@@ -1,0 +1,179 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "InstallUtil"=.\TESTINSTALLER\InstallUtil.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name NetLangDLL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCANetUnInstall
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCARISvc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCASetup
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SCATimEx
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TestCollect
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TestInstConfig
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TestLangDLL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TestNetEnum
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TestService
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "NetLangDLL"=.\TestNetEnum\LangDLL\NetLangDLL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SCANetUnInstall"=.\SCANetUnInstall\SCANetUnInstall.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SCARISvc"=.\SCARISvc\SCARISvc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SCASetup"=.\SCASetup\SCASetup.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SCATimEx"=.\SCATimEx\SCATimEx.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TestCollect"=.\TestCollect\TestCollect.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TestInstConfig"=.\TestInstConfig\TestInstConfig.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TestLangDLL"=.\TestInstConfig\LangDLL\TestLangDLL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TestNetEnum"=.\TestNetEnum\TestNetEnum.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TestService"=.\TestService\TestService.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

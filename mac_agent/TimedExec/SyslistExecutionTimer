@@ -1,0 +1,23 @@
+#!/bin/sh
+
+. /etc/rc.common
+
+StartService ()
+{
+    "/Applications/Syslist Companion Agent/SCATimeEx"&
+	return 0
+}
+
+StopService ()
+{
+	killall -TERM SCATimeEx
+    return 0
+}
+
+RestartService ()
+{
+	killall -HUP SCATimeEx
+    return 0
+}
+
+RunService "$1"

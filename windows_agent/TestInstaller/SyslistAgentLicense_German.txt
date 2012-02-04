@@ -1,0 +1,40 @@
+(c) 2003 - 2009 Literal Technology
+    
+Dieses Softwareprogramm ("das Programm") ist ein 
+urheberrechtlich geschuetztes Werk von Literal Technoly.
+Jeder Gebrauch, jede Reproduktion oder Distribution dieses
+Programms, die nicht nach den Regeln dieser 
+Lizenzbestimmungen ausgefuehrt wird, ist
+ausdruecklich verboten.
+
+Alle Titel-, Eigentums- und intellektuellen Rechte von diesem
+und ueber dieses Programm und alle Kopien davon gehoeren
+Literal Technology. Das Programm ist geschuetzt durch
+Copyright-Gesetze der Vereinigten Staaten,
+Internationale copyrigh- Vertraege und Konventionen sowie
+anderes Recht. Alle Rechte sind vorbehalten.
+
+Sie sind berechtigt, dieses Programm fuer ihren eigenen
+Gebrauch zu nutzen, aber Sie sind nicht berechtigt, das
+Programm, Teile davon oder Kopien anderen zur Verfuegung zu
+stellen. Auch Verleih, Leasing oder Lizensierung an 
+Dritte ist untersagt ohne die ausdrueckliche schriftliche
+Genehmigung von Literal Technology.
+    
+Literal Technology lehnt ausdruecklich jede Garantie fuer
+den Syslist Companion Agent ab. Er wird angeboten, wie er 
+ist, ohne jedwede Garantie gleich welcher Art, ob ausdruecklich
+geaeusert oder
+impliziert, einschliesslich - aber nicht nur - die inbegriffene
+Garantie der Marktgaengigkeit, der Eignung fuer einen 
+bestimmten Zweck oder der Nichtverletzung etwaiger Rechte Dritter.
+Das gesamte Risiko des Gebrauchs des 
+Syslist Companion Agents verbleibt bei Ihnen.
+
+Durch klicken auf "Ich stimme zu" bestaetigen Sie, 
+dass Sie alle Bedingungen dieses Vertrags gelesen und 
+verstanden haben und dass Sie sich an 
+die Bedingungen halten werden. Falls Sie einen Teil dieses Vertrags
+nicht verstehen, druecken Sie bitte auf 
+"Abbrechen". Sie koennen dann Kontakt aufnehmen mit 
+support@syslist.de fuer Hilfe.

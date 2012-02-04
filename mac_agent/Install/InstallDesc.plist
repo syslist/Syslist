@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IFPkgDescriptionDeleteWarning</key>
+	<string></string>
+	<key>IFPkgDescriptionDescription</key>
+	<string>This installs the Syslist Companion Agent software which is used by computer administrators to track the configuration of machines.</string>
+	<key>IFPkgDescriptionTitle</key>
+	<string>Syslist Companion Agent 1.1.5</string>
+	<key>IFPkgDescriptionVersion</key>
+	<string>1.1.5</string>
+</dict>
+</plist>

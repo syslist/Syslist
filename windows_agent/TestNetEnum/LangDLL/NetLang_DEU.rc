@@ -1,0 +1,168 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\resource.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\resource.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RAW_TEXT
+//
+
+IDR_RAW_TEXT_LIC        RAW_TEXT DISCARDABLE    "SyslistAgentLicense_German.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CANCEL              "Abbrechen"
+    IDS_CB_DISABLED         "Unterbrochen"
+    IDS_CB_DAILY            "Einmal am Tag"
+    IDS_CB_STARTUP          "Beim Start"
+    IDS_CB_WEEKLY           "Einmal die Woche"
+    IDS_CB_MONTHLY          "Einmal im Monat"
+    IDS_SERVER_STATIC       "* Syslistserver:"
+    IDS_FREQ_STATIC         "Haeufigkeit:"
+    IDS_OK                  "OK"
+    IDS_CFG_SLANG           "DEU"
+    IDS_CFG_LLANG           "German (DE)"
+    IDS_LANG_STATIC         "Sprache:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CFG_ILANG           "1031"
+    IDS_USER_STATIC         "* Syslist-Konto Name:"
+    IDS_PWD_STATIC          "* Syslist-Konto Passwort:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MACHUSER_STATIC     "* Administrator Username der Maschine:"
+    IDS_MACHPWD_STATIC      "* Administrator Passwort der Maschine:"
+    IDS_MACH_PROCESSING     "Bearbeitungsknoten:"
+    IDS_MACH_PASSED         "Durchgelaufen"
+    IDS_MACH_FAILED         "ERFOLGLOS"
+    IDS_ERR_NO_SOURCE_SHARE "Kann die Installation nicht mitbenutzen. Prozess abgebrochen"
+    IDS_ERR_START_TASK_MGR  "Kann den Remote Task Manager nicht starten um weiter zu machen"
+    IDS_ERR_NO_INSTALLER    "Kann das lokale Installationprogramm SCAInst.exe nicht finden"
+    IDS_ERR_NO_INSTALL_TASK "Kann die remote Installation nicht auf der Maschine ausfuehren. Bitte ueberpruefen Sie die Berechtigungen."
+    IDS_INST_COMPLETE       "Die remote Installation ist komplett!"
+    IDS_INST_TOTAL_ATTEMPT  "Totale Anzahl der versuchten Installationen:"
+    IDS_INST_TOTAL_PASS     "Totale Anzahl der erfolgreichen Installationen:"
+    IDS_INST_TOTAL_FAIL     "Totale Anzahl der erfolglosen Installationen:"
+    IDS_NET_ID_LOCAL        "Lokales Netzwerk"
+    IDS_NET_ID_NETWORK      "NETZWERK"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NET_ID_DOMAIN       "DOMAIN"
+    IDS_INSTALL             "Installiere"
+    IDS_LOCAL_SCAN          "Nur lokalen Scan"
+    IDS_SCAN                "Scanne Netzwerk"
+    IDS_NET_SCAN_START      "Starte Netzwerkscan"
+    IDS_NET_SCAN_DONE       "Netzwerkscan komplett!"
+    IDS_NET_SCAN_CANCEL     "Netzwerkscan abgebrochen."
+    IDS_INST_CANCEL         "Remote Installationsprozess abgebrochen."
+    IDS_CLOSE               "Schliessen"
+    IDS_LIC_ACCEPT          "Ich nehme an"
+    IDS_LIC_DLG_CAPTION     "Syslistagent Lizensierung"
+    IDS_INST_DLG_CAPTION    "Syslistagent Remote Installierer"
+    IDS_INST_START          "Starte Installation."
+    IDS_INTRO_SCAN_INVITE   "Druecken Sie  """"Scanne Netzwerk"""" um die Computer im Netzwerk zu finden"
+    IDS_PLEASE_FILL_FORM    "Bitte geben Sie den Syslist Usernamen, das Syslist Passwort,\tund den Servernamen vor dem Installationsversuch ein."
+    IDS_PLEASE_CHOOSE_MACH  "Kies alstublieft tenminste een computer om te verwerken."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PLEASE_FILL_FORM_CAP "Fuellen Sie das Formular aus"
+    IDS_PLEASE_CHOOSE_MACH_CAP "Geben Sie die Zielmaschine ein"
+    IDS_NO_MACH             "Sie haben keine Maschine ausgewaehlt um weiterzumachen."
+    IDS_PRUNE_UNAVAIL       "Zeige nur verfuegbare Knoten"
+    IDS_PRUNE_INCOMPAT      "Zeige nur kompatible Knoten"
+    IDS_UNINSTALL           "Deinstallieren"
+    IDS_UNINST_CANCELLED    "Remote Deinstallation abgebrochen."
+    IDS_ERR_NO_UNINSTALLER  "Kann das lokale Deinstallationsprogramm  SCAUn.exe nicht finden"
+    IDS_UNINST_TOTAL_ATTEMPT "Totale Anzahl von versuchten Deinstallationen:"
+    IDS_UNINST_TOTAL_PASS   "Totale Anzahl von erfolgreichen Deinstallationen:"
+    IDS_UNINST_TOTAL_FAIL   "Totale Anzahl von erfolglosen Deinstallationen:"
+    IDS_UNINST_COMPLETE     "Remote Deinstallation komplett!"
+    IDS_UNINST_START        "Starte Deinstallation."
+    IDS_NO_PROXY            "Keine Proxy (Direkt)"
+    IDS_IE_PROXY            "Gebrauchen Sie die Einstellungen des Browsers"
+    IDS_MANUAL_PROXY        "Manuelle Proxy-Einstellung"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROXY_COMBO_STATIC  "HTTP(S) Proxy-Einstellungen:"
+    IDS_PROXY_SERVER_STATIC "HTTP(S) Proxy-Server:"
+    IDS_MACHDOMAIN_STATIC   "Domain des PC-Administrators:"
+    IDS_PROXY_PORT_STATIC   "HTTP(S) Proxy Port:"
+    IDS_ACCTID_STATIC       "* Zugangschluessel:"
+    IDS_MACHLOCAL_STATIC    "Benutze lokalen Account:"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

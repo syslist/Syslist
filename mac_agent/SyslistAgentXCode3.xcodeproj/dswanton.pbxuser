@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	044B16D91110D57200990311 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D85207B876C400120859 /* SyslistHTTPTransport.h */;
+		name = "SyslistHTTPTransport.h: 31";
+		rLen = 0;
+		rLoc = 747;
+		rType = 0;
+		vrLen = 743;
+		vrLoc = 0;
+	};
+	044B16DA1110D57200990311 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 902BB87207BC588600C14A00 /* SoftwareCollector.h */;
+		name = "SoftwareCollector.h: 9";
+		rLen = 0;
+		rLoc = 187;
+		rType = 0;
+		vrLen = 680;
+		vrLoc = 0;
+	};
+	044B16DB1110D57200990311 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 90BA083D07E694E900D309D6 /* SoftwareCollector.cpp */;
+		name = "SoftwareCollector.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 777;
+		vrLoc = 0;
+	};
+	044B16DC1110D57200990311 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 90BA083D07E694E900D309D6 /* SoftwareCollector.cpp */;
+		name = "SoftwareCollector.cpp: 264";
+		rLen = 0;
+		rLoc = 6388;
+		rType = 0;
+		vrLen = 578;
+		vrLoc = 698;
+	};
+	0492D29D11051C5900F82AAA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9053795A0D4BE182009E3963 /* FileConfig.cpp */;
+		name = "FileConfig.cpp: 98";
+		rLen = 0;
+		rLoc = 2507;
+		rType = 0;
+		vrLen = 850;
+		vrLoc = 2397;
+	};
+	0492D29E11051C5900F82AAA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9013CB0508C9454100461AB4 /* BSAUtilMain.m */;
+		name = "BSAUtilMain.m: 79";
+		rLen = 5;
+		rLoc = 2100;
+		rType = 0;
+		vrLen = 765;
+		vrLoc = 1648;
+	};
+	0492D29F11051C5900F82AAA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D84D07B876C400120859 /* FileTransport.h */;
+		name = "FileTransport.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 418;
+		vrLoc = 0;
+	};
+	0492D2A011051C5900F82AAA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D84E07B876C400120859 /* HTTPSecureTransport.h */;
+		name = "HTTPSecureTransport.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 461;
+		vrLoc = 83;
+	};
+	04A1923510FD430D00053249 /* BSAUtil */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = BSAUtil;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1923610FD430D00053249 /* SCACollector BSA */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "SCACollector BSA";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1923710FD430D00053249 /* SCATimeEx */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = SCATimeEx;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1923810FD430D00053249 /* SCACollector */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = SCACollector;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1923910FD430D00053249 /* SCAConfig */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = SCAConfig;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1923A10FD430D00053249 /* SCAConfig ASP */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "SCAConfig ASP";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1923B10FD430D00053249 /* SCACollector ASP */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "SCACollector ASP";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1923C10FD430D00053249 /* SCAConfig DEMO */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "SCAConfig DEMO";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1923D10FD430D00053249 /* SCACollector DEMO */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "SCACollector DEMO";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1923E10FD430D00053249 /* SCAConfig ASP DEMO */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "SCAConfig ASP DEMO";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1923F10FD430D00053249 /* SCACollector ASP DEMO */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "SCACollector ASP DEMO";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	04A1924A10FD432E00053249 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	04A1924B10FD432E00053249 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	04A1924C10FD5CB600053249 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 90AE32DE07B8598500BCB4E2 /* CollectorMain.cpp */;
+		name = "CollectorMain.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 601;
+		vrLoc = 0;
+	};
+	04A5DF0811063F8100BE7DED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D84F07B876C400120859 /* HTTPTransport.h */;
+		name = "HTTPTransport.h: 591";
+		rLen = 0;
+		rLoc = 13205;
+		rType = 0;
+		vrLen = 565;
+		vrLoc = 13051;
+	};
+	04D196331102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 900C52F807CA73ED00EF3285 /* License.txt */;
+		name = "License.txt: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1111;
+		vrLoc = 0;
+	};
+	04D196341102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 90247CCC0804E5290068AF26 /* DisplayCollector.cpp */;
+		name = "DisplayCollector.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 636;
+		vrLoc = 3640;
+	};
+	04D196371102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 900C529707CA540500EF3285 /* SyslistVersion.h */;
+		name = "SyslistVersion.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 746;
+		vrLoc = 0;
+	};
+	04D196381102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D85307B876C400120859 /* TransportProto.h */;
+		name = "TransportProto.h: 18";
+		rLen = 0;
+		rLoc = 376;
+		rType = 0;
+		vrLen = 387;
+		vrLoc = 0;
+	};
+	04D1963A1102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D85107B876C400120859 /* SOMBase.h */;
+		name = "SOMBase.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 585;
+		vrLoc = 1685;
+	};
+	04D1963B1102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D85007B876C400120859 /* ScreenTransport.h */;
+		name = "ScreenTransport.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 391;
+		vrLoc = 0;
+	};
+	04D1963C1102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D85507B876D000120859 /* CFUtil.h */;
+		name = "CFUtil.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 531;
+		vrLoc = 0;
+	};
+	04D1963D1102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D84C07B876C400120859 /* FileHandleTransport.h */;
+		name = "FileHandleTransport.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 444;
+		vrLoc = 2182;
+	};
+	04D1963E1102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9074B04F07EBE4250033A48E /* Uninstall Syslist Agent.applescript */;
+		name = "Uninstall Syslist Agent.applescript: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 310;
+		vrLoc = 0;
+	};
+	04D1963F1102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 900C539B07CA91C300EF3285 /* uninstall.sh */;
+		name = "uninstall.sh: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 744;
+		vrLoc = 0;
+	};
+	04D196401102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 900C524707CA427500EF3285 /* SyslistExecutionTimer */;
+		name = "SyslistExecutionTimer: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 248;
+		vrLoc = 0;
+	};
+	04D196411102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 900C50C207C96B1A00EF3285 /* TimedExecMain.cpp */;
+		name = "TimedExecMain.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 508;
+		vrLoc = 5739;
+	};
+	04D196421102B23700AC160F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 900C524C07CA440400EF3285 /* StartupParameters.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/dswanton/Syslist/macsyslist_test2/TimedExec/StartupParameters.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	04D196431102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 90247CCA0804E50F0068AF26 /* DisplayCollector.h */;
+		name = "DisplayCollector.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 303;
+		vrLoc = 0;
+	};
+	04D196441102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 905379460D4BD9B4009E3963 /* FileConfig.h */;
+		name = "FileConfig.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 497;
+		vrLoc = 0;
+	};
+	04D196451102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D84907B876B700120859 /* SyslistPrefs.h */;
+		name = "SyslistPrefs.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 754;
+		vrLoc = 0;
+	};
+	04D196461102B23700AC160F /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 9053608D0D47248800220107 /* syslist-logo-mac.pict */;
+	};
+	04D196471102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D89A07B879EF00120859 /* ConfigMain.m */;
+		name = "ConfigMain.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 458;
+		vrLoc = 6681;
+	};
+	04D196481102B23700AC160F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9034D8B507B8870A00120859 /* ConfigUIController.h */;
+		name = "ConfigUIController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 949;
+		vrLoc = 0;
+	};
+	04F34C8C1104F7B900EEDE8C /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 9034D85F07B8785F00120859 /* SCAConfig-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/dswanton/Syslist/macsyslist_test2/Config/SCAConfig-Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	900C50BF07C96AC300EF3285 /* SCATimeEx */ = {
+		activeExec = 0;
+		executables = (
+			04A1923710FD430D00053249 /* SCATimeEx */,
+		);
+	};
+	900C50C207C96B1A00EF3285 /* TimedExecMain.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 4396}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{5739, 508}";
+		};
+	};
+	900C524707CA427500EF3285 /* SyslistExecutionTimer */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 378}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 248}";
+		};
+	};
+	900C526507CA4B5C00EF3285 /* BuildAllProducts */ = {
+		activeExec = 0;
+	};
+	900C526E07CA4D2200EF3285 /* PackageProducts */ = {
+		activeExec = 0;
+	};
+	900C529707CA540500EF3285 /* SyslistVersion.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 434}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 746}";
+		};
+	};
+	900C52F807CA73ED00EF3285 /* License.txt */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 518}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1111}";
+		};
+	};
+	900C52F907CA73ED00EF3285 /* Welcome.rtf */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {740, 195}}";
+			sepNavSelRange = "{55, 5}";
+			sepNavVisRect = "{{0, 0}, {740, 195}}";
+		};
+	};
+	900C539B07CA91C300EF3285 /* uninstall.sh */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 378}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 744}";
+		};
+	};
+	9013CAFA08C9414200461AB4 /* BSAUtil */ = {
+		activeExec = 0;
+		executables = (
+			04A1923510FD430D00053249 /* BSAUtil */,
+		);
+	};
+	9013CB0508C9454100461AB4 /* BSAUtilMain.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 3328}}";
+			sepNavSelRange = "{2100, 5}";
+			sepNavVisRange = "{1648, 765}";
+		};
+	};
+	9013CB3D08C963DA00461AB4 /* SCACollector BSA */ = {
+		activeExec = 0;
+		executables = (
+			04A1923610FD430D00053249 /* SCACollector BSA */,
+		);
+	};
+	90247CCA0804E50F0068AF26 /* DisplayCollector.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 378}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 303}";
+		};
+	};
+	90247CCC0804E5290068AF26 /* DisplayCollector.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 2016}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{3640, 636}";
+		};
+	};
+	902BB87207BC588600C14A00 /* SoftwareCollector.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {877, 468}}";
+			sepNavSelRange = "{187, 0}";
+			sepNavVisRange = "{0, 680}";
+		};
+	};
+	9034D84907B876B700120859 /* SyslistPrefs.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 9702}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 754}";
+		};
+	};
+	9034D84C07B876C400120859 /* FileHandleTransport.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 2044}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{2182, 444}";
+		};
+	};
+	9034D84D07B876C400120859 /* FileTransport.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {877, 780}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 418}";
+		};
+	};
+	9034D84E07B876C400120859 /* HTTPSecureTransport.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {877, 2990}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{83, 461}";
+		};
+	};
+	9034D84F07B876C400120859 /* HTTPTransport.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {877, 9503}}";
+			sepNavSelRange = "{13205, 0}";
+			sepNavVisRange = "{13051, 565}";
+			sepNavWindowFrame = "{{15, 56}, {1129, 717}}";
+		};
+	};
+	9034D85007B876C400120859 /* ScreenTransport.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 616}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 391}";
+		};
+	};
+	9034D85107B876C400120859 /* SOMBase.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 3500}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1685, 585}";
+		};
+	};
+	9034D85207B876C400120859 /* SyslistHTTPTransport.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {877, 3328}}";
+			sepNavSelRange = "{747, 0}";
+			sepNavVisRange = "{0, 743}";
+		};
+	};
+	9034D85307B876C400120859 /* TransportProto.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 378}}";
+			sepNavSelRange = "{376, 0}";
+			sepNavVisRange = "{0, 387}";
+		};
+	};
+	9034D85507B876D000120859 /* CFUtil.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 4074}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 531}";
+		};
+	};
+	9034D85C07B8785F00120859 /* SCAConfig */ = {
+		activeExec = 0;
+		executables = (
+			04A1923910FD430D00053249 /* SCAConfig */,
+		);
+	};
+	9034D89A07B879EF00120859 /* ConfigMain.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 3724}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{6681, 458}";
+		};
+	};
+	9034D8B507B8870A00120859 /* ConfigUIController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 672}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 949}";
+		};
+	};
+	905379460D4BD9B4009E3963 /* FileConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 420}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 497}";
+		};
+	};
+	9053795A0D4BE182009E3963 /* FileConfig.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 1625}}";
+			sepNavSelRange = "{2507, 0}";
+			sepNavVisRange = "{2397, 850}";
+		};
+	};
+	906EF69D080CBCAF00EC9105 /* SCACollector ASP */ = {
+		activeExec = 0;
+		executables = (
+			04A1923B10FD430D00053249 /* SCACollector ASP */,
+		);
+	};
+	906EF6B8080CBD8F00EC9105 /* SCAConfig DEMO */ = {
+		activeExec = 0;
+		executables = (
+			04A1923C10FD430D00053249 /* SCAConfig DEMO */,
+		);
+	};
+	906EF6CD080CBD8F00EC9105 /* SCACollector DEMO */ = {
+		activeExec = 0;
+		executables = (
+			04A1923D10FD430D00053249 /* SCACollector DEMO */,
+		);
+	};
+	906EF6E8080CBF2900EC9105 /* SCAConfig ASP DEMO */ = {
+		activeExec = 0;
+		executables = (
+			04A1923E10FD430D00053249 /* SCAConfig ASP DEMO */,
+		);
+	};
+	906EF6FD080CBF2900EC9105 /* SCACollector ASP DEMO */ = {
+		activeExec = 0;
+		executables = (
+			04A1923F10FD430D00053249 /* SCACollector ASP DEMO */,
+		);
+	};
+	9074B04F07EBE4250033A48E /* Uninstall Syslist Agent.applescript */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 378}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 310}";
+		};
+	};
+	90AE32AC07B8577000BCB4E2 /* SCACollector */ = {
+		activeExec = 0;
+		executables = (
+			04A1923810FD430D00053249 /* SCACollector */,
+		);
+	};
+	90AE32DE07B8598500BCB4E2 /* CollectorMain.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {907, 4225}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 601}";
+		};
+	};
+	90BA083D07E694E900D309D6 /* SoftwareCollector.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {936, 5629}}";
+			sepNavSelRange = "{6388, 0}";
+			sepNavVisRange = "{698, 578}";
+		};
+	};
+	90C9888407B6E0C3008008F5 /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeExecutable = 04A1923910FD430D00053249 /* SCAConfig */;
+		activeSDKPreference = macosx10.4;
+		activeTarget = 9034D85C07B8785F00120859 /* SCAConfig */;
+		codeSenseManager = 04A1924B10FD432E00053249 /* Code sense */;
+		executables = (
+			04A1923510FD430D00053249 /* BSAUtil */,
+			04A1923610FD430D00053249 /* SCACollector BSA */,
+			04A1923710FD430D00053249 /* SCATimeEx */,
+			04A1923810FD430D00053249 /* SCACollector */,
+			04A1923910FD430D00053249 /* SCAConfig */,
+			04A1923A10FD430D00053249 /* SCAConfig ASP */,
+			04A1923B10FD430D00053249 /* SCACollector ASP */,
+			04A1923C10FD430D00053249 /* SCAConfig DEMO */,
+			04A1923D10FD430D00053249 /* SCACollector DEMO */,
+			04A1923E10FD430D00053249 /* SCAConfig ASP DEMO */,
+			04A1923F10FD430D00053249 /* SCACollector ASP DEMO */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					699,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					689,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 286160429;
+			PBXWorkspaceStateSaveDate = 286160429;
+		};
+		perUserProjectItems = {
+			044B16D91110D57200990311 /* PBXTextBookmark */ = 044B16D91110D57200990311 /* PBXTextBookmark */;
+			044B16DA1110D57200990311 /* PBXTextBookmark */ = 044B16DA1110D57200990311 /* PBXTextBookmark */;
+			044B16DB1110D57200990311 /* PBXTextBookmark */ = 044B16DB1110D57200990311 /* PBXTextBookmark */;
+			044B16DC1110D57200990311 /* PBXTextBookmark */ = 044B16DC1110D57200990311 /* PBXTextBookmark */;
+			0492D29D11051C5900F82AAA /* PBXTextBookmark */ = 0492D29D11051C5900F82AAA /* PBXTextBookmark */;
+			0492D29E11051C5900F82AAA /* PBXTextBookmark */ = 0492D29E11051C5900F82AAA /* PBXTextBookmark */;
+			0492D29F11051C5900F82AAA /* PBXTextBookmark */ = 0492D29F11051C5900F82AAA /* PBXTextBookmark */;
+			0492D2A011051C5900F82AAA /* PBXTextBookmark */ = 0492D2A011051C5900F82AAA /* PBXTextBookmark */;
+			04A1924C10FD5CB600053249 /* PBXTextBookmark */ = 04A1924C10FD5CB600053249 /* PBXTextBookmark */;
+			04A5DF0811063F8100BE7DED /* PBXTextBookmark */ = 04A5DF0811063F8100BE7DED /* PBXTextBookmark */;
+			04D196331102B23700AC160F /* PBXTextBookmark */ = 04D196331102B23700AC160F /* PBXTextBookmark */;
+			04D196341102B23700AC160F /* PBXTextBookmark */ = 04D196341102B23700AC160F /* PBXTextBookmark */;
+			04D196371102B23700AC160F /* PBXTextBookmark */ = 04D196371102B23700AC160F /* PBXTextBookmark */;
+			04D196381102B23700AC160F /* PBXTextBookmark */ = 04D196381102B23700AC160F /* PBXTextBookmark */;
+			04D1963A1102B23700AC160F /* PBXTextBookmark */ = 04D1963A1102B23700AC160F /* PBXTextBookmark */;
+			04D1963B1102B23700AC160F /* PBXTextBookmark */ = 04D1963B1102B23700AC160F /* PBXTextBookmark */;
+			04D1963C1102B23700AC160F /* PBXTextBookmark */ = 04D1963C1102B23700AC160F /* PBXTextBookmark */;
+			04D1963D1102B23700AC160F /* PBXTextBookmark */ = 04D1963D1102B23700AC160F /* PBXTextBookmark */;
+			04D1963E1102B23700AC160F /* PBXTextBookmark */ = 04D1963E1102B23700AC160F /* PBXTextBookmark */;
+			04D1963F1102B23700AC160F /* PBXTextBookmark */ = 04D1963F1102B23700AC160F /* PBXTextBookmark */;
+			04D196401102B23700AC160F /* PBXTextBookmark */ = 04D196401102B23700AC160F /* PBXTextBookmark */;
+			04D196411102B23700AC160F /* PBXTextBookmark */ = 04D196411102B23700AC160F /* PBXTextBookmark */;
+			04D196421102B23700AC160F /* PlistBookmark */ = 04D196421102B23700AC160F /* PlistBookmark */;
+			04D196431102B23700AC160F /* PBXTextBookmark */ = 04D196431102B23700AC160F /* PBXTextBookmark */;
+			04D196441102B23700AC160F /* PBXTextBookmark */ = 04D196441102B23700AC160F /* PBXTextBookmark */;
+			04D196451102B23700AC160F /* PBXTextBookmark */ = 04D196451102B23700AC160F /* PBXTextBookmark */;
+			04D196461102B23700AC160F /* PBXBookmark */ = 04D196461102B23700AC160F /* PBXBookmark */;
+			04D196471102B23700AC160F /* PBXTextBookmark */ = 04D196471102B23700AC160F /* PBXTextBookmark */;
+			04D196481102B23700AC160F /* PBXTextBookmark */ = 04D196481102B23700AC160F /* PBXTextBookmark */;
+			04F34C8C1104F7B900EEDE8C /* PlistBookmark */ = 04F34C8C1104F7B900EEDE8C /* PlistBookmark */;
+		};
+		sourceControlManager = 04A1924A10FD432E00053249 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	90CDF62B0809C22400D72698 /* SCAConfig ASP */ = {
+		activeExec = 0;
+		executables = (
+			04A1923A10FD430D00053249 /* SCAConfig ASP */,
+		);
+	};
+}

@@ -1,0 +1,31 @@
+8
+
+dir
+111
+svn://192.168.1.7/syslist/trunk/Build%20Util
+svn://192.168.1.7/syslist
+
+
+
+2003-12-08T01:28:13.000000Z
+94
+kholland
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5e017c35-9a2a-dc11-a9ac-00d009e63586
+
+NSIS_2.0b3_Mod
+dir
+

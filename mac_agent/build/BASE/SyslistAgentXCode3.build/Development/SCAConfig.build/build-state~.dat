@@ -1,0 +1,104 @@
+TSCAConfig
+v7
+r1
+cCheck dependencies
+
+N/Users/dswanton/Syslist/macsyslist_test2/Config/ConfigUI.nib
+c000000004796F04400000000000000CC
+t1201074244
+s204
+
+N/Users/dswanton/Syslist/macsyslist_test2/Config/ConfigUIController.h
+c0000000046911EFB000000000000061C
+t1183915771
+s1564
+
+N/Users/dswanton/Syslist/macsyslist_test2/Config/SyslistIcon.icns
+c0000000046911EFB000000000000F2DC
+t1183915771
+s62172
+
+N/Users/dswanton/Syslist/macsyslist_test2/Config/SyslistIconButton.icns
+c0000000046911EFB0000000000010E7F
+t1183915771
+s69247
+
+N/Users/dswanton/Syslist/macsyslist_test2/Config/syslist-logo-mac.pict
+c000000004612FB5800000000000033E0
+t1175649112
+s13280
+
+N/Users/dswanton/Syslist/macsyslist_test2/build/BASE/Development/SCAConfig.app
+t2
+s0
+
+N/Users/dswanton/Syslist/macsyslist_test2/build/BASE/Development/SCAConfig.app/Contents/Info.plist
+t2
+s0
+
+N/Users/dswanton/Syslist/macsyslist_test2/build/BASE/Development/SCAConfig.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/dswanton/Syslist/macsyslist_test2/build/BASE/Development/SCAConfig.app/Contents/Resources/ConfigUI.nib
+t2
+s0
+
+N/Users/dswanton/Syslist/macsyslist_test2/build/BASE/Development/SCAConfig.app/Contents/Resources/ConfigUIController.h
+t2
+s0
+
+N/Users/dswanton/Syslist/macsyslist_test2/build/BASE/Development/SCAConfig.app/Contents/Resources/SyslistIcon.icns
+t2
+s0
+
+N/Users/dswanton/Syslist/macsyslist_test2/build/BASE/Development/SCAConfig.app/Contents/Resources/SyslistIconButton.icns
+t2
+s0
+
+N/Users/dswanton/Syslist/macsyslist_test2/build/BASE/Development/SCAConfig.app/Contents/Resources/syslist-logo-mac.pict
+t2
+s0
+
+NConfig/SCAConfig-Info.plist
+c0000000047A40239000000000000031F
+t1201930809
+s799
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies285535225#285535225#0(87"[BEROR]error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.3.9.sdk'1(4@79"error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.3.9.sdk'285535225#18446744073709551615#0#0(1@0"0(0#1#0"28429427921584240#0"0#
+
+CCompileC build/BASE/SyslistAgentXCode3.build/Development/SCAConfig.build/Objects-normal/i386/ConfigMain.o /Users/dswanton/Syslist/macsyslist_test2/Config/ConfigMain.m normal i386 objective-c++ com.apple.compilers.gcc.4_0
+r0
+
+CCompileC build/BASE/SyslistAgentXCode3.build/Development/SCAConfig.build/Objects-normal/i386/ConfigUIController.o /Users/dswanton/Syslist/macsyslist_test2/Config/ConfigUIController.m normal i386 objective-c++ com.apple.compilers.gcc.4_0
+r0
+
+CCompileC build/BASE/SyslistAgentXCode3.build/Development/SCAConfig.build/Objects-normal/i386/FileConfig.o /Users/dswanton/Syslist/macsyslist_test2/Config/FileConfig.cpp normal i386 c++ com.apple.compilers.gcc.4_0
+r0
+
+CCpResource build/BASE/Development/SCAConfig.app/Contents/Resources/ConfigUIController.h Config/ConfigUIController.h
+r0
+
+CCpResource build/BASE/Development/SCAConfig.app/Contents/Resources/SyslistIcon.icns Config/SyslistIcon.icns
+r0
+
+CCpResource build/BASE/Development/SCAConfig.app/Contents/Resources/SyslistIconButton.icns Config/SyslistIconButton.icns
+r0
+
+CCpResource build/BASE/Development/SCAConfig.app/Contents/Resources/syslist-logo-mac.pict Config/syslist-logo-mac.pict
+r0
+
+CLd /Users/dswanton/Syslist/macsyslist_test2/build/BASE/SyslistAgentXCode3.build/Development/SCAConfig.build/Objects-normal/i386/SCAConfig normal i386
+r0
+
+CProcessInfoPlistFile /Users/dswanton/Syslist/macsyslist_test2/build/BASE/Development/SCAConfig.app/Contents/Info.plist Config/SCAConfig-Info.plist
+r0
+
+CStripNIB /Users/dswanton/Syslist/macsyslist_test2/Config/ConfigUI.nib
+r0
+
+CTouch /Users/dswanton/Syslist/macsyslist_test2/build/BASE/Development/SCAConfig.app
+r0
+

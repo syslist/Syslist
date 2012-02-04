@@ -1,0 +1,352 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NET_INSTALL DIALOG DISCARDABLE  0, 0, 401, 350
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Syslist Companion Agent Remote Installer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MACH_USER_EDIT,246,22,149,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MACH_PWD_EDIT,246,44,149,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_MACH_DOMAIN_EDIT,246,66,149,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SYSLIST_SERVER_EDIT,246,88,149,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PROXY_COMBO,246,110,149,56,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PROXY_SERVER_EDIT,246,132,149,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROXY_PORT_EDIT,246,154,149,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_FREQ_COMBO,246,176,149,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SYSLIST_USER_EDIT,246,198,149,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SYSLIST_PWD_EDIT,246,220,149,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_SYSLIST_ACCTID_EDIT,246,242,149,12,ES_AUTOHSCROLL
+    CONTROL         "Local Scan Only",IDC_LOCAL_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,262,135,12
+    CONTROL         "Show Only Available Nodes",IDC_PRUNE_UNAVAIL_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,278,136,12
+    CONTROL         "Show Only Compatible Nodes",IDC_PRUNE_INCOMPAT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,294,138,12
+    PUSHBUTTON      "Scan Network",IDC_SCAN_NET,8,322,66,14
+    CONTROL         "Tree1",IDC_NETTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_CHECKBOXES | WS_BORDER | WS_TABSTOP,2,44,222,210
+    DEFPUSHBUTTON   "Install",IDC_INSTALL,112,323,50,14
+    DEFPUSHBUTTON   "UnInstall",IDC_UNINSTALL,197,323,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,284,322,50,14
+    DEFPUSHBUTTON   "Close",IDC_CLOSE,346,322,50,14
+    EDITTEXT        IDC_LOG,153,258,244,61,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL | 
+                    NOT WS_TABSTOP
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_SUNKEN,2,2,221,40
+    LTEXT           "Install User Name:",IDC_MACH_USER_STATIC,228,12,161,10
+    LTEXT           "Install User Password:",IDC_MACH_PWD_STATIC,229,34,161,
+                    10
+    LTEXT           "Syslist Account User Name:",IDC_SYSLIST_USER_STATIC,228,
+                    188,161,10
+    LTEXT           "Syslist Account User Password:",IDC_SYSLIST_PWD_STATIC,
+                    228,210,161,10
+    LTEXT           "Syslist Server:",IDC_SYSLIST_SERVER_STATIC,228,78,161,
+                    10
+    LTEXT           "Inventory Frequency:",IDC_SYSLIST_FREQ_STATIC,228,166,
+                    161,10
+    LTEXT           "HTTP(S) Proxy Server:",IDC_PROXY_SERVER_STATIC,228,122,
+                    161,10
+    LTEXT           "HTTP(S) Proxy Setting:",IDC_PROXY_COMBO_STATIC,228,100,
+                    161,10
+    RTEXT           "Version",IDC_VERSION_STATIC,278,338,116,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Install User Domain:",IDC_MACH_DOMAIN_STATIC,229,56,161,
+                    10
+    LTEXT           "Syslist Account ID:",IDC_SYSLIST_ACCTID_STATIC,228,232,
+                    161,10
+    LTEXT           "HTTP(S) Proxy Port:",IDC_PROXY_PORT_STATIC,228,144,161,
+                    10
+    CONTROL         "Force Local Administrative Account",
+                    IDC_MACH_LOCAL_CHECK,"Button",BS_AUTOCHECKBOX,247,0,149,
+                    12
+END
+
+IDD_LIC_LANG DIALOGEX 0, 0, 333, 246
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Syslist Companion Agent Installer License"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Accept License",IDC_LIC_ACCEPT,119,217,87,14
+    PUSHBUTTON      "Cancel",IDC_LIC_CANCEL,275,217,50,14
+    CONTROL         102,IDC_LIC_LOGO,"Static",SS_BITMAP | SS_CENTERIMAGE,7,7,
+                    318,41,WS_EX_CLIENTEDGE
+    RTEXT           "Language:",IDC_LANG_STATIC,7,55,93,12
+    COMBOBOX        IDC_LANG_COMBO,102,52,174,116,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LIC_TEXT,7,68,318,145,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_OEMCONVERT | ES_READONLY | WS_VSCROLL | NOT 
+                    WS_TABSTOP,WS_EX_DLGMODALFRAME
+    RTEXT           "Version",IDC_LIC_VERSION_STATIC,209,234,116,12,
+                    SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_NET_INSTALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_LIC_LANG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SYSLIST_LOGO        BITMAP  DISCARDABLE     "syslist-logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_INSTALLER16         ICON    DISCARDABLE     "remote_installer_icon-16.ico"
+IDI_INSTALLER32         ICON    DISCARDABLE     "remote_installer_icon-32.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RAW_TEXT
+//
+
+IDR_RAW_TEXT_LIC        RAW_TEXT DISCARDABLE    "SyslistAgentLicense.txt"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", " \0"
+            VALUE "FileDescription", "SCANet\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SCANet\0"
+            VALUE "LegalCopyright", "Copyright © 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SCANet.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "  SCANet\0"
+            VALUE "ProductVersion", "1, 2, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LIC_TEXT            "(c) 2003 Literal Technology\n    \nThis software program is the copyrighted work of\nLiteral Technology. It is solely for use by end users\naccording to the terms of the License Agreement\n(""license.txt"") included with the Syslist Server\nprogram files. Any use, reproduction or redistribution\nof the Program not in accordance with the terms of the\nLicense Agreement is expressly prohibited.\n    \nBy clicking 'I Agree', you acknowledge that you have\nread and agree with all the terms in the\naforementioned License Agreement, and that you will\nabide by those terms. If you have not read the License\nAgreement, you must click 'Cancel'. If you do not\nunderstand ANY PART of the License Agreement, click\n'Cancel' and contact support@syslist.com for\nassistance.""    \n    \nLiteral Technology expressly disclaims any warranty\nfor the Syslist Companion Agent. It is provided ""as\nis,"" without warranty of any kind, either express or\nimplied, including, without limitation, the implied\nwarranties of merchantabili"
+    IDS_CANCEL              "Cancel"
+    IDS_CB_DISABLED         "Disabled"
+    IDS_CB_DAILY            "Once a Day"
+    IDS_CB_STARTUP          "On Startup"
+    IDS_CB_WEEKLY           "Once A Week"
+    IDS_CB_MONTHLY          "Once a Month"
+    IDS_SERVER_STATIC       "* Syslist Server:"
+    IDS_FREQ_STATIC         "Frequency:"
+    IDS_OK                  "OK"
+    IDS_CFG_SLANG           "ENU"
+    IDS_CFG_LLANG           "English (U.S.)"
+    IDS_LANG_STATIC         "Language:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CFG_ILANG           "1033"
+    IDS_USER_STATIC         "* Syslist Account Name:"
+    IDS_PWD_STATIC          "* Syslist Account Password:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MACHUSER_STATIC     "* Machine Administrator Username:"
+    IDS_MACHPWD_STATIC      "* Machine Administrator Password:"
+    IDS_MACH_PROCESSING     "Processing node:"
+    IDS_MACH_PASSED         "Passed"
+    IDS_MACH_FAILED         "FAILED"
+    IDS_ERR_NO_SOURCE_SHARE "Could not share the installation source. Processing Terminated"
+    IDS_ERR_START_TASK_MGR  "Could not start the remote task manager for processing"
+    IDS_ERR_NO_INSTALLER    "Could not locate the local installation executable SCAInst.exe"
+    IDS_ERR_NO_INSTALL_TASK "Could not successfully execute the remote install on the remote machine. Please check user permissions."
+    IDS_INST_COMPLETE       "Remote Installation Processing Complete!"
+    IDS_INST_TOTAL_ATTEMPT  "Total number of ATTEMPTED installs:"
+    IDS_INST_TOTAL_PASS     "Total number of SUCCESSFUL installs:"
+    IDS_INST_TOTAL_FAIL     "Total number of FAILED installs:"
+    IDS_NET_ID_LOCAL        "Local Network"
+    IDS_NET_ID_NETWORK      "NETWORK"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NET_ID_DOMAIN       "DOMAIN"
+    IDS_INSTALL             "Install"
+    IDS_LOCAL_SCAN          "Local Scan Only"
+    IDS_SCAN                "Scan Network"
+    IDS_NET_SCAN_START      "Starting Network Scan"
+    IDS_NET_SCAN_DONE       "Network Scan Complete!"
+    IDS_NET_SCAN_CANCEL     "Network Scan Cancelled."
+    IDS_INST_CANCEL         "Remote Installation Processing Cancelled."
+    IDS_CLOSE               "Close"
+    IDS_LIC_ACCEPT          "I Agree"
+    IDS_LIC_DLG_CAPTION     "Syslist Companion Agent Licensing"
+    IDS_INST_DLG_CAPTION    "Syslist Companion Agent Remote Installer"
+    IDS_INST_START          "Starting Installation."
+    IDS_INTRO_SCAN_INVITE   "Press ""Scan Network"" to detect computers on your network"
+    IDS_PLEASE_FILL_FORM    "Please Fill in Syslist User Name, Syslist Password, and Server Name before attempting to Install."
+    IDS_PLEASE_CHOOSE_MACH  "Please choose at least one machine to process."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PLEASE_FILL_FORM_CAP "Please Fill In Form"
+    IDS_PLEASE_CHOOSE_MACH_CAP "Please Select Target Machines"
+    IDS_NO_MACH             "You have not selected any machines to process."
+    IDS_PRUNE_UNAVAIL       "Show Available Nodes Only"
+    IDS_PRUNE_INCOMPAT      "Show Compatible Nodes Only"
+    IDS_UNINSTALL           "Uninstall"
+    IDS_UNINST_CANCELLED    "Remote UnInstallation Processing Cancelled."
+    IDS_ERR_NO_UNINSTALLER  "Could not located the local uninstallation executable SCAUn.exe"
+    IDS_UNINST_TOTAL_ATTEMPT "Total number of ATTEMPTED Uninstalls:"
+    IDS_UNINST_TOTAL_PASS   "Total number of SUCCESSFUL Uninstalls:"
+    IDS_UNINST_TOTAL_FAIL   "Total number of FAILED Uninstalls:"
+    IDS_UNINST_COMPLETE     "Remote UnInstallation Processing Complete!"
+    IDS_UNINST_START        "Starting Uninstallation."
+    IDS_NO_PROXY            "No Proxy (Direct)"
+    IDS_IE_PROXY            "Use Internet Explorer Settings"
+    IDS_MANUAL_PROXY        "Manual Proxy Setting"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROXY_COMBO_STATIC  "HTTP(S) Proxy Settings:"
+    IDS_PROXY_SERVER_STATIC "HTTP(S) Proxy Server:"
+    IDS_MACHDOMAIN_STATIC   "Machine Administrator Domain:"
+    IDS_PROXY_PORT_STATIC   "HTTP(S) Proxy Port:"
+    IDS_ACCTID_STATIC       "* Syslist Account Code:"
+    IDS_MACHLOCAL_STATIC    "Force Local Administrative Account"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

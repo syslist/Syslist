@@ -1,0 +1,38 @@
+(c) 2003 Literal Technology
+    
+Dit softwareprogramma ("het programma") is een werk van 
+Literal Technology waarop copyright rust. Elk gebruik,
+reproductie of herdistributie van het programma dat 
+niet volgens de regels van dit verdrag geschiedt is 
+uitdrukkelijk verboden. 
+
+Alle titel-, eigendoms- en intellectuele eigendomsrechten
+van en over het programma en elk en alle kopieen daarvan
+zijn eigendom van Literal Technology. Het programma is 
+beschermd door copyright wetten van de Verenigde Staten
+van Amerika, internationale copyright verdragen en andere
+wetten. Alle rechten voorbehouden. 
+
+U bent berechtigd om het programma te gebruiken voor 
+uw eigen gebruik, maar u bent niet berechtigd om het 
+programma, delen daarvan of kopieen aan anderen ter 
+beschikking te stellen. Ook de verhuur, lease of 
+licensering van het programma aan anderen is u niet 
+toegestaan tenzij u schriftelijke toestemming heeft
+van Literal Technology.
+
+Literal Technology erkent met nadruk geen garantie 
+op de Syslist Companion Agent. Deze wordt u ter beschikking 
+gesteld zoals deze is, zonder garantie van welke aard 
+dan ook; zij het expliciet, impliciet, inclusief, zonder
+restricties, gangbaarheid, geschiktheid voor een bepaald
+doel of inbreuk makend op rechten van derden. Het gehele
+risico van het gebruik en de prestatie van de Syslist 
+Companion Agent ligt bij u.
+
+Door het klikken op "Ik ben akkoord", geeft u aan dat 
+u alle voorwaarden van dit verdrag heeft gelezen en 
+begrepen en dat u zich aan deze voorwaarden zult houden.
+Mocht u een voorwaarde of een deel van dit verdrag niet 
+begrijpen klikt u dan op "Annuleer" en neem contact op
+met support@syslist.com voor assistentie.

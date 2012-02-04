@@ -1,0 +1,22 @@
+#!/bin/sh
+
+rm -rf /Library/Receipts/SCA_Install*.pkg
+killall -TERM SCATimeEx
+
+BASE_PKG_DIR=`dirname $PACKAGE_PATH`
+CONF_PATH="$BASE_PKG_DIR/config"
+
+SCA_CONFIG="/Applications/Syslist Companion Agent/SCAConfig.app/Contents/MacOS/SCAConfig"
+
+if test -f $CONF_PATH ; then
+    "$SCA_CONFIG" -config "$CONF_PATH" -install || exit 1;
+elif test -z $COMMAND_LINE_INSTALL ; then
+	"$SCA_CONFIG" -install || exit 1 ;
+fi
+
+"/Applications/Syslist Companion Agent/SCATimeEx"&
+
+chown -R root "/Library/StartupItems/SyslistExecutionTimer"
+chgrp -R wheel "/Library/StartupItems/SyslistExecutionTimer"
+
+exit 0

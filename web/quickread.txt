@@ -1,0 +1,19 @@
+Note: to quickly get a sense of how the Syslist Companion Agent works, we recommend that you simply install the "manual" version on your local PC or Mac. That's "Win_SCA_Manual_Free.exe" or "Mac_SCA_Manual_Free.dmg". It takes seconds and generates a lot of interesting information. Afterwards, you may wish to try the Windows remote installer, using logon scripts, or similar methods to perform a remote push. If you have any questions or issues, please contact support@syslist.com. Thank you!
+
+Manual installer requirements
+
+- Mac OS X, Windows 98SE, ME, NT, 2000, XP, and Vista are supported
+- Disk Space: 2MB
+- Memory: enough to run 500KB resident program.
+
+
+Remote installer (additional requirements)*
+
+- Only Windows NT, XP, and 2000 are supported
+- Windows XP machines must be joined to a domain
+- Netbios must be enabled
+- The administrative account used to install the Agent must have batch logon rights
+
+*If you cannot meet these requirements, the Agent may also be distributed via logon scripts, or any remote deployment system that utilizes command line arguments. You can also use the Optional Config File Generator to create an encrypted file that can be downloaded, along with the Agent, by any user, who can then install the Agent manually without assistance.
+
+See instructions.doc for additional details.

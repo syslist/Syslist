@@ -1,0 +1,168 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\resource.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\resource.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RAW_TEXT
+//
+
+IDR_RAW_TEXT_LIC        RAW_TEXT DISCARDABLE    "SyslistAgentLicense_Dutch.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CANCEL              "Annuleren"
+    IDS_CB_DISABLED         "Geblokkeerd"
+    IDS_CB_DAILY            "Eens per dag"
+    IDS_CB_STARTUP          "Bij het opstarten"
+    IDS_CB_WEEKLY           "Eens per week"
+    IDS_CB_MONTHLY          "Eens per maand"
+    IDS_SERVER_STATIC       "* Syslist Server:"
+    IDS_FREQ_STATIC         "Frequentie:"
+    IDS_OK                  "OK"
+    IDS_CFG_SLANG           "NLD"
+    IDS_CFG_LLANG           "Nederlands (NL)"
+    IDS_LANG_STATIC         "Taal:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CFG_ILANG           "1043"
+    IDS_USER_STATIC         "* Syslist lidmaatschapsnaam:"
+    IDS_PWD_STATIC          "* Syslist lidmaatschap wachtwoord:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MACHUSER_STATIC     "* Machine Inventaris Account gebruikersnaam:"
+    IDS_MACHPWD_STATIC      "* Machine Inventory Account wachtwoord:"
+    IDS_MACH_PROCESSING     "Processing node:"
+    IDS_MACH_PASSED         "geslaagd"
+    IDS_MACH_FAILED         "MISLUKT"
+    IDS_ERR_NO_SOURCE_SHARE "Kon de installatiebron niet delen."
+    IDS_ERR_START_TASK_MGR  "Kon de remote task manager voor de installatie niet opstarten."
+    IDS_ERR_NO_INSTALLER    "Kon de lokale installatie executable SCAInst.exe niet lokaliseren"
+    IDS_ERR_NO_INSTALL_TASK "Kon de the remote installatie op the remote machine niet succesvol uitvoeren. Controleer alstublieft de gebruikerspermissies."
+    IDS_INST_COMPLETE       "Remote installatie verwerking voltooid!"
+    IDS_INST_TOTAL_ATTEMPT  "Totaal aantal GEPOOGDE installaties:"
+    IDS_INST_TOTAL_PASS     "Totaal aantal SUCCESVOLLE installaties:"
+    IDS_INST_TOTAL_FAIL     "Totaal aantal MISLUKTE installaties:"
+    IDS_NET_ID_LOCAL        "Lokaal netwerk"
+    IDS_NET_ID_NETWORK      "Netwerk"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NET_ID_DOMAIN       "Domein"
+    IDS_INSTALL             "Installatie"
+    IDS_LOCAL_SCAN          "Alleen lokale scan"
+    IDS_SCAN                "Scan netwerk"
+    IDS_NET_SCAN_START      "Bezig met het opstarten van een netwerk scan."
+    IDS_NET_SCAN_DONE       "Netwerk scan voltooid!"
+    IDS_NET_SCAN_CANCEL     "Netwerkscan geannuleerd."
+    IDS_INST_CANCEL         "Remote Installation verwerking geannuleerd."
+    IDS_CLOSE               "Sluiten"
+    IDS_LIC_ACCEPT          "Ik accepteer"
+    IDS_LIC_DLG_CAPTION     "Syslist Companion Agent Licentie"
+    IDS_INST_DLG_CAPTION    "Syslist Companion Agent Remote Installer"
+    IDS_INST_START          "Installatie aan het starten."
+    IDS_INTRO_SCAN_INVITE   "Druk op """"Scan Netwerk"""" om computers op uw netwerk te detecteren."
+    IDS_PLEASE_FILL_FORM    "A.u.b Syslist gebruikersnaam, Syslist wachtwoord, en Server naam invullen alvorens poging to installatie te starten.\n"
+    IDS_PLEASE_CHOOSE_MACH  "Kies alstublieft tenminste een computer om te verwerken."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PLEASE_FILL_FORM_CAP "A.u.b. formulier invullen"
+    IDS_PLEASE_CHOOSE_MACH_CAP "Kies alstublieft doelcomputer"
+    IDS_NO_MACH             "U heeft geen computer ter verwerking geselecteerd."
+    IDS_PRUNE_UNAVAIL       "Alleen beschikbare knooppunten tonen"
+    IDS_PRUNE_INCOMPAT      "Alleen compatibele knooppunten tonen"
+    IDS_UNINSTALL           "De-installeer"
+    IDS_UNINST_CANCELLED    "Remote de-installatie verwerking geannuleerd."
+    IDS_ERR_NO_UNINSTALLER  "Kon lokaliseren de-installatie executable SCAUn.exe niet okaliseren"
+    IDS_UNINST_TOTAL_ATTEMPT "Totaal aantal GEPOOGDE de-installaties:"
+    IDS_UNINST_TOTAL_PASS   "Totaal aantal GESLAAGDE de-installaties:"
+    IDS_UNINST_TOTAL_FAIL   "Totaal aantal MISLUKTE de-installaties:"
+    IDS_UNINST_COMPLETE     "Remote de-installatie verwerking voltooid!"
+    IDS_UNINST_START        "Bezig de-installatie op te starten."
+    IDS_NO_PROXY            "Geen Proxy-server (Direkte verbinding)"
+    IDS_IE_PROXY            "Gebruik instellingen van Internet Explorer"
+    IDS_MANUAL_PROXY        "Handmatig Proxy-server instellen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROXY_COMBO_STATIC  "HTTP(S) Proxy-server instellingen:"
+    IDS_PROXY_SERVER_STATIC "HTTP(S) Proxy-Server:"
+    IDS_MACHDOMAIN_STATIC   "Machine Administrator Domain:"
+    IDS_PROXY_PORT_STATIC   "HTTP(S) Proxy Port:"
+    IDS_ACCTID_STATIC       "* Syslist Account Code:"
+    IDS_MACHLOCAL_STATIC    "Force Local Accounts"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

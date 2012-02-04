@@ -1,0 +1,3143 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		900C507507C95D0400EF3285 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = MemoryCollector.cpp;
+			path = Collector/MemoryCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		900C507607C95D0400EF3285 = {
+			fileRef = 900C507507C95D0400EF3285;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		900C50BD07C96AC300EF3285 = {
+			buildActionMask = 2147483647;
+			files = (
+				900C50C307C96B1A00EF3285,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900C50BE07C96AC300EF3285 = {
+			buildActionMask = 2147483647;
+			files = (
+				900C51A207C9A75500EF3285,
+				900C51A307C9A75500EF3285,
+				900C519807C9A65200EF3285,
+				900C50ED07C97AE300EF3285,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900C50BF07C96AC300EF3285 = {
+			buildPhases = (
+				900C50BD07C96AC300EF3285,
+				900C50BE07C96AC300EF3285,
+			);
+			buildRules = (
+				90B725A908255E7B006B8A33,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks\"";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3\" /Users/karlholland/Documents/Devel/openssl-0.9.7e";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SCATimeEx;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = SCATimeEx;
+			productName = SCATimeEx;
+			productReference = 900C50C007C96AC300EF3285;
+			productType = "com.apple.product-type.tool";
+		};
+		900C50C007C96AC300EF3285 = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SCATimeEx;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		900C50C207C96B1A00EF3285 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = TimedExecMain.cpp;
+			path = TimedExec/TimedExecMain.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		900C50C307C96B1A00EF3285 = {
+			fileRef = 900C50C207C96B1A00EF3285;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		900C50ED07C97AE300EF3285 = {
+			fileRef = 90AE2E5407B84F7B00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		900C519807C9A65200EF3285 = {
+			fileRef = 90AE2E5507B84FDA00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		900C51A207C9A75500EF3285 = {
+			fileRef = 90AE2E5207B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		900C51A307C9A75500EF3285 = {
+			fileRef = 90AE2E5307B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		900C524707CA427500EF3285 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = text.script.sh;
+			name = SyslistExecutionTimer;
+			path = TimedExec/SyslistExecutionTimer;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		900C524C07CA440400EF3285 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			name = StartupParameters.plist;
+			path = TimedExec/StartupParameters.plist;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		900C525B07CA482400EF3285 = {
+			buildActionMask = 2147483647;
+			dstPath = SCA_Package;
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900C526507CA4B5C00EF3285 = {
+			buildPhases = (
+			);
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = SYSLIST_ASP;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = BuildAllProducts;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+				900C526707CA4C3900EF3285,
+				900C526907CA4C3F00EF3285,
+				900C526B07CA4C4300EF3285,
+				90959B4B080CC32B00639929,
+				90959B4D080CC32B00639929,
+				90959B4F080CC32B00639929,
+				90959B51080CC32B00639929,
+				90959B53080CC32B00639929,
+				90959B55080CC32B00639929,
+				90EC21CB08CA81D100DDB3BD,
+				90EC21CD08CA81D500DDB3BD,
+			);
+			isa = PBXAggregateTarget;
+			name = BuildAllProducts;
+			productName = BuildAllProducts;
+		};
+		900C526607CA4C3900EF3285 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 90AE32AC07B8577000BCB4E2;
+			remoteInfo = SCACollector;
+		};
+		900C526707CA4C3900EF3285 = {
+			isa = PBXTargetDependency;
+			target = 90AE32AC07B8577000BCB4E2;
+			targetProxy = 900C526607CA4C3900EF3285;
+		};
+		900C526807CA4C3F00EF3285 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 9034D85C07B8785F00120859;
+			remoteInfo = SCAConfig;
+		};
+		900C526907CA4C3F00EF3285 = {
+			isa = PBXTargetDependency;
+			target = 9034D85C07B8785F00120859;
+			targetProxy = 900C526807CA4C3F00EF3285;
+		};
+		900C526A07CA4C4300EF3285 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 900C50BF07C96AC300EF3285;
+			remoteInfo = SCATimeEx;
+		};
+		900C526B07CA4C4300EF3285 = {
+			isa = PBXTargetDependency;
+			target = 900C50BF07C96AC300EF3285;
+			targetProxy = 900C526A07CA4C4300EF3285;
+		};
+		900C526D07CA4D2200EF3285 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				build/BASE/SCACollector,
+				build/BASE/SCAConfig.app,
+				build/SCATimeEx,
+			);
+			isa = PBXShellScriptBuildPhase;
+			outputPaths = (
+				build/SCA_Package,
+				build/SCA_ASP_Package,
+				build/SCA_DEMO_Package,
+				build/SCA_ASP_DEMO_Package,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#This script builds all configurations of the syslist installation package\n\n\n# This function builds a configuration of the \nfunction BuildPackage() {\n\n\t# $1 is Dest/To Dir Name\n\t# $2 is Source/From Dir Name\n\n\tDEST_DIR=\"${COMMON_DIR}/${1}_Package\"\n\tIMAGE_DIR=\"${COMMON_DIR}/${1}_Image\"\n\tFINAL_DIR=\"${IMAGE_DIR}/SCA_Install.pkg\"\n\n\tSOURCE_DIR=\"${COMMON_DIR}/$2\"\n\n\tDISK_NAME=\"SyslistAgent${3}\"\n\n\tDISK_LOC=\"${COMMON_DIR}/${DISK_NAME}.dmg\"\n\n\techo \"Building Package Source: ${SOURCE_DIR} Dest: ${DEST_DIR}\"\n\n\tDEST_APPS_DIR=\"${DEST_DIR}/Applications/Syslist Companion Agent\"\n\tDEST_DAEMON_DIR=\"${DEST_DIR}/Library/StartupItems/SyslistExecutionTimer\"\n\n\t# remove existing destination directory - chown 'cause we set then to root on build\n\tsudo chown -R \"${USER}\" \"${DEST_DIR}\"\n\trm -rf \"${DEST_DIR}\"\n\n\t# and remake it anew!\n\tmkdir \"${DEST_DIR}\"\n\t\n\t# make needed subdirectories for package structure\n\tmkdir -p \"${DEST_APPS_DIR}\"\n\tmkdir -p \"${DEST_DAEMON_DIR}\"\n\n\t# copy common application items into apps package infrastructure\n\tcp \"${COMMON_DIR}/SCATimeEx\" \"${DEST_APPS_DIR}\"\n\n\t# copy specific application items into apps package infrastructure\n\tcp \"${SOURCE_DIR}/SCACollector\" \"${DEST_APPS_DIR}\"\n\tcp -r \"${SOURCE_DIR}/SCAConfig.app\" \"${DEST_APPS_DIR}\"\n\n\t# Uninstall items - applescript must be built before calling\n\tcp Install/uninstall.sh \"${DEST_APPS_DIR}\"\n\tcp -r \"${COMMON_DIR}/Uninstall Syslist Agent.app\" \"${DEST_APPS_DIR}\"\n\t\n\t# Set Apps permissions to group and user for read, write and execute\n\tchmod -R 770 \"${DEST_APPS_DIR}\"\n\tchgrp -R admin \"${DEST_APPS_DIR}\"\n\tsudo chown -R root \"${DEST_APPS_DIR}\"\n\n\t# Daemon/Startup executable and Info files\n\tcp TimedExec/StartupParameters.plist \"${DEST_DAEMON_DIR}\"\n\tcp TimedExec/SyslistExecutionTimer \"${DEST_DAEMON_DIR}\"\n\n\t# Daemon permissions\n\tchmod 755 \"${DEST_DAEMON_DIR}/SyslistExecutionTimer\"\n\tchmod 744 \"${DEST_DAEMON_DIR}/StartupParameters.plist\"\n\tchmod 755 \"${DEST_DAEMON_DIR}\"\n\tsudo chgrp -R wheel \"${DEST_DAEMON_DIR}\"\n\tsudo chown -R root \"${DEST_DAEMON_DIR}\"\n\n\t# remove old package first and make anew\n\trm -rf \"${IMAGE_DIR}\"\n\tmkdir -p \"${IMAGE_DIR}\"\n\n\t# final install package build\n\t/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker -build -p \"${PWD}/${FINAL_DIR}\" -f \"${PWD}/${DEST_DIR}\" -r \"${PWD}/Install/Resources\" -i \"${PWD}/Install/InstallPkgInfo.plist\" -d \"${PWD}/Install/InstallDesc.plist\"\n\n\t# and now finally, the disk image\n\trm -rf \"${DISK_LOC}\"\n\thdiutil create -srcfolder \"${IMAGE_DIR}\" -volname \"${DISK_NAME}\" -fs HFS+ \"${DISK_LOC}\"\n\n\techo \"Package $1 Build Complete!\"\n\treturn 0\n}\n\n#This is the central location in which all build products end up\nCOMMON_DIR=build\n\necho \"Common Directory is ${COMMON_DIR}\"\n\n# Base work and repition of building the different configurations\necho \"Working Directory is \" `pwd`\n\n# build the common uninstall application\nosacompile -d -o \"${COMMON_DIR}/Uninstall Syslist Agent.app\" \"Install/Uninstall Syslist Agent.applescript\"\n\n# Package 'em all\nBuildPackage SCA BASE \"\"\nBuildPackage SCA_ASP ASP _ASP\nBuildPackage SCA_DEMO DEMO _DEMO\nBuildPackage SCA_ASP_DEMO ASP_DEMO _ASP_DEMO\n\necho \"BUILD IS COMPLETE!\"\n\nexit 0";
+		};
+		900C526E07CA4D2200EF3285 = {
+			buildPhases = (
+				900C526D07CA4D2200EF3285,
+			);
+			buildSettings = {
+				DEPLOYMENT_POSTPROCESSING = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PackageProducts;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+				900C527007CA4D3200EF3285,
+			);
+			isa = PBXAggregateTarget;
+			name = PackageProducts;
+			productName = PackageProducts;
+		};
+		900C526F07CA4D3200EF3285 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 900C526507CA4B5C00EF3285;
+			remoteInfo = BuildAllProducts;
+		};
+		900C527007CA4D3200EF3285 = {
+			isa = PBXTargetDependency;
+			target = 900C526507CA4B5C00EF3285;
+			targetProxy = 900C526F07CA4D3200EF3285;
+		};
+		900C529707CA540500EF3285 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = SyslistVersion.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/SyslistVersion.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		900C52EE07CA739000EF3285 = {
+			children = (
+				90B7260F08256D2A006B8A33,
+				90B725F408256C3E006B8A33,
+				9074B04F07EBE4250033A48E,
+				900C539B07CA91C300EF3285,
+				900C52EF07CA73A100EF3285,
+				900C52F307CA73C400EF3285,
+			);
+			isa = PBXGroup;
+			name = Install;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		900C52EF07CA73A100EF3285 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = SCAPackageDefs.pmsp;
+			path = Install/SCAPackageDefs.pmsp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		900C52F307CA73C400EF3285 = {
+			children = (
+				900C52F807CA73ED00EF3285,
+				900C52F907CA73ED00EF3285,
+				900C531807CA75D100EF3285,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		900C52F807CA73ED00EF3285 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = License.txt;
+			path = Install/Resources/License.txt;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		900C52F907CA73ED00EF3285 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.rtf;
+			name = Welcome.rtf;
+			path = Install/Resources/Welcome.rtf;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		900C531807CA75D100EF3285 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.script.sh;
+			name = postinstall;
+			path = Install/Resources/postinstall;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		900C539B07CA91C300EF3285 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.script.sh;
+			name = uninstall.sh;
+			path = Install/uninstall.sh;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9013CAF708C9414200461AB4 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9013CAF808C9414200461AB4 = {
+			buildActionMask = 2147483647;
+			files = (
+				9013CB0608C9454100461AB4,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9013CAF908C9414200461AB4 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9013CAFA08C9414200461AB4 = {
+			buildPhases = (
+				9013CAF708C9414200461AB4,
+				9013CAF808C9414200461AB4,
+				9013CAF908C9414200461AB4,
+				906CC64B08C96AF600020EE1,
+				906CC64D08C96B0E00020EE1,
+			);
+			buildRules = (
+				9013CB0F08C94E3200461AB4,
+			);
+			buildSettings = {
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "BSAUtil-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OBJROOT = build/BSA;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Foundation -framework AppKit";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = BSAUtil;
+				SECTORDER_FLAGS = "";
+				SYMROOT = build/BSA;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+				906CC64A08C96AE300020EE1,
+			);
+			isa = PBXNativeTarget;
+			name = BSAUtil;
+			productName = BSAUtil;
+			productReference = 9013CAFB08C9414200461AB4;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>BSAUtil</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.BSAUtil</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		9013CAFB08C9414200461AB4 = {
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = BSAUtil.app;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9013CAFD08C9414200461AB4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			path = "BSAUtil-Info.plist";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9013CB0408C944B500461AB4 = {
+			children = (
+				9013CAFD08C9414200461AB4,
+				9013CB0508C9454100461AB4,
+				906CC66D08C9EA2000020EE1,
+			);
+			isa = PBXGroup;
+			name = BSAUtil;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9013CB0508C9454100461AB4 = {
+			explicitFileType = sourcecode.cpp.objcpp;
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			path = BSAUtilMain.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9013CB0608C9454100461AB4 = {
+			fileRef = 9013CB0508C9454100461AB4;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB0F08C94E3200461AB4 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		9013CB3D08C963DA00461AB4 = {
+			buildPhases = (
+				9013CB3E08C963DA00461AB4,
+				9013CB4B08C963DA00461AB4,
+				9013CB5208C963DA00461AB4,
+			);
+			buildRules = (
+				9013CB5308C963DA00461AB4,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = SYSLIST_BSA;
+				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3\" /Users/karlholland/Documents/Devel/openssl-0.9.7e";
+				OBJROOT = build/BSA;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SCACollector;
+				SECTORDER_FLAGS = "";
+				SYMROOT = build/BSA;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = "SCACollector BSA";
+			productName = SCACollector;
+			productReference = 9013CB5408C963DA00461AB4;
+			productType = "com.apple.product-type.tool";
+		};
+		9013CB3E08C963DA00461AB4 = {
+			buildActionMask = 2147483647;
+			files = (
+				9013CB3F08C963DA00461AB4,
+				9013CB4008C963DA00461AB4,
+				9013CB4108C963DA00461AB4,
+				9013CB4208C963DA00461AB4,
+				9013CB4308C963DA00461AB4,
+				9013CB4408C963DA00461AB4,
+				9013CB4508C963DA00461AB4,
+				9013CB4608C963DA00461AB4,
+				9013CB4708C963DA00461AB4,
+				9013CB4808C963DA00461AB4,
+				9013CB4908C963DA00461AB4,
+				9013CB4A08C963DA00461AB4,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9013CB3F08C963DA00461AB4 = {
+			fileRef = 90AE32DE07B8598500BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4008C963DA00461AB4 = {
+			fileRef = 902BB86807BC54FE00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4108C963DA00461AB4 = {
+			fileRef = 90D73F4507BE9AE100C15D07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4208C963DA00461AB4 = {
+			fileRef = 908766D107BFEF6700CA9D15;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4308C963DA00461AB4 = {
+			fileRef = 908767DF07C055A000CA9D15;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4408C963DA00461AB4 = {
+			fileRef = 90B61C9A07C1B521009D38D5;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4508C963DA00461AB4 = {
+			fileRef = 9022646207C2D50B00972CB2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4608C963DA00461AB4 = {
+			fileRef = 900C507507C95D0400EF3285;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4708C963DA00461AB4 = {
+			fileRef = 90BA083D07E694E900D309D6;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4808C963DA00461AB4 = {
+			fileRef = 9074AF3B07EBCC060033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4908C963DA00461AB4 = {
+			fileRef = 9074AFA807EBD67D0033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4A08C963DA00461AB4 = {
+			fileRef = 90247CCC0804E5290068AF26;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4B08C963DA00461AB4 = {
+			buildActionMask = 2147483647;
+			files = (
+				9013CB4C08C963DA00461AB4,
+				9013CB4D08C963DA00461AB4,
+				9013CB4E08C963DA00461AB4,
+				9013CB4F08C963DA00461AB4,
+				9013CB5008C963DA00461AB4,
+				9013CB5108C963DA00461AB4,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9013CB4C08C963DA00461AB4 = {
+			fileRef = 90AE2E5407B84F7B00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4D08C963DA00461AB4 = {
+			fileRef = 90AE2E5207B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4E08C963DA00461AB4 = {
+			fileRef = 90AE2E5307B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB4F08C963DA00461AB4 = {
+			fileRef = 90AE2E5507B84FDA00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB5008C963DA00461AB4 = {
+			fileRef = 902BB8A807BC70FC00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB5108C963DA00461AB4 = {
+			fileRef = 90D7407E07BF204B00C15D07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9013CB5208C963DA00461AB4 = {
+			buildActionMask = 2147483647;
+			dstPath = SCA_Package;
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9013CB5308C963DA00461AB4 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		9013CB5408C963DA00461AB4 = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SCACollector;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9022646207C2D50B00972CB2 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = NetCollector.cpp;
+			path = Collector/NetCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9022646307C2D50B00972CB2 = {
+			fileRef = 9022646207C2D50B00972CB2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90247CCA0804E50F0068AF26 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = DisplayCollector.h;
+			path = Collector/DisplayCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90247CCC0804E5290068AF26 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = DisplayCollector.cpp;
+			path = Collector/DisplayCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90247CCD0804E5290068AF26 = {
+			fileRef = 90247CCC0804E5290068AF26;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9028F4070928102D0008B47E = {
+			explicitFileType = text.script.sh;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = bsaretrieve.sh;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		902BB86807BC54FE00C14A00 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = MasterCollector.cpp;
+			path = Collector/MasterCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		902BB86907BC54FE00C14A00 = {
+			fileRef = 902BB86807BC54FE00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		902BB86D07BC56D700C14A00 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = HardwareCollector.h;
+			path = Collector/HardwareCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		902BB86E07BC577200C14A00 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OSCollector.h;
+			path = Collector/OSCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		902BB87207BC588600C14A00 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = SoftwareCollector.h;
+			path = Collector/SoftwareCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		902BB8A807BC70FC00C14A00 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = SystemConfiguration.framework;
+			path = /Developer/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks/SystemConfiguration.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		902BB8A907BC70FC00C14A00 = {
+			fileRef = 902BB8A807BC70FC00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		902BF29307B9C2A900A04C62 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			name = SyslistIconButton.icns;
+			path = Config/SyslistIconButton.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		902BF29407B9C2A900A04C62 = {
+			fileRef = 902BF29307B9C2A900A04C62;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		902BF2A007B9C61F00A04C62 = {
+			explicitFileType = image.bmp;
+			isa = PBXFileReference;
+			name = "syslist-logo-mac.bmp";
+			path = "Config/syslist-logo-mac.bmp";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		902BF2A107B9C61F00A04C62 = {
+			fileRef = 902BF2A007B9C61F00A04C62;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D84907B876B700120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = SyslistPrefs.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/SyslistPrefs.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D84C07B876C400120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = FileHandleTransport.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/som/FileHandleTransport.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D84D07B876C400120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = FileTransport.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/som/FileTransport.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D84E07B876C400120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = HTTPSecureTransport.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/som/HTTPSecureTransport.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D84F07B876C400120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = HTTPTransport.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/som/HTTPTransport.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D85007B876C400120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = ScreenTransport.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/som/ScreenTransport.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D85107B876C400120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = SOMBase.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/som/SOMBase.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D85207B876C400120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = SyslistHTTPTransport.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/som/SyslistHTTPTransport.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D85307B876C400120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = TransportProto.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/som/TransportProto.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D85507B876D000120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = CFUtil.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/macutil/CFUtil.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D85607B876D000120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = IOUtil.h;
+			path = /Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Common/inc/macutil/IOUtil.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D85907B8785F00120859 = {
+			buildActionMask = 2147483647;
+			files = (
+				9034D89907B879AB00120859,
+				9034D8B707B8870A00120859,
+				9034D92C07B893D600120859,
+				902BF29407B9C2A900A04C62,
+				902BF2A107B9C61F00A04C62,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9034D85A07B8785F00120859 = {
+			buildActionMask = 2147483647;
+			files = (
+				9034D89B07B879EF00120859,
+				9034D8B807B8870A00120859,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9034D85B07B8785F00120859 = {
+			buildActionMask = 2147483647;
+			files = (
+				90D73E6507BDBC8D00C15D07,
+				9034D88807B878CF00120859,
+				9034D88907B878CF00120859,
+				9034D88A07B878CF00120859,
+				9034D88B07B878CF00120859,
+				9034D86207B878AF00120859,
+				9034D86307B878AF00120859,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9034D85C07B8785F00120859 = {
+			buildPhases = (
+				9034D85907B8785F00120859,
+				9034D85A07B8785F00120859,
+				9034D85B07B8785F00120859,
+			);
+			buildRules = (
+				90B725B408255F62006B8A33,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "Config/SCAConfig-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3\" /Users/karlholland/Documents/Devel/openssl-0.9.7e";
+				OBJROOT = build/BASE;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Foundation -framework AppKit -bind_at_load";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SCAConfig;
+				SECTORDER_FLAGS = "";
+				SYMROOT = build/BASE;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = SCAConfig;
+			productName = SCAConfig;
+			productReference = 9034D85D07B8785F00120859;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>SCAConfig</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.SCAConfig</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		9034D85D07B8785F00120859 = {
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SCAConfig.app;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9034D85F07B8785F00120859 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			name = "SCAConfig-Info.plist";
+			path = "/Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Agent/Config/SCAConfig-Info.plist";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D86007B878AF00120859 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = AppKit.framework;
+			path = /Developer/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks/AppKit.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D86107B878AF00120859 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Cocoa.framework;
+			path = /Developer/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9034D86207B878AF00120859 = {
+			fileRef = 9034D86007B878AF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D86307B878AF00120859 = {
+			fileRef = 9034D86107B878AF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D88807B878CF00120859 = {
+			fileRef = 90AE2E5507B84FDA00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D88907B878CF00120859 = {
+			fileRef = 90AE2E5407B84F7B00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D88A07B878CF00120859 = {
+			fileRef = 90AE2E5207B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D88B07B878CF00120859 = {
+			fileRef = 90AE2E5307B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D89807B879AB00120859 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = ConfigUI.nib;
+			path = Config/ConfigUI.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9034D89907B879AB00120859 = {
+			fileRef = 9034D89807B879AB00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D89A07B879EF00120859 = {
+			explicitFileType = sourcecode.cpp.objcpp;
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			name = ConfigMain.m;
+			path = Config/ConfigMain.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9034D89B07B879EF00120859 = {
+			fileRef = 9034D89A07B879EF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D8B507B8870A00120859 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = ConfigUIController.h;
+			path = Config/ConfigUIController.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9034D8B607B8870A00120859 = {
+			explicitFileType = sourcecode.cpp.objcpp;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			name = ConfigUIController.m;
+			path = Config/ConfigUIController.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9034D8B707B8870A00120859 = {
+			fileRef = 9034D8B507B8870A00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D8B807B8870A00120859 = {
+			fileRef = 9034D8B607B8870A00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9034D92B07B893D600120859 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			name = SyslistIcon.icns;
+			path = Config/SyslistIcon.icns;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9034D92C07B893D600120859 = {
+			fileRef = 9034D92B07B893D600120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906CC64908C96AE300020EE1 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 9013CB3D08C963DA00461AB4;
+			remoteInfo = "SCACollector BSA";
+		};
+		906CC64A08C96AE300020EE1 = {
+			isa = PBXTargetDependency;
+			target = 9013CB3D08C963DA00461AB4;
+			targetProxy = 906CC64908C96AE300020EE1;
+		};
+		906CC64B08C96AF600020EE1 = {
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906CC64D08C96B0E00020EE1 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			isa = PBXShellScriptBuildPhase;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp ${TARGET_BUILD_DIR}/SCACollector ${TARGET_BUILD_DIR}/BSAUtil.app/Contents/MacOS\nmkdir ${TARGET_BUILD_DIR}/BSAUtil.app/Contents/Resources\necho \"Utility Executable Attached to Main Executable\"\n";
+		};
+		906CC66D08C9EA2000020EE1 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = BSAConfig.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		906EF69D080CBCAF00EC9105 = {
+			buildPhases = (
+				906EF69E080CBCAF00EC9105,
+				906EF6AB080CBCAF00EC9105,
+				906EF6B2080CBCAF00EC9105,
+			);
+			buildRules = (
+				90B725B108255F0C006B8A33,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks\"";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = SYSLIST_ASP;
+				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3\" /Users/karlholland/Documents/Devel/openssl-0.9.7e";
+				OBJROOT = build/ASP;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SCACollector;
+				SECTORDER_FLAGS = "";
+				SYMROOT = build/ASP;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = "SCACollector ASP";
+			productName = SCACollector;
+			productReference = 906EF6B6080CBCAF00EC9105;
+			productType = "com.apple.product-type.tool";
+		};
+		906EF69E080CBCAF00EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF69F080CBCAF00EC9105,
+				906EF6A0080CBCAF00EC9105,
+				906EF6A1080CBCAF00EC9105,
+				906EF6A2080CBCAF00EC9105,
+				906EF6A3080CBCAF00EC9105,
+				906EF6A4080CBCAF00EC9105,
+				906EF6A5080CBCAF00EC9105,
+				906EF6A6080CBCAF00EC9105,
+				906EF6A7080CBCAF00EC9105,
+				906EF6A8080CBCAF00EC9105,
+				906EF6A9080CBCAF00EC9105,
+				906EF6AA080CBCAF00EC9105,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF69F080CBCAF00EC9105 = {
+			fileRef = 90AE32DE07B8598500BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6A0080CBCAF00EC9105 = {
+			fileRef = 902BB86807BC54FE00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6A1080CBCAF00EC9105 = {
+			fileRef = 90D73F4507BE9AE100C15D07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6A2080CBCAF00EC9105 = {
+			fileRef = 908766D107BFEF6700CA9D15;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6A3080CBCAF00EC9105 = {
+			fileRef = 908767DF07C055A000CA9D15;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6A4080CBCAF00EC9105 = {
+			fileRef = 90B61C9A07C1B521009D38D5;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6A5080CBCAF00EC9105 = {
+			fileRef = 9022646207C2D50B00972CB2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6A6080CBCAF00EC9105 = {
+			fileRef = 900C507507C95D0400EF3285;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6A7080CBCAF00EC9105 = {
+			fileRef = 90BA083D07E694E900D309D6;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6A8080CBCAF00EC9105 = {
+			fileRef = 9074AF3B07EBCC060033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6A9080CBCAF00EC9105 = {
+			fileRef = 9074AFA807EBD67D0033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6AA080CBCAF00EC9105 = {
+			fileRef = 90247CCC0804E5290068AF26;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6AB080CBCAF00EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF6AC080CBCAF00EC9105,
+				906EF6AD080CBCAF00EC9105,
+				906EF6AE080CBCAF00EC9105,
+				906EF6AF080CBCAF00EC9105,
+				906EF6B0080CBCAF00EC9105,
+				906EF6B1080CBCAF00EC9105,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6AC080CBCAF00EC9105 = {
+			fileRef = 90AE2E5407B84F7B00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6AD080CBCAF00EC9105 = {
+			fileRef = 90AE2E5207B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6AE080CBCAF00EC9105 = {
+			fileRef = 90AE2E5307B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6AF080CBCAF00EC9105 = {
+			fileRef = 90AE2E5507B84FDA00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6B0080CBCAF00EC9105 = {
+			fileRef = 902BB8A807BC70FC00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6B1080CBCAF00EC9105 = {
+			fileRef = 90D7407E07BF204B00C15D07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6B2080CBCAF00EC9105 = {
+			buildActionMask = 2147483647;
+			dstPath = SCA_Package;
+			dstSubfolderSpec = 16;
+			files = (
+				906EF6B3080CBCAF00EC9105,
+				906EF6B4080CBCAF00EC9105,
+				906EF6B5080CBCAF00EC9105,
+			);
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6B3080CBCAF00EC9105 = {
+			fileRef = 9074AF2907EBCAAF0033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6B4080CBCAF00EC9105 = {
+			fileRef = 9074AF2B07EBCAD30033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6B5080CBCAF00EC9105 = {
+			fileRef = 90247CCA0804E50F0068AF26;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6B6080CBCAF00EC9105 = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SCACollector;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		906EF6B8080CBD8F00EC9105 = {
+			buildPhases = (
+				906EF6B9080CBD8F00EC9105,
+				906EF6BF080CBD8F00EC9105,
+				906EF6C2080CBD8F00EC9105,
+			);
+			buildRules = (
+				90B725B508255F7B006B8A33,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = SYSLIST_DEMO;
+				INFOPLIST_FILE = "/Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Agent/Config/SCAConfig-Info copy 2.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3\" /Users/karlholland/Documents/Devel/openssl-0.9.7e";
+				OBJROOT = build/DEMO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Foundation -framework AppKit -bind_at_load";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SCAConfig;
+				SECTORDER_FLAGS = "";
+				SYMROOT = build/DEMO;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = "SCAConfig DEMO";
+			productName = SCAConfig;
+			productReference = 906EF6CA080CBD8F00EC9105;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>SCAConfig</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.SCAConfig</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		906EF6B9080CBD8F00EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF6BA080CBD8F00EC9105,
+				906EF6BB080CBD8F00EC9105,
+				906EF6BC080CBD8F00EC9105,
+				906EF6BD080CBD8F00EC9105,
+				906EF6BE080CBD8F00EC9105,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6BA080CBD8F00EC9105 = {
+			fileRef = 9034D89807B879AB00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6BB080CBD8F00EC9105 = {
+			fileRef = 9034D8B507B8870A00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6BC080CBD8F00EC9105 = {
+			fileRef = 9034D92B07B893D600120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6BD080CBD8F00EC9105 = {
+			fileRef = 902BF29307B9C2A900A04C62;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6BE080CBD8F00EC9105 = {
+			fileRef = 902BF2A007B9C61F00A04C62;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6BF080CBD8F00EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF6C0080CBD8F00EC9105,
+				906EF6C1080CBD8F00EC9105,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6C0080CBD8F00EC9105 = {
+			fileRef = 9034D89A07B879EF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6C1080CBD8F00EC9105 = {
+			fileRef = 9034D8B607B8870A00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6C2080CBD8F00EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF6C3080CBD8F00EC9105,
+				906EF6C4080CBD8F00EC9105,
+				906EF6C5080CBD8F00EC9105,
+				906EF6C6080CBD8F00EC9105,
+				906EF6C7080CBD8F00EC9105,
+				906EF6C8080CBD8F00EC9105,
+				906EF6C9080CBD8F00EC9105,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6C3080CBD8F00EC9105 = {
+			fileRef = 902BB8A807BC70FC00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6C4080CBD8F00EC9105 = {
+			fileRef = 90AE2E5507B84FDA00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6C5080CBD8F00EC9105 = {
+			fileRef = 90AE2E5407B84F7B00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6C6080CBD8F00EC9105 = {
+			fileRef = 90AE2E5207B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6C7080CBD8F00EC9105 = {
+			fileRef = 90AE2E5307B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6C8080CBD8F00EC9105 = {
+			fileRef = 9034D86007B878AF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6C9080CBD8F00EC9105 = {
+			fileRef = 9034D86107B878AF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6CA080CBD8F00EC9105 = {
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SCAConfig.app;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		906EF6CC080CBD8F00EC9105 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			name = "SCAConfig-Info copy 2.plist";
+			path = "/Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Agent/Config/SCAConfig-Info copy 2.plist";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		906EF6CD080CBD8F00EC9105 = {
+			buildPhases = (
+				906EF6CE080CBD8F00EC9105,
+				906EF6DB080CBD8F00EC9105,
+				906EF6E2080CBD8F00EC9105,
+			);
+			buildRules = (
+				90B725B808255F86006B8A33,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks\"";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = SYSLIST_DEMO;
+				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3\" /Users/karlholland/Documents/Devel/openssl-0.9.7e";
+				OBJROOT = build/DEMO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SCACollector;
+				SECTORDER_FLAGS = "";
+				SYMROOT = build/DEMO;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = "SCACollector DEMO";
+			productName = SCACollector;
+			productReference = 906EF6E6080CBD8F00EC9105;
+			productType = "com.apple.product-type.tool";
+		};
+		906EF6CE080CBD8F00EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF6CF080CBD8F00EC9105,
+				906EF6D0080CBD8F00EC9105,
+				906EF6D1080CBD8F00EC9105,
+				906EF6D2080CBD8F00EC9105,
+				906EF6D3080CBD8F00EC9105,
+				906EF6D4080CBD8F00EC9105,
+				906EF6D5080CBD8F00EC9105,
+				906EF6D6080CBD8F00EC9105,
+				906EF6D7080CBD8F00EC9105,
+				906EF6D8080CBD8F00EC9105,
+				906EF6D9080CBD8F00EC9105,
+				906EF6DA080CBD8F00EC9105,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6CF080CBD8F00EC9105 = {
+			fileRef = 90AE32DE07B8598500BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6D0080CBD8F00EC9105 = {
+			fileRef = 902BB86807BC54FE00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6D1080CBD8F00EC9105 = {
+			fileRef = 90D73F4507BE9AE100C15D07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6D2080CBD8F00EC9105 = {
+			fileRef = 908766D107BFEF6700CA9D15;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6D3080CBD8F00EC9105 = {
+			fileRef = 908767DF07C055A000CA9D15;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6D4080CBD8F00EC9105 = {
+			fileRef = 90B61C9A07C1B521009D38D5;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6D5080CBD8F00EC9105 = {
+			fileRef = 9022646207C2D50B00972CB2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6D6080CBD8F00EC9105 = {
+			fileRef = 900C507507C95D0400EF3285;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6D7080CBD8F00EC9105 = {
+			fileRef = 90BA083D07E694E900D309D6;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6D8080CBD8F00EC9105 = {
+			fileRef = 9074AF3B07EBCC060033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6D9080CBD8F00EC9105 = {
+			fileRef = 9074AFA807EBD67D0033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6DA080CBD8F00EC9105 = {
+			fileRef = 90247CCC0804E5290068AF26;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6DB080CBD8F00EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF6DC080CBD8F00EC9105,
+				906EF6DD080CBD8F00EC9105,
+				906EF6DE080CBD8F00EC9105,
+				906EF6DF080CBD8F00EC9105,
+				906EF6E0080CBD8F00EC9105,
+				906EF6E1080CBD8F00EC9105,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6DC080CBD8F00EC9105 = {
+			fileRef = 90AE2E5407B84F7B00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6DD080CBD8F00EC9105 = {
+			fileRef = 90AE2E5207B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6DE080CBD8F00EC9105 = {
+			fileRef = 90AE2E5307B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6DF080CBD8F00EC9105 = {
+			fileRef = 90AE2E5507B84FDA00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6E0080CBD8F00EC9105 = {
+			fileRef = 902BB8A807BC70FC00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6E1080CBD8F00EC9105 = {
+			fileRef = 90D7407E07BF204B00C15D07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6E2080CBD8F00EC9105 = {
+			buildActionMask = 2147483647;
+			dstPath = SCA_Package;
+			dstSubfolderSpec = 16;
+			files = (
+				906EF6E3080CBD8F00EC9105,
+				906EF6E4080CBD8F00EC9105,
+				906EF6E5080CBD8F00EC9105,
+			);
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6E3080CBD8F00EC9105 = {
+			fileRef = 9074AF2907EBCAAF0033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6E4080CBD8F00EC9105 = {
+			fileRef = 9074AF2B07EBCAD30033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6E5080CBD8F00EC9105 = {
+			fileRef = 90247CCA0804E50F0068AF26;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6E6080CBD8F00EC9105 = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SCACollector;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		906EF6E8080CBF2900EC9105 = {
+			buildPhases = (
+				906EF6E9080CBF2900EC9105,
+				906EF6EF080CBF2900EC9105,
+				906EF6F2080CBF2900EC9105,
+			);
+			buildRules = (
+				90B725BB08255F92006B8A33,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "SYSLIST_ASP SYSLIST_DEMO";
+				INFOPLIST_FILE = "/Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Agent/Config/SCAConfig-Info copy 3.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3\" /Users/karlholland/Documents/Devel/openssl-0.9.7e";
+				OBJROOT = build/ASP_DEMO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Foundation -framework AppKit -bind_at_load";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SCAConfig;
+				SECTORDER_FLAGS = "";
+				SYMROOT = build/ASP_DEMO;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = "SCAConfig ASP DEMO";
+			productName = SCAConfig;
+			productReference = 906EF6FA080CBF2900EC9105;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>SCAConfig</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.SCAConfig</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		906EF6E9080CBF2900EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF6EA080CBF2900EC9105,
+				906EF6EB080CBF2900EC9105,
+				906EF6EC080CBF2900EC9105,
+				906EF6ED080CBF2900EC9105,
+				906EF6EE080CBF2900EC9105,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6EA080CBF2900EC9105 = {
+			fileRef = 9034D89807B879AB00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6EB080CBF2900EC9105 = {
+			fileRef = 9034D8B507B8870A00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6EC080CBF2900EC9105 = {
+			fileRef = 9034D92B07B893D600120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6ED080CBF2900EC9105 = {
+			fileRef = 902BF29307B9C2A900A04C62;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6EE080CBF2900EC9105 = {
+			fileRef = 902BF2A007B9C61F00A04C62;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6EF080CBF2900EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF6F0080CBF2900EC9105,
+				906EF6F1080CBF2900EC9105,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6F0080CBF2900EC9105 = {
+			fileRef = 9034D89A07B879EF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6F1080CBF2900EC9105 = {
+			fileRef = 9034D8B607B8870A00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6F2080CBF2900EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF6F3080CBF2900EC9105,
+				906EF6F4080CBF2900EC9105,
+				906EF6F5080CBF2900EC9105,
+				906EF6F6080CBF2900EC9105,
+				906EF6F7080CBF2900EC9105,
+				906EF6F8080CBF2900EC9105,
+				906EF6F9080CBF2900EC9105,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6F3080CBF2900EC9105 = {
+			fileRef = 902BB8A807BC70FC00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6F4080CBF2900EC9105 = {
+			fileRef = 90AE2E5507B84FDA00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6F5080CBF2900EC9105 = {
+			fileRef = 90AE2E5407B84F7B00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6F6080CBF2900EC9105 = {
+			fileRef = 90AE2E5207B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6F7080CBF2900EC9105 = {
+			fileRef = 90AE2E5307B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6F8080CBF2900EC9105 = {
+			fileRef = 9034D86007B878AF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6F9080CBF2900EC9105 = {
+			fileRef = 9034D86107B878AF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF6FA080CBF2900EC9105 = {
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SCAConfig.app;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		906EF6FC080CBF2900EC9105 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			name = "SCAConfig-Info copy 3.plist";
+			path = "/Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Agent/Config/SCAConfig-Info copy 3.plist";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		906EF6FD080CBF2900EC9105 = {
+			buildPhases = (
+				906EF6FE080CBF2900EC9105,
+				906EF70B080CBF2900EC9105,
+				906EF712080CBF2900EC9105,
+			);
+			buildRules = (
+				90B725BC08255FA6006B8A33,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks\"";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "SYSLIST_ASP SYSLIST_DEMO";
+				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3\" /Users/karlholland/Documents/Devel/openssl-0.9.7e";
+				OBJROOT = build/ASP_DEMO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SCACollector;
+				SECTORDER_FLAGS = "";
+				SYMROOT = build/ASP_DEMO;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = "SCACollector ASP DEMO";
+			productName = SCACollector;
+			productReference = 906EF716080CBF2900EC9105;
+			productType = "com.apple.product-type.tool";
+		};
+		906EF6FE080CBF2900EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF6FF080CBF2900EC9105,
+				906EF700080CBF2900EC9105,
+				906EF701080CBF2900EC9105,
+				906EF702080CBF2900EC9105,
+				906EF703080CBF2900EC9105,
+				906EF704080CBF2900EC9105,
+				906EF705080CBF2900EC9105,
+				906EF706080CBF2900EC9105,
+				906EF707080CBF2900EC9105,
+				906EF708080CBF2900EC9105,
+				906EF709080CBF2900EC9105,
+				906EF70A080CBF2900EC9105,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF6FF080CBF2900EC9105 = {
+			fileRef = 90AE32DE07B8598500BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF700080CBF2900EC9105 = {
+			fileRef = 902BB86807BC54FE00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF701080CBF2900EC9105 = {
+			fileRef = 90D73F4507BE9AE100C15D07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF702080CBF2900EC9105 = {
+			fileRef = 908766D107BFEF6700CA9D15;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF703080CBF2900EC9105 = {
+			fileRef = 908767DF07C055A000CA9D15;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF704080CBF2900EC9105 = {
+			fileRef = 90B61C9A07C1B521009D38D5;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF705080CBF2900EC9105 = {
+			fileRef = 9022646207C2D50B00972CB2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF706080CBF2900EC9105 = {
+			fileRef = 900C507507C95D0400EF3285;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF707080CBF2900EC9105 = {
+			fileRef = 90BA083D07E694E900D309D6;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF708080CBF2900EC9105 = {
+			fileRef = 9074AF3B07EBCC060033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF709080CBF2900EC9105 = {
+			fileRef = 9074AFA807EBD67D0033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF70A080CBF2900EC9105 = {
+			fileRef = 90247CCC0804E5290068AF26;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF70B080CBF2900EC9105 = {
+			buildActionMask = 2147483647;
+			files = (
+				906EF70C080CBF2900EC9105,
+				906EF70D080CBF2900EC9105,
+				906EF70E080CBF2900EC9105,
+				906EF70F080CBF2900EC9105,
+				906EF710080CBF2900EC9105,
+				906EF711080CBF2900EC9105,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF70C080CBF2900EC9105 = {
+			fileRef = 90AE2E5407B84F7B00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF70D080CBF2900EC9105 = {
+			fileRef = 90AE2E5207B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF70E080CBF2900EC9105 = {
+			fileRef = 90AE2E5307B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF70F080CBF2900EC9105 = {
+			fileRef = 90AE2E5507B84FDA00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF710080CBF2900EC9105 = {
+			fileRef = 902BB8A807BC70FC00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF711080CBF2900EC9105 = {
+			fileRef = 90D7407E07BF204B00C15D07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF712080CBF2900EC9105 = {
+			buildActionMask = 2147483647;
+			dstPath = SCA_Package;
+			dstSubfolderSpec = 16;
+			files = (
+				906EF713080CBF2900EC9105,
+				906EF714080CBF2900EC9105,
+				906EF715080CBF2900EC9105,
+			);
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906EF713080CBF2900EC9105 = {
+			fileRef = 9074AF2907EBCAAF0033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF714080CBF2900EC9105 = {
+			fileRef = 9074AF2B07EBCAD30033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF715080CBF2900EC9105 = {
+			fileRef = 90247CCA0804E50F0068AF26;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		906EF716080CBF2900EC9105 = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SCACollector;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9074AF2907EBCAAF0033A48E = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KeyboardCollector.h;
+			path = Collector/KeyboardCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9074AF2B07EBCAD30033A48E = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = MouseCollector.h;
+			path = Collector/MouseCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9074AF3B07EBCC060033A48E = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = MouseCollector.cpp;
+			path = Collector/MouseCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9074AF3C07EBCC060033A48E = {
+			fileRef = 9074AF3B07EBCC060033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9074AFA807EBD67D0033A48E = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KeyboardCollector.cpp;
+			path = Collector/KeyboardCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		9074AFA907EBD67D0033A48E = {
+			fileRef = 9074AFA807EBD67D0033A48E;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		9074B04F07EBE4250033A48E = {
+			explicitFileType = sourcecode.applescript;
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			name = "Uninstall Syslist Agent.applescript";
+			path = "Install/Uninstall Syslist Agent.applescript";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		908766D107BFEF6700CA9D15 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = ProcessorCollector.cpp;
+			path = Collector/ProcessorCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		908766D207BFEF6700CA9D15 = {
+			fileRef = 908766D107BFEF6700CA9D15;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		908767DF07C055A000CA9D15 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = DiskCollector.cpp;
+			path = Collector/DiskCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		908767E007C055A000CA9D15 = {
+			fileRef = 908767DF07C055A000CA9D15;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90959B4A080CC32B00639929 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 90CDF62B0809C22400D72698;
+			remoteInfo = "SCAConfig ASP";
+		};
+		90959B4B080CC32B00639929 = {
+			isa = PBXTargetDependency;
+			target = 90CDF62B0809C22400D72698;
+			targetProxy = 90959B4A080CC32B00639929;
+		};
+		90959B4C080CC32B00639929 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 906EF69D080CBCAF00EC9105;
+			remoteInfo = "SCACollector ASP";
+		};
+		90959B4D080CC32B00639929 = {
+			isa = PBXTargetDependency;
+			target = 906EF69D080CBCAF00EC9105;
+			targetProxy = 90959B4C080CC32B00639929;
+		};
+		90959B4E080CC32B00639929 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 906EF6B8080CBD8F00EC9105;
+			remoteInfo = "SCAConfig DEMO";
+		};
+		90959B4F080CC32B00639929 = {
+			isa = PBXTargetDependency;
+			target = 906EF6B8080CBD8F00EC9105;
+			targetProxy = 90959B4E080CC32B00639929;
+		};
+		90959B50080CC32B00639929 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 906EF6CD080CBD8F00EC9105;
+			remoteInfo = "SCACollector DEMO";
+		};
+		90959B51080CC32B00639929 = {
+			isa = PBXTargetDependency;
+			target = 906EF6CD080CBD8F00EC9105;
+			targetProxy = 90959B50080CC32B00639929;
+		};
+		90959B52080CC32B00639929 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 906EF6E8080CBF2900EC9105;
+			remoteInfo = "SCAConfig ASP DEMO";
+		};
+		90959B53080CC32B00639929 = {
+			isa = PBXTargetDependency;
+			target = 906EF6E8080CBF2900EC9105;
+			targetProxy = 90959B52080CC32B00639929;
+		};
+		90959B54080CC32B00639929 = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 906EF6FD080CBF2900EC9105;
+			remoteInfo = "SCACollector ASP DEMO";
+		};
+		90959B55080CC32B00639929 = {
+			isa = PBXTargetDependency;
+			target = 906EF6FD080CBF2900EC9105;
+			targetProxy = 90959B54080CC32B00639929;
+		};
+		90AE2E4D07B84EB000BCB4E2 = {
+			children = (
+				90D7407E07BF204B00C15D07,
+				902BB8A807BC70FC00C14A00,
+				9034D86007B878AF00120859,
+				9034D86107B878AF00120859,
+				90AE2E5507B84FDA00BCB4E2,
+				90AE2E5407B84F7B00BCB4E2,
+				90AE2E5207B84F1C00BCB4E2,
+				90AE2E5307B84F1C00BCB4E2,
+			);
+			isa = PBXGroup;
+			name = "External Frameworks and Libraries";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90AE2E5207B84F1C00BCB4E2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = libcrypto.a;
+			path = "/Users/karlholland/Documents/Devel/openssl-0.9.7e/libcrypto.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		90AE2E5307B84F1C00BCB4E2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = libssl.a;
+			path = "/Users/karlholland/Documents/Devel/openssl-0.9.7e/libssl.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		90AE2E5407B84F7B00BCB4E2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = CoreFoundation.framework;
+			path = /Developer/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks/CoreFoundation.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		90AE2E5507B84FDA00BCB4E2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = "libstdc++.a";
+			path = "/Developer/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3/libstdc++.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		90AE32AA07B8577000BCB4E2 = {
+			buildActionMask = 2147483647;
+			files = (
+				90AE32DF07B8598500BCB4E2,
+				902BB86907BC54FE00C14A00,
+				90D73F4607BE9AE100C15D07,
+				908766D207BFEF6700CA9D15,
+				908767E007C055A000CA9D15,
+				90B61C9B07C1B521009D38D5,
+				9022646307C2D50B00972CB2,
+				900C507607C95D0400EF3285,
+				90BA083E07E694E900D309D6,
+				9074AF3C07EBCC060033A48E,
+				9074AFA907EBD67D0033A48E,
+				90247CCD0804E5290068AF26,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90AE32AB07B8577000BCB4E2 = {
+			buildActionMask = 2147483647;
+			files = (
+				90AE32B107B8579A00BCB4E2,
+				90AE32D507B8579D00BCB4E2,
+				90AE32D607B857A300BCB4E2,
+				90AE32B007B8579600BCB4E2,
+				902BB8A907BC70FC00C14A00,
+				90D7407F07BF204B00C15D07,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90AE32AC07B8577000BCB4E2 = {
+			buildPhases = (
+				90AE32AA07B8577000BCB4E2,
+				90AE32AB07B8577000BCB4E2,
+				900C525B07CA482400EF3285,
+			);
+			buildRules = (
+				90B725B308255F46006B8A33,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks\"";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3\" /Users/karlholland/Documents/Devel/openssl-0.9.7e";
+				OBJROOT = build/BASE;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SCACollector;
+				SECTORDER_FLAGS = "";
+				SYMROOT = build/BASE;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = SCACollector;
+			productName = SCACollector;
+			productReference = 90AE32AD07B8577000BCB4E2;
+			productType = "com.apple.product-type.tool";
+		};
+		90AE32AD07B8577000BCB4E2 = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SCACollector;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90AE32AE07B8577000BCB4E2 = {
+			children = (
+				90AE32AD07B8577000BCB4E2,
+				9034D85D07B8785F00120859,
+				900C50C007C96AC300EF3285,
+				90CDF63D0809C22400D72698,
+				906EF6B6080CBCAF00EC9105,
+				906EF6CA080CBD8F00EC9105,
+				906EF6E6080CBD8F00EC9105,
+				906EF6FA080CBF2900EC9105,
+				906EF716080CBF2900EC9105,
+				9013CAFB08C9414200461AB4,
+				9013CB5408C963DA00461AB4,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90AE32B007B8579600BCB4E2 = {
+			fileRef = 90AE2E5507B84FDA00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90AE32B107B8579A00BCB4E2 = {
+			fileRef = 90AE2E5407B84F7B00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90AE32D507B8579D00BCB4E2 = {
+			fileRef = 90AE2E5207B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90AE32D607B857A300BCB4E2 = {
+			fileRef = 90AE2E5307B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90AE32D907B857C900BCB4E2 = {
+			children = (
+				90247CCC0804E5290068AF26,
+				90247CCA0804E50F0068AF26,
+				9074AF3B07EBCC060033A48E,
+				9074AF2B07EBCAD30033A48E,
+				9074AFA807EBD67D0033A48E,
+				9074AF2907EBCAAF0033A48E,
+				90D740AB07BF2D1300C15D07,
+				908766D107BFEF6700CA9D15,
+				90D740AF07BF2DE800C15D07,
+				90B61C9A07C1B521009D38D5,
+				90D740AE07BF2D8D00C15D07,
+				900C507507C95D0400EF3285,
+				90D740AD07BF2D6A00C15D07,
+				9022646207C2D50B00972CB2,
+				90D740AC07BF2D4D00C15D07,
+				908767DF07C055A000CA9D15,
+				90AE32FA07B85BCD00BCB4E2,
+				902BB86807BC54FE00C14A00,
+				902BB87207BC588600C14A00,
+				90BA083D07E694E900D309D6,
+				902BB86E07BC577200C14A00,
+				90D73F4507BE9AE100C15D07,
+				902BB86D07BC56D700C14A00,
+				90AE330107B85CC500BCB4E2,
+				90AE32FE07B85C1800BCB4E2,
+				90AE32DE07B8598500BCB4E2,
+			);
+			isa = PBXGroup;
+			name = Collector;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90AE32DA07B857D400BCB4E2 = {
+			children = (
+				9034D89A07B879EF00120859,
+				9034D89807B879AB00120859,
+				9034D85F07B8785F00120859,
+				9034D8B507B8870A00120859,
+				9034D8B607B8870A00120859,
+				902BF2A007B9C61F00A04C62,
+				9034D92B07B893D600120859,
+				902BF29307B9C2A900A04C62,
+				90CDF63F0809C22400D72698,
+				906EF6CC080CBD8F00EC9105,
+				906EF6FC080CBF2900EC9105,
+			);
+			isa = PBXGroup;
+			name = Config;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90AE32DB07B857E000BCB4E2 = {
+			children = (
+				900C524C07CA440400EF3285,
+				900C524707CA427500EF3285,
+				900C50C207C96B1A00EF3285,
+			);
+			isa = PBXGroup;
+			name = TimedExec;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90AE32DC07B8585B00BCB4E2 = {
+			children = (
+				9034D85507B876D000120859,
+				9034D85607B876D000120859,
+				9034D84C07B876C400120859,
+				9034D84D07B876C400120859,
+				9034D84E07B876C400120859,
+				9034D84F07B876C400120859,
+				9034D85007B876C400120859,
+				9034D85107B876C400120859,
+				9034D85207B876C400120859,
+				9034D85307B876C400120859,
+				9034D84907B876B700120859,
+				900C529707CA540500EF3285,
+			);
+			isa = PBXGroup;
+			name = Common;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90AE32DE07B8598500BCB4E2 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = CollectorMain.cpp;
+			path = Collector/CollectorMain.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90AE32DF07B8598500BCB4E2 = {
+			fileRef = 90AE32DE07B8598500BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90AE32FA07B85BCD00BCB4E2 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = MasterCollector.h;
+			path = Collector/MasterCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90AE32FE07B85C1800BCB4E2 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = SeqListCollector.h;
+			path = Collector/SeqListCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90AE330107B85CC500BCB4E2 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = CollectProto.h;
+			path = Collector/CollectProto.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90B61C9A07C1B521009D38D5 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = LogicalDiskCollector.cpp;
+			path = Collector/LogicalDiskCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90B61C9B07C1B521009D38D5 = {
+			fileRef = 90B61C9A07C1B521009D38D5;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90B725A908255E7B006B8A33 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		90B725B108255F0C006B8A33 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		90B725B208255F1D006B8A33 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		90B725B308255F46006B8A33 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		90B725B408255F62006B8A33 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		90B725B508255F7B006B8A33 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		90B725B808255F86006B8A33 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		90B725BB08255F92006B8A33 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		90B725BC08255FA6006B8A33 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		90B725F408256C3E006B8A33 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			name = InstallPkgInfo.plist;
+			path = Install/InstallPkgInfo.plist;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90B7260F08256D2A006B8A33 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			name = InstallDesc.plist;
+			path = Install/InstallDesc.plist;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90BA083D07E694E900D309D6 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SoftwareCollector.cpp;
+			path = Collector/SoftwareCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90BA083E07E694E900D309D6 = {
+			fileRef = 90BA083D07E694E900D309D6;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90C9888007B6E0C3008008F5 = {
+			children = (
+				90E25C420909E88D00E212BC,
+				9028F4070928102D0008B47E,
+				9013CB0408C944B500461AB4,
+				900C52EE07CA739000EF3285,
+				90AE32DC07B8585B00BCB4E2,
+				90AE32DA07B857D400BCB4E2,
+				90AE32D907B857C900BCB4E2,
+				90AE32DB07B857E000BCB4E2,
+				90AE2E4D07B84EB000BCB4E2,
+				90AE32AE07B8577000BCB4E2,
+			);
+			isa = PBXGroup;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90C9888207B6E0C3008008F5 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "\"/Users/karlholland/Documents/Devel/openssl-0.9.7e/include \" ../Common/inc";
+				LIBRARY_SEARCH_PATHS = "/Users/karlholland/Documents/Devel/openssl-0.9.7e/";
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				REZ_PREPROCESSOR_DEFINITIONS = "SYSLIST_ASP=1";
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		90C9888307B6E0C3008008F5 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = "\"/Users/karlholland/Documents/Devel/openssl-0.9.7e/include \" ../Common/inc";
+				LIBRARY_SEARCH_PATHS = "/Users/karlholland/Documents/Devel/openssl-0.9.7e/";
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				REZ_PREPROCESSOR_DEFINITIONS = "SYSLIST_ASP=1";
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+		90C9888407B6E0C3008008F5 = {
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				SDKROOT = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			buildStyles = (
+				90C9888207B6E0C3008008F5,
+				90C9888307B6E0C3008008F5,
+			);
+			hasScannedForEncodings = 0;
+			isa = PBXProject;
+			mainGroup = 90C9888007B6E0C3008008F5;
+			productRefGroup = 90AE32AE07B8577000BCB4E2;
+			projectDirPath = "";
+			targets = (
+				9013CAFA08C9414200461AB4,
+				9013CB3D08C963DA00461AB4,
+				900C50BF07C96AC300EF3285,
+				90AE32AC07B8577000BCB4E2,
+				9034D85C07B8785F00120859,
+				90CDF62B0809C22400D72698,
+				906EF69D080CBCAF00EC9105,
+				906EF6B8080CBD8F00EC9105,
+				906EF6CD080CBD8F00EC9105,
+				906EF6E8080CBF2900EC9105,
+				906EF6FD080CBF2900EC9105,
+				900C526507CA4B5C00EF3285,
+				900C526E07CA4D2200EF3285,
+			);
+		};
+		90CDF62B0809C22400D72698 = {
+			buildPhases = (
+				90CDF62C0809C22400D72698,
+				90CDF6320809C22400D72698,
+				90CDF6350809C22400D72698,
+			);
+			buildRules = (
+				90B725B208255F1D006B8A33,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = SYSLIST_ASP;
+				INFOPLIST_FILE = "/Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Agent/Config/SCAConfig-Info copy.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				LIBRARY_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.2.8.sdk/usr/lib/gcc/darwin/3.3\" /Users/karlholland/Documents/Devel/openssl-0.9.7e";
+				OBJROOT = build/ASP;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Foundation -framework AppKit -bind_at_load";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SCAConfig;
+				SECTORDER_FLAGS = "";
+				SYMROOT = build/ASP;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = "SCAConfig ASP";
+			productName = SCAConfig;
+			productReference = 90CDF63D0809C22400D72698;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>SCAConfig</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.SCAConfig</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		90CDF62C0809C22400D72698 = {
+			buildActionMask = 2147483647;
+			files = (
+				90CDF62D0809C22400D72698,
+				90CDF62E0809C22400D72698,
+				90CDF62F0809C22400D72698,
+				90CDF6300809C22400D72698,
+				90CDF6310809C22400D72698,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90CDF62D0809C22400D72698 = {
+			fileRef = 9034D89807B879AB00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF62E0809C22400D72698 = {
+			fileRef = 9034D8B507B8870A00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF62F0809C22400D72698 = {
+			fileRef = 9034D92B07B893D600120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF6300809C22400D72698 = {
+			fileRef = 902BF29307B9C2A900A04C62;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF6310809C22400D72698 = {
+			fileRef = 902BF2A007B9C61F00A04C62;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF6320809C22400D72698 = {
+			buildActionMask = 2147483647;
+			files = (
+				90CDF6330809C22400D72698,
+				90CDF6340809C22400D72698,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90CDF6330809C22400D72698 = {
+			fileRef = 9034D89A07B879EF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF6340809C22400D72698 = {
+			fileRef = 9034D8B607B8870A00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF6350809C22400D72698 = {
+			buildActionMask = 2147483647;
+			files = (
+				90CDF6360809C22400D72698,
+				90CDF6370809C22400D72698,
+				90CDF6380809C22400D72698,
+				90CDF6390809C22400D72698,
+				90CDF63A0809C22400D72698,
+				90CDF63B0809C22400D72698,
+				90CDF63C0809C22400D72698,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90CDF6360809C22400D72698 = {
+			fileRef = 902BB8A807BC70FC00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF6370809C22400D72698 = {
+			fileRef = 90AE2E5507B84FDA00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF6380809C22400D72698 = {
+			fileRef = 90AE2E5407B84F7B00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF6390809C22400D72698 = {
+			fileRef = 90AE2E5207B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF63A0809C22400D72698 = {
+			fileRef = 90AE2E5307B84F1C00BCB4E2;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF63B0809C22400D72698 = {
+			fileRef = 9034D86007B878AF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF63C0809C22400D72698 = {
+			fileRef = 9034D86107B878AF00120859;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90CDF63D0809C22400D72698 = {
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SCAConfig.app;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90CDF63F0809C22400D72698 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			name = "SCAConfig-Info copy.plist";
+			path = "/Users/karlholland/Documents/Devel/MacSysList/CVSROOT/Agent/Config/SCAConfig-Info copy.plist";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		90D73E6507BDBC8D00C15D07 = {
+			fileRef = 902BB8A807BC70FC00C14A00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90D73F4507BE9AE100C15D07 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = OSCollector.cpp;
+			path = Collector/OSCollector.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90D73F4607BE9AE100C15D07 = {
+			fileRef = 90D73F4507BE9AE100C15D07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90D7407E07BF204B00C15D07 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = IOKit.framework;
+			path = /Developer/SDKs/MacOSX10.2.8.sdk/System/Library/Frameworks/IOKit.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		90D7407F07BF204B00C15D07 = {
+			fileRef = 90D7407E07BF204B00C15D07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		90D740AB07BF2D1300C15D07 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = ProcessorCollector.h;
+			path = Collector/ProcessorCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90D740AC07BF2D4D00C15D07 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = DiskCollector.h;
+			path = Collector/DiskCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90D740AD07BF2D6A00C15D07 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = NetCollector.h;
+			path = Collector/NetCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90D740AE07BF2D8D00C15D07 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = MemoryCollector.h;
+			path = Collector/MemoryCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90D740AF07BF2DE800C15D07 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = LogicalDiskCollector.h;
+			path = Collector/LogicalDiskCollector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90E25C420909E88D00E212BC = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.script.sh;
+			path = bsaremote.sh;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		90EC21CA08CA81D100DDB3BD = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 9013CB3D08C963DA00461AB4;
+			remoteInfo = "SCACollector BSA";
+		};
+		90EC21CB08CA81D100DDB3BD = {
+			isa = PBXTargetDependency;
+			target = 9013CB3D08C963DA00461AB4;
+			targetProxy = 90EC21CA08CA81D100DDB3BD;
+		};
+		90EC21CC08CA81D500DDB3BD = {
+			containerPortal = 90C9888407B6E0C3008008F5;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 9013CAFA08C9414200461AB4;
+			remoteInfo = BSAUtil;
+		};
+		90EC21CD08CA81D500DDB3BD = {
+			isa = PBXTargetDependency;
+			target = 9013CAFA08C9414200461AB4;
+			targetProxy = 90EC21CC08CA81D500DDB3BD;
+		};
+	};
+	rootObject = 90C9888407B6E0C3008008F5;
+}

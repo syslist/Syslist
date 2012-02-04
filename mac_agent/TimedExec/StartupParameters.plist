@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>Description</key>
+	<string>Syslist Companion Agent Timed Execution Daemon Starter</string>
+	<key>Messages</key>
+	<dict>
+		<key>start</key>
+		<string>Starting Syslist Companion Agent Timed Execution Daemon</string>
+		<key>stop</key>
+		<string>Stopping Syslist Companion Agent Timed Execution Daemon</string>
+	</dict>
+	<key>OrderPreference</key>
+	<string>Late</string>
+	<key>Provides</key>
+	<array>
+		<string>SCATimeEx</string>
+	</array>
+	<key>Requires</key>
+	<array>
+		<string>Network</string>
+	</array>
+</dict>
+</plist>

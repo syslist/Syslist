@@ -1,0 +1,33 @@
+BODY
+{
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 12px;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	TEXT-DECORATION: none
+}
+
+TD
+{
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 12px;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	TEXT-DECORATION: none
+}
+
+TR.title { color: #FFFFFF; font-weight: bolder; background-color: #666666;}
+TR.row1 { background-color: #FFFFFF; }
+TR.row2 { background-color: #99CCFF; }
+A.action { text-decoration: none; }
+A.titlerow { color: #CCFFFF; FONT-SIZE: 11px; }
+
+.instructions { color: #9F0000; font-weight: bolder; }
+.soft_instructions { color: #9F0000; }
+.smaller { FONT-SIZE: 11px; }
+.larger { FONT-SIZE: 13px; }
+.much_larger { FONT-SIZE: 14px; }
+
+TR.hidden { display: none; }
+TR.visible { display: run-in; }
+A.collapseLink { font-size: 12; text-decoration: none; border: 1px solid; color: black; padding-left: 2px; padding-right: 2px; }

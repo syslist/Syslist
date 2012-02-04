@@ -1,0 +1,168 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\resource.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\resource.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OK                  "OK"
+    IDS_CANCEL              "Annuleren"
+    IDS_CB_DISABLED         "Geblokkeerd"
+    IDS_CB_DAILY            "Eens per dag"
+    IDS_CB_STARTUP          "Bij het opstarten"
+    IDS_CB_WEEKLY           "Eens per week"
+    IDS_CB_MONTHLY          "Eens per maand"
+    IDS_SERVER_STATIC       "* Syslist Server:"
+    IDS_FREQ_STATIC         "Frequentie:"
+    IDS_CFG_CANCELLED_STR   "Configuratie is geannuleerd. Er zullen geen veranderingen aan Syslist worden gerapporteerd. \n\n Als de rapportage was geblokkeerd dan zal deze computer niet rapporteren aan de Syslist server."
+    IDS_CFG_CANCELLED_CAPTION "Configuratie is geannuleerd."
+    IDS_CFG_SLANG           "NLD"
+    IDS_CFG_LLANG           "Nederlands (NL)"
+    IDS_LANG_STATIC         "Taal:"
+    IDS_ID_STATIC           "Status PC:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CFG_ILANG           "1043"
+    IDS_CFG_UNKNOWN         "Niet herkend"
+    IDS_CFG_KNOWN           "Herkend"
+    IDS_USER_STATIC         "* Syslist lidmaatschapsnaam:"
+    IDS_PWD_STATIC          "* Syslist lidmaatschap wachtwoord:"
+    IDS_INVENTORY           "Inventariseer nu!"
+    IDS_ERR_COLLECT_NOT_RUN "De Companion Agent had geen succes."
+    IDS_ERR_SYSLIST_REJECT  "De server van Syslist gaf aan dat de unieke inventaris ID-code die op deze computer opgeslagen is, ongeldig is. Start alstublieft de Companion Agent opnieuw om de\njuiste ID-code te achterhalen of creeer een nieuwe."
+    IDS_ERR_SYSLIST_AUTH    "De opgegeven gebruikersnaam en wachtwoord is niet bekend bij de server van Syslist."
+    IDS_ERR_SYSLIST_GEN     "De Companion Agent was niet in staat om te rapporteren aan de server van Syslist."
+    IDS_ERROR_GEN_CAP       "Syslist Foutmelding"
+    IDS_ERR_COLLECT_HANG    "De Companion Agent slaagde er niet in om binnen 5 minuten alle data te verzamelen."
+    IDS_ERR_SYSLIST_NO_INFO "De server van Syslist ontving niet voldoende informatie om deze computer in de inventaris op te nemen."
+    IDS_ERR_SYSLIST_INCOMPLETE_XML 
+                            "De server van Syslist ontving geen complete inventaris van dit systeem. Probeer het opnieuw."
+    IDS_ERR_SYSLIST_COMM    "De Companion Agent had problemen om te communiceren met de server van Syslist."
+    IDS_ERR_COLLECT_WRITE_ID 
+                            "De Companion Agent was niet in staat om de unieke inventaris ID op te slaan in het Windowsregister."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_CFG_REG         "De informatie benodigd voor dit programma ontbreekt in de Windows registratie \n\n Installeer alstublieft de Companion Agent opnieuw en draai het nogmaals."
+    IDS_CFG_INSTALL_SUCCESS "Installatie succesvol voltooid, en deze computer is geinventariseerd.\n\n Een web browser met de inventarisinformatie van deze computer zal nu worden geopend."
+    IDS_CFG_INSTALL_SUCCESS_CAP "Installatie configuratie succesvol."
+    IDS_ERR_COLLECT_PROTO   "De Syslist server mist een protocol of heeft een protocol entry die niet wordt begrepen.\n\n Begin de naam van de server alstublieft met http:// of https://"
+    IDS_ERR_COLLECT_READ_REG 
+                            "De Companion Agent was niet in staat om de configuratie informatie te lezen.\n\n Installeer deze software alstublieft opnieuw."
+    IDS_ERR_COLLECT_FAIL    "De Companion Agent was niet in staat om het verzamelen van systeeminformatie te voltooien.\n"
+    IDS_ERR_SYSLIST_NO_AGENT_PAGE 
+                            "De Companion Agent kon het eindverslag op de Syslist Server niet vinden."
+    IDS_ERR_NO_SHOW_BROWSER "De Companion Agent is niet in staat om een web browser te openen om de inventaris van deze computer aan u te tonen. U kunt de gegevens handmatig controleren door bij Syslist in te loggen."
+    IDS_ERR_NO_SHOW_BROWSER_CAP 
+                            "Niet in staat om de inventarisinformatie te tonen."
+    IDS_ERR_COLLECT_OPEN_URI 
+                            "De Companion Agent was niet in staat om te communiceren met de gespecificeerde Syslist Server.\n\n Controleer alstublieft uw adres."
+    IDS_ERR_SYSLIST_LIC_MAXED 
+                            "U heeft het maximum aantal systemen bereikt dat u \n mag toevoegen aan Syslist volgens uw huidige \nlicentieovereenkomst.\nDe Companion Agent zal geen nieuwe systemen meer verwerken.\n\n Neem alstublieft email-contact op met Literal Technology via sales@syslist.com om \n aanvullende licenties aan te schaffen."
+    IDS_ERR_SYSLIST_LIC_INVALID 
+                            "Syslist is niet geconfigureerd met een geldige licentie-toegangssleutel"
+    IDS_ERR_CFG_REG_WRITE   "De Companion Agent was niet in staat om configuratieinformatie terug te schrijven naar het Windows-register.\n\n Vergewist u zich u er alstublieft van dat u voldoende permissies heeft om dit programma te installeren \nAls dit probleem zich blijft voordoen, vraag alstublieft om technische assistentie."
+    IDS_ERR_CFG_SCHED_START "De Companion Agent was niet in staat om de Windows Task Scheduler te starten \n\n. Dit verhindert de Agent om te draaien volgens uw specificatie. \n Vergewist u zich er alstublieft van dat u voldoende permissies heeft om dit programma te draaien en te installeren."
+    IDS_ERR_CFG_SCHED_TASK  "De Companion Agent was niet in staat om toekomstige inventarispunten in een schema vast te stellen.\n\n Dit verhindert het automatisch updaten van uw gegevens in de Syslist database\n Vergewist u zich er alstublieft van dat u voldoende permissies heeft om dit programma te draaien en te installeren."
+    IDS_CFG_IMMED_INV_SUCCESS 
+                            "De Companion Agent heeft deze machine succesvol geinventariseerd.\n\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CFG_GEN_CAP         "Syslist Companion Agent informatie"
+    IDS_MACHUSER_STATIC     "Machine Inventaris Account gebruikersnaam:"
+    IDS_MACHPWD_STATIC      "Machine Inventory Account wachtwoord:"
+    IDS_NO_PROXY            "Geen Proxy-server (Direkte verbinding)"
+    IDS_IE_PROXY            "Gebruik instellingen van Internet Explorer"
+    IDS_MANUAL_PROXY        "Handmatig Proxy-server instellen"
+    IDS_PROXY_COMBO_STATIC  "HTTP(S) Proxy-server instellingen:"
+    IDS_PROXY_SERVER_STATIC "HTTP(S) Proxy-Server:"
+    IDS_ERR_COLLECT_DEMO_EXPIRED 
+                            "The evaluation period for this software has expired. \n\nNo further inventories will occur until a full version of the Syslist Companion Agent is installed."
+    IDS_ERR_COLLECT_NO_ID   "The inventory completed, but no ID was recieved from the Syslist Server."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROXY_PORT_STATIC   "HTTP(S) Proxy Port:"
+    IDS_ACCTID_STATIC       "* Syslist Account Code:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PLEASE_FILL_FORM    "A.u.b Syslist gebruikersnaam, Syslist wachtwoord, en Server naam invullen alvorens poging to installatie te starten.\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PLEASE_FILL_FORM_CAP "A.u.b. formulier invullen"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,36 @@
+(c) 2008 Literal Technology
+    
+This software program ("the Program") is the
+copyrighted work of Literal Technology. Any use,
+reproduction or redistribution of the Program not in
+accordance with the terms of this agreement is
+expressly prohibited. 
+
+All title, ownership, and intellectual property rights
+in and to the Program and any and all copies thereof
+are owned by Literal Technology. The Program is
+protected by the copyright laws of the United States,
+international copyright treaties and conventions, and
+other laws. All rights are reserved.
+
+You are entitled to use the Program for your own use,
+but You are not entitled to sell or grant a security
+interest in or transfer reproductions of the Program
+to other parties in any way, nor to rent, lease, or
+license the Program to others without the prior
+written consent of Literal Technology.
+    
+Literal Technology expressly disclaims any warranty
+for the Syslist Companion Agent. It is provided "as
+is," without warranty of any kind, either express or
+implied, including, without limitation, the implied
+warranties of merchantability, fitness for a
+particular purpose, or noninfringement. The entire
+risk arising out of use or performance of the Syslist
+Companion Agent remains with the you.
+
+By clicking 'I Agree', you acknowledge that you have
+read and agree with all the terms in this agreement,
+and that you will abide by those terms. If you do not
+understand ANY PART of this agreement, click 'Cancel'
+and contact support@syslist.com for assistance."

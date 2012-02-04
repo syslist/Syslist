@@ -1,0 +1,722 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NetLangDLL - Win32 NLD--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x413 /fo"NetLangDLL___Win32_NLD/NetLang_NLD.res" /d "NDEBUG" "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestNetEnum\LangDLL\NetLang_NLD.rc"" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3C8.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "NETLANGDLL_EXPORTS" /Fp"NetLangDLL___Win32_NLD/NetLangDLL.pch" /Yu"stdafx.h" /Fo"NetLangDLL___Win32_NLD/" /Fd"NetLangDLL___Win32_NLD/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestNetEnum\LangDLL\NetLangDLL.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3C8.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3C9.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "NETLANGDLL_EXPORTS" /Fp"NetLangDLL___Win32_NLD/NetLangDLL.pch" /Yc"stdafx.h" /Fo"NetLangDLL___Win32_NLD/" /Fd"NetLangDLL___Win32_NLD/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestNetEnum\LangDLL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3C9.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3CA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"NetLangDLL___Win32_NLD/NetLang_NLD.pdb" /machine:I386 /out:"NetLang_NLD.dll" /implib:"NetLangDLL___Win32_NLD/NetLang_NLD.lib" 
+".\NetLangDLL___Win32_NLD\NetLangDLL.obj"
+".\NetLangDLL___Win32_NLD\StdAfx.obj"
+".\NetLangDLL___Win32_NLD\NetLang_NLD.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3CA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+NetLangDLL.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+NetLang_NLD.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: NetLangDLL - Win32 DEU--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"NetLangDLL___Win32_DEU/NetLang_DEU.res" /d "NDEBUG" "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestNetEnum\LangDLL\NetLang_DEU.rc"" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3CC.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "NETLANGDLL_EXPORTS" /Fp"NetLangDLL___Win32_DEU/NetLangDLL.pch" /Yu"stdafx.h" /Fo"NetLangDLL___Win32_DEU/" /Fd"NetLangDLL___Win32_DEU/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestNetEnum\LangDLL\NetLangDLL.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3CC.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3CD.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "NETLANGDLL_EXPORTS" /Fp"NetLangDLL___Win32_DEU/NetLangDLL.pch" /Yc"stdafx.h" /Fo"NetLangDLL___Win32_DEU/" /Fd"NetLangDLL___Win32_DEU/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestNetEnum\LangDLL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3CD.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3CE.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"NetLangDLL___Win32_DEU/NetLang_DEU.pdb" /machine:I386 /out:"NetLang_DEU.dll" /implib:"NetLangDLL___Win32_DEU/NetLang_DEU.lib" 
+".\NetLangDLL___Win32_DEU\NetLangDLL.obj"
+".\NetLangDLL___Win32_DEU\StdAfx.obj"
+".\NetLangDLL___Win32_DEU\NetLang_DEU.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3CE.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+NetLangDLL.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+NetLang_DEU.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SCANetUnInstall - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D0.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SCANetUnInstall.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCANetUnInstall\SCANetUnInstall.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistRegistry.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D0.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D1.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SCANetUnInstall.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCANetUnInstall\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D1.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D2.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SCAUn.pdb" /machine:I386 /out:"Release/SCAUn.exe" 
+".\Release\SCANetUnInstall.obj"
+".\Release\StdAfx.obj"
+".\Release\SyslistRegistry.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D2.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+SCANetUnInstall.cpp
+SyslistRegistry.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SCAUn.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SCARISvc - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D4.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SCARISvc.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\QueryAdmin.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCARISvc\SCARISvc.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestService\ServiceSkeleton.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D4.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D5.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SCARISvc.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCARISvc\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D5.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SCARISvc.pdb" /machine:I386 /out:"Release/SCARISvc.exe" 
+".\Release\QueryAdmin.obj"
+".\Release\SCARISvc.obj"
+".\Release\ServiceSkeleton.obj"
+".\Release\StdAfx.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D6.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+QueryAdmin.cpp
+SCARISvc.cpp
+ServiceSkeleton.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SCARISvc.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SCASetup - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D8.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SCASetup.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\ConfigTaskSched.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCASetup\RASUser.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCASetup\SCASetup.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCASetup\SyslistAcct.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistRegistry.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D8.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D9.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SCASetup.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCASetup\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3D9.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3DA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Netapi32.lib mstask.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SCASet.pdb" /machine:I386 /out:"Release/SCASet.exe" 
+".\Release\ConfigTaskSched.obj"
+".\Release\RASUser.obj"
+".\Release\SCASetup.obj"
+".\Release\StdAfx.obj"
+".\Release\SyslistAcct.obj"
+".\Release\SyslistRegistry.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3DA.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ConfigTaskSched.cpp
+RASUser.cpp
+C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCASetup\RASUser.cpp(11) : error C2017: illegal escape sequence
+C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCASetup\RASUser.cpp(11) : error C2017: illegal escape sequence
+C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCASetup\RASUser.cpp(11) : error C2146: syntax error : missing ';' before identifier 'SOFTWARE'
+C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCASetup\RASUser.cpp(11) : fatal error C1004: unexpected end of file found
+SCASetup.cpp
+SyslistAcct.cpp
+SyslistRegistry.cpp
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+SCASet.exe - 4 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SCATimEx - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3DB.tmp" with contents
+[
+/nologo /ML /W3 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SCATimEx.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCATimEx\SCATimEx.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestService\ServiceSkeleton.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCASetup\SyslistAcct.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistRegistry.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3DB.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3DC.tmp" with contents
+[
+/nologo /ML /W3 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SCATimEx.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCATimEx\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3DC.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3DD.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SCATimEx.pdb" /machine:I386 /out:"Release/SCATimEx.exe" 
+".\Release\SCATimEx.obj"
+".\Release\ServiceSkeleton.obj"
+".\Release\StdAfx.obj"
+".\Release\SyslistAcct.obj"
+".\Release\SyslistMethod.obj"
+".\Release\SyslistRegistry.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3DD.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+SCATimEx.cpp
+ServiceSkeleton.cpp
+SyslistAcct.cpp
+SyslistMethod.cpp
+SyslistRegistry.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SCATimEx.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: TestCollect - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/SyslistConfigResources.res" /d "NDEBUG" "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\SyslistConfigResources.rc"" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3DF.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\Program Files\Microsoft SDK\.\include" /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fp"Release/TestCollect.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\DiskCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\DisplayCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\KeyboardCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\LogicalDiskCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MasterCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MemoryCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MouseCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\NetCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\OSCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\PrinterCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\ProcessorCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\RegUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\SoftwareCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestWinCrypt\SyslistPhrase.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistProxyMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistRegistry.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\TestCollect.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\WinSetupUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\WMIUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestData\TextConv.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3DF.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E0.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\Program Files\Microsoft SDK\.\include" /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fp"Release/TestCollect.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E0.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E1.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Wbemuuid.lib SetupAPI.lib Iphlpapi.lib Ws2_32.lib Mswsock.lib rpcrt4.lib ssleay32.lib libeay32.lib wininet.lib Netapi32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SCAInv.pdb" /machine:I386 /out:"Release/SCAInv.exe" /libpath:"C:\OpenSSL\lib\VC" /libpath:"C:\Program Files\Microsoft SDK\.\lib" 
+".\Release\DiskCollector.obj"
+".\Release\DisplayCollector.obj"
+".\Release\KeyboardCollector.obj"
+".\Release\LogicalDiskCollector.obj"
+".\Release\MasterCollector.obj"
+".\Release\MemoryCollector.obj"
+".\Release\MouseCollector.obj"
+".\Release\NetCollector.obj"
+".\Release\OSCollector.obj"
+".\Release\PrinterCollector.obj"
+".\Release\ProcessorCollector.obj"
+".\Release\RegUtil.obj"
+".\Release\SoftwareCollector.obj"
+".\Release\StdAfx.obj"
+".\Release\SyslistMethod.obj"
+".\Release\SyslistPhrase.obj"
+".\Release\SyslistProxyMethod.obj"
+".\Release\SyslistRegistry.obj"
+".\Release\TestCollect.obj"
+".\Release\WinSetupUtil.obj"
+".\Release\WMIUtil.obj"
+".\Release\SyslistConfigResources.res"
+".\Release\TextConv.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E1.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DiskCollector.cpp
+DisplayCollector.cpp
+KeyboardCollector.cpp
+LogicalDiskCollector.cpp
+MasterCollector.cpp
+MemoryCollector.cpp
+MouseCollector.cpp
+NetCollector.cpp
+OSCollector.cpp
+PrinterCollector.cpp
+ProcessorCollector.cpp
+RegUtil.cpp
+SoftwareCollector.cpp
+SyslistMethod.cpp
+SyslistPhrase.cpp
+SyslistProxyMethod.cpp
+SyslistRegistry.cpp
+TestCollect.cpp
+WinSetupUtil.cpp
+WMIUtil.cpp
+Generating Code...
+Compiling...
+TextConv.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SCAInv.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: TestCollect - Win32 Demo Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"ReleaseDemo/SyslistConfigResources.res" /d "NDEBUG" "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\SyslistConfigResources.rc"" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E3.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\Program Files\Microsoft SDK\.\include" /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "SYSLIST_DEMO" /FR"ReleaseDemo/" /Fp"ReleaseDemo/TestCollect.pch" /Yu"stdafx.h" /Fo"ReleaseDemo/" /Fd"ReleaseDemo/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\DiskCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\DisplayCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\KeyboardCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\LogicalDiskCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MasterCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MemoryCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MouseCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\NetCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\OSCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\PrinterCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\ProcessorCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\RegUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\SoftwareCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestWinCrypt\SyslistPhrase.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistProxyMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistRegistry.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\TestCollect.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\WinSetupUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\WMIUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestData\TextConv.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E3.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E4.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\Program Files\Microsoft SDK\.\include" /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "SYSLIST_DEMO" /FR"ReleaseDemo/" /Fp"ReleaseDemo/TestCollect.pch" /Yc"stdafx.h" /Fo"ReleaseDemo/" /Fd"ReleaseDemo/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E4.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E5.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Wbemuuid.lib SetupAPI.lib Iphlpapi.lib Ws2_32.lib Mswsock.lib rpcrt4.lib ssleay32.lib libeay32.lib wininet.lib Netapi32.lib /nologo /subsystem:windows /incremental:no /pdb:"ReleaseDemo/SCAInv.pdb" /machine:I386 /out:"ReleaseDemo/SCAInv.exe" /libpath:"C:\OpenSSL\lib\VC\Static" /libpath:"C:\Program Files\Microsoft SDK\.\lib" /libpath:"C:\OpenSSL\lib\VC" 
+".\ReleaseDemo\DiskCollector.obj"
+".\ReleaseDemo\DisplayCollector.obj"
+".\ReleaseDemo\KeyboardCollector.obj"
+".\ReleaseDemo\LogicalDiskCollector.obj"
+".\ReleaseDemo\MasterCollector.obj"
+".\ReleaseDemo\MemoryCollector.obj"
+".\ReleaseDemo\MouseCollector.obj"
+".\ReleaseDemo\NetCollector.obj"
+".\ReleaseDemo\OSCollector.obj"
+".\ReleaseDemo\PrinterCollector.obj"
+".\ReleaseDemo\ProcessorCollector.obj"
+".\ReleaseDemo\RegUtil.obj"
+".\ReleaseDemo\SoftwareCollector.obj"
+".\ReleaseDemo\StdAfx.obj"
+".\ReleaseDemo\SyslistMethod.obj"
+".\ReleaseDemo\SyslistPhrase.obj"
+".\ReleaseDemo\SyslistProxyMethod.obj"
+".\ReleaseDemo\SyslistRegistry.obj"
+".\ReleaseDemo\TestCollect.obj"
+".\ReleaseDemo\WinSetupUtil.obj"
+".\ReleaseDemo\WMIUtil.obj"
+".\ReleaseDemo\SyslistConfigResources.res"
+".\ReleaseDemo\TextConv.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E5.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DiskCollector.cpp
+DisplayCollector.cpp
+KeyboardCollector.cpp
+LogicalDiskCollector.cpp
+MasterCollector.cpp
+MemoryCollector.cpp
+MouseCollector.cpp
+NetCollector.cpp
+OSCollector.cpp
+PrinterCollector.cpp
+ProcessorCollector.cpp
+RegUtil.cpp
+SoftwareCollector.cpp
+SyslistMethod.cpp
+SyslistPhrase.cpp
+SyslistProxyMethod.cpp
+SyslistRegistry.cpp
+TestCollect.cpp
+WinSetupUtil.cpp
+WMIUtil.cpp
+Generating Code...
+Compiling...
+TextConv.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SCAInv.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: TestCollect - Win32 ASP Demo Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"ReleaseASPDemo/SyslistConfigResources.res" /d "NDEBUG" "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\SyslistConfigResources.rc"" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E7.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\Program Files\Microsoft SDK\.\include" /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "SYSLIST_DEMO" /D "ASP_DEMO" /D "SYSLIST_ACC" /FR"ReleaseASPDemo/" /Fp"ReleaseASPDemo/TestCollect.pch" /Yu"stdafx.h" /Fo"ReleaseASPDemo/" /Fd"ReleaseASPDemo/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\DiskCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\DisplayCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\KeyboardCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\LogicalDiskCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MasterCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MemoryCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MouseCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\NetCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\OSCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\PrinterCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\ProcessorCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\RegUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\SoftwareCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestWinCrypt\SyslistPhrase.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistProxyMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistRegistry.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\TestCollect.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\WinSetupUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\WMIUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestData\TextConv.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E7.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E8.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\Program Files\Microsoft SDK\.\include" /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "SYSLIST_DEMO" /D "ASP_DEMO" /D "SYSLIST_ACC" /FR"ReleaseASPDemo/" /Fp"ReleaseASPDemo/TestCollect.pch" /Yc"stdafx.h" /Fo"ReleaseASPDemo/" /Fd"ReleaseASPDemo/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E8.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Wbemuuid.lib SetupAPI.lib Iphlpapi.lib Ws2_32.lib Mswsock.lib rpcrt4.lib ssleay32.lib libeay32.lib wininet.lib Netapi32.lib /nologo /subsystem:windows /incremental:no /pdb:"ReleaseASPDemo/SCAInv.pdb" /machine:I386 /out:"ReleaseASPDemo/SCAInv.exe" /libpath:"C:\OpenSSL\lib\VC\Static" /libpath:"C:\Program Files\Microsoft SDK\.\lib" /libpath:"C:\OpenSSL\lib\VC" 
+".\ReleaseASPDemo\DiskCollector.obj"
+".\ReleaseASPDemo\DisplayCollector.obj"
+".\ReleaseASPDemo\KeyboardCollector.obj"
+".\ReleaseASPDemo\LogicalDiskCollector.obj"
+".\ReleaseASPDemo\MasterCollector.obj"
+".\ReleaseASPDemo\MemoryCollector.obj"
+".\ReleaseASPDemo\MouseCollector.obj"
+".\ReleaseASPDemo\NetCollector.obj"
+".\ReleaseASPDemo\OSCollector.obj"
+".\ReleaseASPDemo\PrinterCollector.obj"
+".\ReleaseASPDemo\ProcessorCollector.obj"
+".\ReleaseASPDemo\RegUtil.obj"
+".\ReleaseASPDemo\SoftwareCollector.obj"
+".\ReleaseASPDemo\StdAfx.obj"
+".\ReleaseASPDemo\SyslistMethod.obj"
+".\ReleaseASPDemo\SyslistPhrase.obj"
+".\ReleaseASPDemo\SyslistProxyMethod.obj"
+".\ReleaseASPDemo\SyslistRegistry.obj"
+".\ReleaseASPDemo\TestCollect.obj"
+".\ReleaseASPDemo\WinSetupUtil.obj"
+".\ReleaseASPDemo\WMIUtil.obj"
+".\ReleaseASPDemo\SyslistConfigResources.res"
+".\ReleaseASPDemo\TextConv.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3E9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DiskCollector.cpp
+DisplayCollector.cpp
+KeyboardCollector.cpp
+LogicalDiskCollector.cpp
+MasterCollector.cpp
+MemoryCollector.cpp
+MouseCollector.cpp
+NetCollector.cpp
+OSCollector.cpp
+PrinterCollector.cpp
+ProcessorCollector.cpp
+RegUtil.cpp
+SoftwareCollector.cpp
+SyslistMethod.cpp
+SyslistPhrase.cpp
+SyslistProxyMethod.cpp
+SyslistRegistry.cpp
+TestCollect.cpp
+WinSetupUtil.cpp
+WMIUtil.cpp
+Generating Code...
+Compiling...
+TextConv.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SCAInv.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: TestCollect - Win32 ACC Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"ReleaseACC/SyslistConfigResources.res" /d "NDEBUG" "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\SyslistConfigResources.rc"" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3EB.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\Program Files\Microsoft SDK\.\include" /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "SYSLIST_DEMO" /D "ASP_DEMO" /FR"ReleaseACC/" /Fp"ReleaseACC/TestCollect.pch" /Yu"stdafx.h" /Fo"ReleaseACC/" /Fd"ReleaseACC/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\DiskCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\DisplayCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\KeyboardCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\LogicalDiskCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MasterCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MemoryCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\MouseCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\NetCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\OSCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\PrinterCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\ProcessorCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\RegUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\SoftwareCollector.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestWinCrypt\SyslistPhrase.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistProxyMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistRegistry.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\TestCollect.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\WinSetupUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\WMIUtil.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestData\TextConv.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3EB.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3EC.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\Program Files\Microsoft SDK\.\include" /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "SYSLIST_DEMO" /D "ASP_DEMO" /FR"ReleaseACC/" /Fp"ReleaseACC/TestCollect.pch" /Yc"stdafx.h" /Fo"ReleaseACC/" /Fd"ReleaseACC/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestCollect\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3EC.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3ED.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Wbemuuid.lib SetupAPI.lib Iphlpapi.lib Ws2_32.lib Mswsock.lib rpcrt4.lib ssleay32.lib libeay32.lib wininet.lib Netapi32.lib /nologo /subsystem:windows /incremental:no /pdb:"ReleaseACC/SCAInv.pdb" /machine:I386 /out:"ReleaseACC/SCAInv.exe" /libpath:"C:\OpenSSL\lib\VC" /libpath:"C:\Program Files\Microsoft SDK\.\lib" 
+".\ReleaseACC\DiskCollector.obj"
+".\ReleaseACC\DisplayCollector.obj"
+".\ReleaseACC\KeyboardCollector.obj"
+".\ReleaseACC\LogicalDiskCollector.obj"
+".\ReleaseACC\MasterCollector.obj"
+".\ReleaseACC\MemoryCollector.obj"
+".\ReleaseACC\MouseCollector.obj"
+".\ReleaseACC\NetCollector.obj"
+".\ReleaseACC\OSCollector.obj"
+".\ReleaseACC\PrinterCollector.obj"
+".\ReleaseACC\ProcessorCollector.obj"
+".\ReleaseACC\RegUtil.obj"
+".\ReleaseACC\SoftwareCollector.obj"
+".\ReleaseACC\StdAfx.obj"
+".\ReleaseACC\SyslistMethod.obj"
+".\ReleaseACC\SyslistPhrase.obj"
+".\ReleaseACC\SyslistProxyMethod.obj"
+".\ReleaseACC\SyslistRegistry.obj"
+".\ReleaseACC\TestCollect.obj"
+".\ReleaseACC\WinSetupUtil.obj"
+".\ReleaseACC\WMIUtil.obj"
+".\ReleaseACC\SyslistConfigResources.res"
+".\ReleaseACC\TextConv.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3ED.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DiskCollector.cpp
+DisplayCollector.cpp
+KeyboardCollector.cpp
+LogicalDiskCollector.cpp
+MasterCollector.cpp
+MemoryCollector.cpp
+MouseCollector.cpp
+NetCollector.cpp
+OSCollector.cpp
+PrinterCollector.cpp
+ProcessorCollector.cpp
+RegUtil.cpp
+SoftwareCollector.cpp
+SyslistMethod.cpp
+SyslistPhrase.cpp
+SyslistProxyMethod.cpp
+SyslistRegistry.cpp
+TestCollect.cpp
+WinSetupUtil.cpp
+WMIUtil.cpp
+Generating Code...
+Compiling...
+TextConv.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SCAInv.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: TestInstConfig - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/ConfigUI.res" /d "NDEBUG" "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\ConfigUI.rc"" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3EF.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\FileConfig.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3EF.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3F0.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/TestInstConfig.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\QueryAdmin.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\SCASetup\SyslistAcct.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistIntLang.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestWinCrypt\SyslistPhrase.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistProxyMethod.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\SyslistRegistry.cpp"
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\TestInstConfig.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3F0.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3F1.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\OpenSSL\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/TestInstConfig.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Karl\My Documents\SyslistDevel\TestInstConfig\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3F1.tmp" 
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3F2.tmp" with contents
+[
+libeay32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SCAConf.pdb" /machine:I386 /out:"Release/SCAConf.exe" /libpath:"C:\OpenSSL\lib\VC" 
+".\Release\FileConfig.obj"
+".\Release\QueryAdmin.obj"
+".\Release\StdAfx.obj"
+".\Release\SyslistAcct.obj"
+".\Release\SyslistIntLang.obj"
+".\Release\SyslistMethod.obj"
+".\Release\SyslistPhrase.obj"
+".\Release\SyslistProxyMethod.obj"
+".\Release\SyslistRegistry.obj"
+".\Release\TestInstConfig.obj"
+".\Release\ConfigUI.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Karl\LOCALS~1\Temp\RSP3F2.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.rh(19) : warning C4005: 'RT_MANIFEST' : macro redefinition
+        C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.h(194) : see previous definition of 'RT_MANIFEST'
+C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.rh(20) : warning C4005: 'CREATEPROCESS_MANIFEST_RESOURCE_ID' : macro redefinition
+        C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.h(195) : see previous definition of 'CREATEPROCESS_MANIFEST_RESOURCE_ID'
+C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.rh(21) : warning C4005: 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID' : macro redefinition
+        C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.h(196) : see previous definition of 'ISOLATIONAWARE_MANIFEST_RESOURCE_ID'
+C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.rh(22) : warning C4005: 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID' : macro redefinition
+        C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.h(197) : see previous definition of 'ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID'
+C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.rh(23) : warning C4005: 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID' : macro redefinition
+        C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.h(198) : see previous definition of 'MINIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.rh(24) : warning C4005: 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID' : macro redefinition
+        C:\PROGRAM FILES\MICROSOFT SDK\INCLUDE\winuser.h(199) : see previous definition of 'MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID'
+cl.exe terminated at user request.
+
+</pre>
+</body>
+</html>

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "You will most likely need to enter an administrator password in order to remove the sofware. Please do so when asked"
+sudo killall -TERM SCATimeEx
+sudo rm -rf /Library/StartupItems/SyslistExecutionTimer
+sudo rm -rf /Library/Receipts/SCA_Install.pkg
+sudo rm -rf "/Applications/Syslist Companion Agent"
+
+exit 0

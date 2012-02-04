@@ -1,0 +1,2075 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: InstallUtil - Win32 BaseInstall--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSPFD.bat" with contents
+[
+@echo off
+.\PackageSCA.bat
+]
+Creating command line "C:\DOCUME~1\Karl\LOCALS~1\Temp\RSPFD.bat"
+<h3>Output Window</h3>
+Building Packages using .\PackageSCA.bat
+Starting Packaging
+"C:\Program Files\NSIS\makensisw.exe" TestInstall.nsi
+MakeNSIS v2.0b3 - Copyright 1999-2003 Nullsoft, Inc.
+
+Portions Copyright (C) 1995-1998 Jean-loup Gailly and Mark Adler (zlib).
+Includes portions derived from bzip2 (see documentation for details).
+Contributors: nnop@newmail.ru, Ryan Geiss, Andras Varga, Drew Davidson, Peter Windridge, Dave Laundon, Robert Rainwater, Yaroslav Faybishenko, Jeff Doozan, Amir Szekely, Ximon Eighteen, et al.
+
+
+
+Processing config: 
+Changing directory to: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER"
+
+Processing plugin dlls: "C:\Program Files\NSIS\plugins\*.dll"
+ - advsplash::show
+ - Banner::destroy
+ - Banner::show
+ - BgImage::Destroy
+ - BgImage::Init
+ - BgImage::SetImage
+ - BgImage::Sound
+ - Dialer::AttemptConnect
+ - Dialer::AutodialHangup
+ - Dialer::AutodialOnline
+ - Dialer::AutodialUnattended
+ - Dialer::GetConnectedState
+ - InstallOptions::dialog
+ - InstallOptions::initDialog
+ - InstallOptions::show
+ - KillProcDLL::KillProc
+ - LangDLL::LangDialog
+ - nsExec::Exec
+ - nsExec::ExecToLog
+ - nsExec::ExecToStack
+ - nsisdl::download
+ - nsisdl::download_quiet
+ - splash::show
+ - StartMenu::Select
+ - System::Alloc
+ - System::Call
+ - System::Copy
+ - System::Free
+ - System::Get
+ - System::Int64Op
+ - System::Store
+ - UserInfo::GetAccountType
+ - UserInfo::GetName
+
+
+Processing script file: "TestInstall.nsi"
+!include: "InstallVersion.nsi"
+!define: "MUI_VERSION"="1.4.0"
+!include: closed: "InstallVersion.nsi"
+!define: "SYSL_OUTPUT_FILE"="SCA_Install.exe"
+!define: "MUI_PRODUCT"="Syslist Companion Agent"
+!define: "SYSL_BASE_NAME"="Syslist Companion Agent"
+!define: "SYSL_REGPATH"="Software\Syslist Companion Agent"
+!define: "SYSL_REGPATH_CONFIG"="Software\Syslist Companion Agent\Config"
+!define: "SYSL_UNINST_ID"="Syslist Companion Agent v1.4.0"
+!define: "SYSL_WIN_UNINST"="Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent"
+!define: "SYSL_WIN98_SERVICE_VALUE"="SCATimeEx"
+!define: "SYSL_SERVICE_EXEC"="SCATimEx.exe"
+!define: "WIN_SERVICE_KEY"="SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices"
+BGGradient: FFFFFF->BBBBBB (text=12582912)
+!include: "MUI.nsh"
+!include: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+NSIS Modern User Interface version 1.63 - © 2002-2003 Joost Verburg (C:\Program Files\NSIS\Contrib\Modern UI\System.nsh:9)
+!include: closed: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+!include: closed: "C:\Program Files\NSIS\Include\MUI.nsh"
+OutFile: "SCA_Install.exe"
+InstallDir: "$PROGRAMFILES\Syslist Companion Agent"
+InstallRegKey: "HKLM\SYSL_REGPATH\"
+!define: "MUI_LANGDLL_REGISTRY_ROOT"="HKLM"
+!define: "MUI_LANGDLL_REGISTRY_KEY"="Software\Syslist Companion Agent\Config"
+!define: "MUI_LANGDLL_REGISTRY_VALUENAME"="Language"
+!define: "MUI_TEXT_LANGDLL_WINDOWTITLE"="Syslist Companion Agent v1.4.0 Installer Language"
+!define: "MUI_TEXT_LANGDLL_INFO"="Please select the language for Syslist Companion Agent v1.4.0."
+!define: "MUI_WELCOMPAGE"=""
+!define: "MUI_LICENSEPAGE"=""
+!define: "MUI_DIRECTORYPAGE"=""
+!define: "MUI_ABORTWARNING"=""
+!define: "MUI_FINISHPAGE"=""
+!define: "MUI_UNINSTALLER"=""
+!define: "MUI_UNCONFIRMPAGE"=""
+!define: "MUI_HEADERBITMAP"="..\Images\syslist-logo-inst.bmp"
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(NLD)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(DE)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+LangString: "DESC_SecCopyUI" 1033 "Install the Syslist Companion Agent in the Installation Folder"
+LangString: "DESC_SecCopyUI" 1043 "Installeer de Syslist Companion Agent in de Installatiefolder"
+LangString: "DESC_SecCopyUI" 1031 "{German} Install the Syslist Companion Agent in the Installation Folder"
+LangString: "ERR_ACCT_SETUP_FAIL" 1033 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LangString: "ERR_ACCT_SETUP_FAIL" 1043 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LangString: "ERR_ACCT_SETUP_FAIL" 1031 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LicenseData: "SyslistAgentLicense.txt"
+LicenseData: "SyslistAgentLicense_Dutch.txt"
+LicenseData: "SyslistAgentLicense_German.txt"
+Section: "Syslist Main Install" ->(SecCopyUI)
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceUninstall, nonequal=
+ExecWait: ""$INSTDIR\SCASet.exe" /U" (->)
+Goto: EndServiceUninstall
+DeleteRegValue: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx
+Delete: "$WINDIR\Tasks\Syslist Companion Agent Inventory.job"
+File: "KillProcDLL.dll"->"$PLUGINSDIR\KillProcDLL.dll" [compress] 13821/32768 bytes
+Plugin Command: KillProc SCATimEx.exe
+SetOutPath: "$INSTDIR"
+File: "SCAInv.exe" [compress] 133070/299008 bytes
+File: "SCAConf.exe" [compress] 103056/237568 bytes
+File: "SCASet.exe" [compress] 24885/65536 bytes
+File: "SCATimEx.exe" [compress] 25314/57344 bytes
+File: "libeay32.dll" [compress] 382980/839680 bytes
+File: "ssleay32.dll" [compress] 73729/159744 bytes
+SetOutPath: "$INSTDIR\LangDLL"
+File: "SyslistLang_DEU.dll" [compress] 16624/53248 bytes
+File: "SyslistLang_FRA.dll" [compress] 14576/45056 bytes
+File: "SyslistLang_NLD.dll" [compress] 16710/53248 bytes
+WriteRegStr: HKLM\Software\Syslist Companion Agent\=$INSTDIR
+WriteRegSTR: HKLM\Software\Syslist Companion Agent\Config\Method=Startup
+WriteRegDWORD: HKLM\Software\Syslist Companion Agent\Config\Frequency=0
+WriteRegDWORD: HKLM\Software\Syslist Companion Agent\Config\Last=0
+ReadRegStr $R2 HKLM\Software\Syslist Companion Agent\Config\Server
+StrCmp "$R2" "" equal=WriteServer, nonequal=NoWriteServer
+WriteRegStr: HKLM\Software\Syslist Companion Agent\Config\Server=https://www.SysList.com
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\DisplayName=Syslist Companion Agent v1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\DisplayVersion=1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\Publisher=Literal Technology
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\UninstallString=$INSTDIR\Uninstall.exe
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\URLInfoAbout=www.Syslist.com
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\URLUpdateInfo=www.Syslist.com
+WriteUninstaller: "$INSTDIR\Uninstall.exe"
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceSetup, nonequal=
+RMDir: "\r"
+ClearErrors
+CreateDirectory: "$INSTDIR\TEMP"
+IfErrors ?AcctConfigFailed:
+ClearErrors
+ExecWait: ""$INSTDIR\SCASet.exe" /I" (->)
+IfErrors ?AcctConfigFailed:
+Goto: EndServiceSetup
+WriteRegStr: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx="$INSTDIR\SCATimEx.exe"
+ClearErrors
+Exec: ""$INSTDIR\SCATimEx.exe" /I" (->)
+IfErrors ?AcctConfigFailed:
+StrCmp "$0" "0" equal=NoSilentConfig, nonequal=
+IfFileExists: "$EXEDIR\config" ? ConfigInstall : 
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install $CMDLINE" (->)
+IfErrors ?ConfigFailed:
+Return
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install /Config "$EXEDIR\config $CMDLINE"" (->)
+IfErrors ?ConfigFailed:
+Return
+StrCmp "$0" "1" equal=ConfigFailed, nonequal=
+MessageBox: 0: "$(ERR_ACCT_SETUP_FAIL)"
+Quit
+SectionEnd
+!insertmacro: MUI_SECTIONS_FINISHHEADER
+!insertmacro: end of MUI_SECTIONS_FINISHHEADER
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: MUI_DESCRIPTION_TEXT
+!insertmacro: end of MUI_DESCRIPTION_TEXT
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_END
+!insertmacro: end of MUI_DESCRIPTION_END
+FunctionEnd
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_END
+Section: "Uninstall"
+ExecWait: ""$INSTDIR\SCAConf.exe" /S /Method Disable" (->)
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceUninstall_U, nonequal=
+ExecWait: ""$INSTDIR\SCASet.exe" /U" (->)
+Goto: EndServiceUninstall_U
+DeleteRegValue: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx
+Delete: "$WINDIR\Tasks\Syslist Companion Agent Inventory.job"
+File: "KillProcDLL.dll"->"$PLUGINSDIR\KillProcDLL.dll" [compress] 13821/32768 bytes
+Plugin Command: KillProc SCATimEx.exe
+Delete: "$INSTDIR\modern.exe"
+Delete: "$INSTDIR\Uninstall.exe"
+Delete: "$INSTDIR\SCAInv.exe"
+Delete: "$INSTDIR\SCAConf.exe"
+Delete: "$INSTDIR\SCASet.exe"
+Delete: "$INSTDIR\SCATimEx.exe"
+Delete: "$INSTDIR\libeay32.dll"
+Delete: "$INSTDIR\ssleay32.dll"
+RMDir: /r "$INSTDIR\LangDLL"
+DeleteRegKey: HKLM\Software\Syslist Companion Agent
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent
+DeleteRegKey: HKLM\Software\Syslist Companion Agent\Config
+!insertmacro: MUI_UNFINISHHEADER
+!insertmacro: end of MUI_UNFINISHHEADER
+SectionEnd
+Function: ".onInit"
+Call "IsSilent"
+Pop: $0
+StrCmp "$0" "1" equal=NoLangDisplay, nonequal=
+!define: "MUI_LANGDLL_ALWAYSSHOW"=""
+!insertmacro: MUI_LANGDLL_DISPLAY
+!insertmacro: end of MUI_LANGDLL_DISPLAY
+FunctionEnd
+Function: ".onInstSuccess"
+StrCmp "$0" "1" equal=NoExitConfig, nonequal=
+IfFileExists: "$EXEDIR\config" ? FinalConfigInstall : 
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install $CMDLINE" (->)
+Return
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install /Config "$EXEDIR\config"  $CMDLINE" (->)
+Return
+FunctionEnd
+Function: ".onInstFailed"
+StrCmp "$0" "1" equal=NoErrMB, nonequal=
+MessageBox: 0: "Installation of Syslist Companion Agent Failed."
+FunctionEnd
+Function: "un.onInit"
+setting uninstall mode to true
+FunctionEnd
+Function: "IsSilent"
+Push: $0
+Push: $CMDLINE
+Push: /S
+Call "StrStr"
+Pop: $0
+StrCpy $0 "$0" (3) ()
+StrCmp "$0" "/S" equal=silent, nonequal=
+StrCmp "$0" "/S " equal=silent, nonequal=
+StrCpy $0 "0" () ()
+Goto: notsilent
+StrCpy $0 "1" () ()
+Exch($0,0)
+FunctionEnd
+Function: "StrStr"
+Exch($R1,0)
+Exch(st(1),0)
+Exch($R2,0)
+Push: $R3
+Push: $R4
+Push: $R5
+StrLen $R3 "$R1"
+StrCpy $R4 "0" () ()
+StrCpy $R5 "$R2" ($R3) ($R4)
+StrCmp "$R5" "$R1" equal=done, nonequal=
+StrCmp "$R5" "" equal=done, nonequal=
+IntOp: $R4=$R4+1
+Goto: loop
+StrCpy $R1 "$R2" () ($R4)
+Pop: $R5
+Pop: $R4
+Pop: $R3
+Pop: $R2
+Exch($R1,0)
+FunctionEnd
+
+Processed 1 file, writing output:
+Adding plug-ins initializing function... setting uninstall mode to true
+Done!
+warning: label "WinNTServiceUninstall_U" not used
+warning: label "WinNTServiceUninstall" not used
+warning: label "WinNTServiceSetup" not used
+Processing pages... Done!
+Removing unused resources... Done!
+Generating language tables... Done!
+Finding icons offsets for uninstaller... Done!
+
+Output: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER\SCA_Install.exe"
+Install: 2 sections (1 required).
+Install: 317 instructions (8876 bytes), 313 strings (13832 bytes), 3 language tables (882 bytes), 5 pages (140 bytes).
+Uninstall: 84 instructions (2352 bytes), 168 strings (4427 bytes), 3 language tables (594 bytes), 3 pages (84 bytes).
+Datablock optimizer saved 6600 bytes (~0.7%).
+
+Using zlib compression.
+
+EXE header size:               47616 / 34816 bytes
+Install code:                   7757 / 23958 bytes
+Install data:                 819838 / 1910494 bytes
+Uninstall code+data:           30452 / 34517 bytes
+CRC (0x3436B71C):                  4 / 4 bytes
+
+Total size:                   905667 / 2003789 bytes (45.2%)
+
+3 warnings:
+  label "WinNTServiceUninstall_U" not used
+  label "WinNTServiceUninstall" not used
+  label "WinNTServiceSetup" not used
+MakeNSIS v2.0b3 - Copyright 1999-2003 Nullsoft, Inc.
+
+Portions Copyright (C) 1995-1998 Jean-loup Gailly and Mark Adler (zlib).
+Includes portions derived from bzip2 (see documentation for details).
+Contributors: nnop@newmail.ru, Ryan Geiss, Andras Varga, Drew Davidson, Peter Windridge, Dave Laundon, Robert Rainwater, Yaroslav Faybishenko, Jeff Doozan, Amir Szekely, Ximon Eighteen, et al.
+
+
+
+Processing config: 
+Changing directory to: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER"
+
+Processing plugin dlls: "C:\Program Files\NSIS\plugins\*.dll"
+ - advsplash::show
+ - Banner::destroy
+ - Banner::show
+ - BgImage::Destroy
+ - BgImage::Init
+ - BgImage::SetImage
+ - BgImage::Sound
+ - Dialer::AttemptConnect
+ - Dialer::AutodialHangup
+ - Dialer::AutodialOnline
+ - Dialer::AutodialUnattended
+ - Dialer::GetConnectedState
+ - InstallOptions::dialog
+ - InstallOptions::initDialog
+ - InstallOptions::show
+ - KillProcDLL::KillProc
+ - LangDLL::LangDialog
+ - nsExec::Exec
+ - nsExec::ExecToLog
+ - nsExec::ExecToStack
+ - nsisdl::download
+ - nsisdl::download_quiet
+ - splash::show
+ - StartMenu::Select
+ - System::Alloc
+ - System::Call
+ - System::Copy
+ - System::Free
+ - System::Get
+ - System::Int64Op
+ - System::Store
+ - UserInfo::GetAccountType
+ - UserInfo::GetName
+
+
+Processing script file: "SCAACCInstaller.nsi"
+!define: "SYSL_OUTPUT_FILE"="SCA_ASP.exe"
+!define: "MUI_PRODUCT"="Syslist Companion Agent ASP"
+!define: "SYSL_ACC"=""
+!include: "TestInstall.nsi"
+!include: "InstallVersion.nsi"
+!define: "MUI_VERSION"="1.4.0"
+!include: closed: "InstallVersion.nsi"
+!define: "SYSL_BASE_NAME"="Syslist Companion Agent"
+!define: "SYSL_REGPATH"="Software\Syslist Companion Agent"
+!define: "SYSL_REGPATH_CONFIG"="Software\Syslist Companion Agent\Config"
+!define: "SYSL_UNINST_ID"="Syslist Companion Agent ASP v1.4.0"
+!define: "SYSL_WIN_UNINST"="Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent"
+!define: "SYSL_WIN98_SERVICE_VALUE"="SCATimeEx"
+!define: "SYSL_SERVICE_EXEC"="SCATimEx.exe"
+!define: "WIN_SERVICE_KEY"="SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices"
+BGGradient: FFFFFF->BBBBBB (text=12582912)
+!include: "MUI.nsh"
+!include: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+NSIS Modern User Interface version 1.63 - © 2002-2003 Joost Verburg (C:\Program Files\NSIS\Contrib\Modern UI\System.nsh:9)
+!include: closed: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+!include: closed: "C:\Program Files\NSIS\Include\MUI.nsh"
+OutFile: "SCA_ASP.exe"
+InstallDir: "$PROGRAMFILES\Syslist Companion Agent"
+InstallRegKey: "HKLM\SYSL_REGPATH\"
+!define: "MUI_LANGDLL_REGISTRY_ROOT"="HKLM"
+!define: "MUI_LANGDLL_REGISTRY_KEY"="Software\Syslist Companion Agent\Config"
+!define: "MUI_LANGDLL_REGISTRY_VALUENAME"="Language"
+!define: "MUI_TEXT_LANGDLL_WINDOWTITLE"="Syslist Companion Agent ASP v1.4.0 Installer Language"
+!define: "MUI_TEXT_LANGDLL_INFO"="Please select the language for Syslist Companion Agent ASP v1.4.0."
+!define: "MUI_WELCOMPAGE"=""
+!define: "MUI_LICENSEPAGE"=""
+!define: "MUI_DIRECTORYPAGE"=""
+!define: "MUI_ABORTWARNING"=""
+!define: "MUI_FINISHPAGE"=""
+!define: "MUI_UNINSTALLER"=""
+!define: "MUI_UNCONFIRMPAGE"=""
+!define: "MUI_HEADERBITMAP"="..\Images\syslist-logo-inst.bmp"
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(NLD)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(DE)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+LangString: "DESC_SecCopyUI" 1033 "Install the Syslist Companion Agent in the Installation Folder"
+LangString: "DESC_SecCopyUI" 1043 "Installeer de Syslist Companion Agent in de Installatiefolder"
+LangString: "DESC_SecCopyUI" 1031 "{German} Install the Syslist Companion Agent in the Installation Folder"
+LangString: "ERR_ACCT_SETUP_FAIL" 1033 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LangString: "ERR_ACCT_SETUP_FAIL" 1043 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LangString: "ERR_ACCT_SETUP_FAIL" 1031 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LicenseData: "SyslistAgentLicense.txt"
+LicenseData: "SyslistAgentLicense_Dutch.txt"
+LicenseData: "SyslistAgentLicense_German.txt"
+Section: "Syslist Main Install" ->(SecCopyUI)
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceUninstall, nonequal=
+ExecWait: ""$INSTDIR\SCASet.exe" /U" (->)
+Goto: EndServiceUninstall
+DeleteRegValue: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx
+Delete: "$WINDIR\Tasks\Syslist Companion Agent Inventory.job"
+File: "KillProcDLL.dll"->"$PLUGINSDIR\KillProcDLL.dll" [compress] 13821/32768 bytes
+Plugin Command: KillProc SCATimEx.exe
+SetOutPath: "$INSTDIR"
+File: "SCAInv.exe" [compress] 133183/299008 bytes
+File: "SCAConf.exe" [compress] 102996/237568 bytes
+File: "SCASet.exe" [compress] 24885/65536 bytes
+File: "SCATimEx.exe" [compress] 25314/57344 bytes
+File: "libeay32.dll" [compress] 382980/839680 bytes
+File: "ssleay32.dll" [compress] 73729/159744 bytes
+SetOutPath: "$INSTDIR\LangDLL"
+File: "SyslistLang_DEU.dll" [compress] 16624/53248 bytes
+File: "SyslistLang_FRA.dll" [compress] 14576/45056 bytes
+File: "SyslistLang_NLD.dll" [compress] 16710/53248 bytes
+WriteRegStr: HKLM\Software\Syslist Companion Agent\=$INSTDIR
+WriteRegSTR: HKLM\Software\Syslist Companion Agent\Config\Method=Startup
+WriteRegDWORD: HKLM\Software\Syslist Companion Agent\Config\Frequency=0
+WriteRegDWORD: HKLM\Software\Syslist Companion Agent\Config\Last=0
+ReadRegStr $R2 HKLM\Software\Syslist Companion Agent\Config\Server
+StrCmp "$R2" "" equal=WriteServer, nonequal=NoWriteServer
+WriteRegStr: HKLM\Software\Syslist Companion Agent\Config\Server=https://www.SysList.com
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\DisplayName=Syslist Companion Agent ASP v1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\DisplayVersion=1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\Publisher=Literal Technology
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\UninstallString=$INSTDIR\Uninstall.exe
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\URLInfoAbout=www.Syslist.com
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\URLUpdateInfo=www.Syslist.com
+WriteUninstaller: "$INSTDIR\Uninstall.exe"
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceSetup, nonequal=
+RMDir: "\r"
+ClearErrors
+CreateDirectory: "$INSTDIR\TEMP"
+IfErrors ?AcctConfigFailed:
+ClearErrors
+ExecWait: ""$INSTDIR\SCASet.exe" /I" (->)
+IfErrors ?AcctConfigFailed:
+Goto: EndServiceSetup
+WriteRegStr: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx="$INSTDIR\SCATimEx.exe"
+ClearErrors
+Exec: ""$INSTDIR\SCATimEx.exe" /I" (->)
+IfErrors ?AcctConfigFailed:
+StrCmp "$0" "0" equal=NoSilentConfig, nonequal=
+IfFileExists: "$EXEDIR\config" ? ConfigInstall : 
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install $CMDLINE" (->)
+IfErrors ?ConfigFailed:
+Return
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install /Config "$EXEDIR\config $CMDLINE"" (->)
+IfErrors ?ConfigFailed:
+Return
+StrCmp "$0" "1" equal=ConfigFailed, nonequal=
+MessageBox: 0: "$(ERR_ACCT_SETUP_FAIL)"
+Quit
+SectionEnd
+!insertmacro: MUI_SECTIONS_FINISHHEADER
+!insertmacro: end of MUI_SECTIONS_FINISHHEADER
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: MUI_DESCRIPTION_TEXT
+!insertmacro: end of MUI_DESCRIPTION_TEXT
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_END
+!insertmacro: end of MUI_DESCRIPTION_END
+FunctionEnd
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_END
+Section: "Uninstall"
+ExecWait: ""$INSTDIR\SCAConf.exe" /S /Method Disable" (->)
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceUninstall_U, nonequal=
+ExecWait: ""$INSTDIR\SCASet.exe" /U" (->)
+Goto: EndServiceUninstall_U
+DeleteRegValue: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx
+Delete: "$WINDIR\Tasks\Syslist Companion Agent Inventory.job"
+File: "KillProcDLL.dll"->"$PLUGINSDIR\KillProcDLL.dll" [compress] 13821/32768 bytes
+Plugin Command: KillProc SCATimEx.exe
+Delete: "$INSTDIR\modern.exe"
+Delete: "$INSTDIR\Uninstall.exe"
+Delete: "$INSTDIR\SCAInv.exe"
+Delete: "$INSTDIR\SCAConf.exe"
+Delete: "$INSTDIR\SCASet.exe"
+Delete: "$INSTDIR\SCATimEx.exe"
+Delete: "$INSTDIR\libeay32.dll"
+Delete: "$INSTDIR\ssleay32.dll"
+RMDir: /r "$INSTDIR\LangDLL"
+DeleteRegKey: HKLM\Software\Syslist Companion Agent
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent
+DeleteRegKey: HKLM\Software\Syslist Companion Agent\Config
+!insertmacro: MUI_UNFINISHHEADER
+!insertmacro: end of MUI_UNFINISHHEADER
+SectionEnd
+Function: ".onInit"
+Call "IsSilent"
+Pop: $0
+StrCmp "$0" "1" equal=NoLangDisplay, nonequal=
+!define: "MUI_LANGDLL_ALWAYSSHOW"=""
+!insertmacro: MUI_LANGDLL_DISPLAY
+!insertmacro: end of MUI_LANGDLL_DISPLAY
+FunctionEnd
+Function: ".onInstSuccess"
+StrCmp "$0" "1" equal=NoExitConfig, nonequal=
+IfFileExists: "$EXEDIR\config" ? FinalConfigInstall : 
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install $CMDLINE" (->)
+Return
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install /Config "$EXEDIR\config"  $CMDLINE" (->)
+Return
+FunctionEnd
+Function: ".onInstFailed"
+StrCmp "$0" "1" equal=NoErrMB, nonequal=
+MessageBox: 0: "Installation of Syslist Companion Agent ASP Failed."
+FunctionEnd
+Function: "un.onInit"
+setting uninstall mode to true
+FunctionEnd
+Function: "IsSilent"
+Push: $0
+Push: $CMDLINE
+Push: /S
+Call "StrStr"
+Pop: $0
+StrCpy $0 "$0" (3) ()
+StrCmp "$0" "/S" equal=silent, nonequal=
+StrCmp "$0" "/S " equal=silent, nonequal=
+StrCpy $0 "0" () ()
+Goto: notsilent
+StrCpy $0 "1" () ()
+Exch($0,0)
+FunctionEnd
+Function: "StrStr"
+Exch($R1,0)
+Exch(st(1),0)
+Exch($R2,0)
+Push: $R3
+Push: $R4
+Push: $R5
+StrLen $R3 "$R1"
+StrCpy $R4 "0" () ()
+StrCpy $R5 "$R2" ($R3) ($R4)
+StrCmp "$R5" "$R1" equal=done, nonequal=
+StrCmp "$R5" "" equal=done, nonequal=
+IntOp: $R4=$R4+1
+Goto: loop
+StrCpy $R1 "$R2" () ($R4)
+Pop: $R5
+Pop: $R4
+Pop: $R3
+Pop: $R2
+Exch($R1,0)
+FunctionEnd
+!include: closed: "TestInstall.nsi"
+
+Processed 1 file, writing output:
+Adding plug-ins initializing function... setting uninstall mode to true
+Done!
+warning: label "WinNTServiceUninstall_U" not used
+warning: label "WinNTServiceUninstall" not used
+warning: label "WinNTServiceSetup" not used
+Processing pages... Done!
+Removing unused resources... Done!
+Generating language tables... Done!
+Finding icons offsets for uninstaller... Done!
+
+Output: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER\SCA_ASP.exe"
+Install: 2 sections (1 required).
+Install: 317 instructions (8876 bytes), 313 strings (13992 bytes), 3 language tables (882 bytes), 5 pages (140 bytes).
+Uninstall: 84 instructions (2352 bytes), 168 strings (4499 bytes), 3 language tables (594 bytes), 3 pages (84 bytes).
+Datablock optimizer saved 6600 bytes (~0.7%).
+
+Using zlib compression.
+
+EXE header size:               47616 / 34816 bytes
+Install code:                   7773 / 24118 bytes
+Install data:                 819891 / 1910494 bytes
+Uninstall code+data:           30468 / 34533 bytes
+CRC (0xCBED48FE):                  4 / 4 bytes
+
+Total size:                   905752 / 2003965 bytes (45.2%)
+
+3 warnings:
+  label "WinNTServiceUninstall_U" not used
+  label "WinNTServiceUninstall" not used
+  label "WinNTServiceSetup" not used
+MakeNSIS v2.0b3 - Copyright 1999-2003 Nullsoft, Inc.
+
+Portions Copyright (C) 1995-1998 Jean-loup Gailly and Mark Adler (zlib).
+Includes portions derived from bzip2 (see documentation for details).
+Contributors: nnop@newmail.ru, Ryan Geiss, Andras Varga, Drew Davidson, Peter Windridge, Dave Laundon, Robert Rainwater, Yaroslav Faybishenko, Jeff Doozan, Amir Szekely, Ximon Eighteen, et al.
+
+
+
+Processing config: 
+Changing directory to: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER"
+
+Processing plugin dlls: "C:\Program Files\NSIS\plugins\*.dll"
+ - advsplash::show
+ - Banner::destroy
+ - Banner::show
+ - BgImage::Destroy
+ - BgImage::Init
+ - BgImage::SetImage
+ - BgImage::Sound
+ - Dialer::AttemptConnect
+ - Dialer::AutodialHangup
+ - Dialer::AutodialOnline
+ - Dialer::AutodialUnattended
+ - Dialer::GetConnectedState
+ - InstallOptions::dialog
+ - InstallOptions::initDialog
+ - InstallOptions::show
+ - KillProcDLL::KillProc
+ - LangDLL::LangDialog
+ - nsExec::Exec
+ - nsExec::ExecToLog
+ - nsExec::ExecToStack
+ - nsisdl::download
+ - nsisdl::download_quiet
+ - splash::show
+ - StartMenu::Select
+ - System::Alloc
+ - System::Call
+ - System::Copy
+ - System::Free
+ - System::Get
+ - System::Int64Op
+ - System::Store
+ - UserInfo::GetAccountType
+ - UserInfo::GetName
+
+
+Processing script file: "DemoInstall.nsi"
+!define: "SYSL_OUTPUT_FILE"="SCA_Demo.exe"
+!define: "MUI_PRODUCT"="Syslist Companion Agent Demo"
+!define: "SYSL_DEMO_INSTALL"=""
+!include: "TestInstall.nsi"
+!include: "InstallVersion.nsi"
+!define: "MUI_VERSION"="1.4.0"
+!include: closed: "InstallVersion.nsi"
+!define: "SYSL_BASE_NAME"="Syslist Companion Agent"
+!define: "SYSL_REGPATH"="Software\Syslist Companion Agent"
+!define: "SYSL_REGPATH_CONFIG"="Software\Syslist Companion Agent\Config"
+!define: "SYSL_UNINST_ID"="Syslist Companion Agent Demo v1.4.0"
+!define: "SYSL_WIN_UNINST"="Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent"
+!define: "SYSL_WIN98_SERVICE_VALUE"="SCATimeEx"
+!define: "SYSL_SERVICE_EXEC"="SCATimEx.exe"
+!define: "WIN_SERVICE_KEY"="SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices"
+BGGradient: FFFFFF->BBBBBB (text=12582912)
+!include: "MUI.nsh"
+!include: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+NSIS Modern User Interface version 1.63 - © 2002-2003 Joost Verburg (C:\Program Files\NSIS\Contrib\Modern UI\System.nsh:9)
+!include: closed: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+!include: closed: "C:\Program Files\NSIS\Include\MUI.nsh"
+OutFile: "SCA_Demo.exe"
+InstallDir: "$PROGRAMFILES\Syslist Companion Agent"
+InstallRegKey: "HKLM\SYSL_REGPATH\"
+!define: "MUI_LANGDLL_REGISTRY_ROOT"="HKLM"
+!define: "MUI_LANGDLL_REGISTRY_KEY"="Software\Syslist Companion Agent\Config"
+!define: "MUI_LANGDLL_REGISTRY_VALUENAME"="Language"
+!define: "MUI_TEXT_LANGDLL_WINDOWTITLE"="Syslist Companion Agent Demo v1.4.0 Installer Language"
+!define: "MUI_TEXT_LANGDLL_INFO"="Please select the language for Syslist Companion Agent Demo v1.4.0."
+!define: "MUI_WELCOMPAGE"=""
+!define: "MUI_LICENSEPAGE"=""
+!define: "MUI_DIRECTORYPAGE"=""
+!define: "MUI_ABORTWARNING"=""
+!define: "MUI_FINISHPAGE"=""
+!define: "MUI_UNINSTALLER"=""
+!define: "MUI_UNCONFIRMPAGE"=""
+!define: "MUI_HEADERBITMAP"="..\Images\syslist-logo-inst.bmp"
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(NLD)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(DE)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+LangString: "DESC_SecCopyUI" 1033 "Install the Syslist Companion Agent in the Installation Folder"
+LangString: "DESC_SecCopyUI" 1043 "Installeer de Syslist Companion Agent in de Installatiefolder"
+LangString: "DESC_SecCopyUI" 1031 "{German} Install the Syslist Companion Agent in the Installation Folder"
+LangString: "ERR_ACCT_SETUP_FAIL" 1033 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LangString: "ERR_ACCT_SETUP_FAIL" 1043 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LangString: "ERR_ACCT_SETUP_FAIL" 1031 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LicenseData: "SyslistAgentLicense.txt"
+LicenseData: "SyslistAgentLicense_Dutch.txt"
+LicenseData: "SyslistAgentLicense_German.txt"
+Section: "Syslist Main Install" ->(SecCopyUI)
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceUninstall, nonequal=
+ExecWait: ""$INSTDIR\SCASet.exe" /U" (->)
+Goto: EndServiceUninstall
+DeleteRegValue: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx
+Delete: "$WINDIR\Tasks\Syslist Companion Agent Inventory.job"
+File: "KillProcDLL.dll"->"$PLUGINSDIR\KillProcDLL.dll" [compress] 13821/32768 bytes
+Plugin Command: KillProc SCATimEx.exe
+SetOutPath: "$INSTDIR"
+File: "SCAInv.exe" [compress] 133302/299008 bytes
+File: "SCAConf.exe" [compress] 103061/237568 bytes
+File: "SCASet.exe" [compress] 24885/65536 bytes
+File: "SCATimEx.exe" [compress] 25314/57344 bytes
+File: "libeay32.dll" [compress] 382980/839680 bytes
+File: "ssleay32.dll" [compress] 73729/159744 bytes
+SetOutPath: "$INSTDIR\LangDLL"
+File: "SyslistLang_DEU.dll" [compress] 16624/53248 bytes
+File: "SyslistLang_FRA.dll" [compress] 14576/45056 bytes
+File: "SyslistLang_NLD.dll" [compress] 16710/53248 bytes
+WriteRegStr: HKLM\Software\Syslist Companion Agent\=$INSTDIR
+WriteRegSTR: HKLM\Software\Syslist Companion Agent\Config\Method=Startup
+WriteRegDWORD: HKLM\Software\Syslist Companion Agent\Config\Frequency=0
+WriteRegDWORD: HKLM\Software\Syslist Companion Agent\Config\Last=0
+ReadRegStr $R2 HKLM\Software\Syslist Companion Agent\Config\Server
+StrCmp "$R2" "" equal=WriteServer, nonequal=NoWriteServer
+WriteRegStr: HKLM\Software\Syslist Companion Agent\Config\Server=https://www.SysList.com
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\DisplayName=Syslist Companion Agent Demo v1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\DisplayVersion=1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\Publisher=Literal Technology
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\UninstallString=$INSTDIR\Uninstall.exe
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\URLInfoAbout=www.Syslist.com
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\URLUpdateInfo=www.Syslist.com
+WriteUninstaller: "$INSTDIR\Uninstall.exe"
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceSetup, nonequal=
+RMDir: "\r"
+ClearErrors
+CreateDirectory: "$INSTDIR\TEMP"
+IfErrors ?AcctConfigFailed:
+ClearErrors
+ExecWait: ""$INSTDIR\SCASet.exe" /I" (->)
+IfErrors ?AcctConfigFailed:
+Goto: EndServiceSetup
+WriteRegStr: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx="$INSTDIR\SCATimEx.exe"
+ClearErrors
+Exec: ""$INSTDIR\SCATimEx.exe" /I" (->)
+IfErrors ?AcctConfigFailed:
+StrCmp "$0" "0" equal=NoSilentConfig, nonequal=
+IfFileExists: "$EXEDIR\config" ? ConfigInstall : 
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install $CMDLINE" (->)
+IfErrors ?ConfigFailed:
+Return
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install /Config "$EXEDIR\config $CMDLINE"" (->)
+IfErrors ?ConfigFailed:
+Return
+StrCmp "$0" "1" equal=ConfigFailed, nonequal=
+MessageBox: 0: "$(ERR_ACCT_SETUP_FAIL)"
+Quit
+SectionEnd
+!insertmacro: MUI_SECTIONS_FINISHHEADER
+!insertmacro: end of MUI_SECTIONS_FINISHHEADER
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: MUI_DESCRIPTION_TEXT
+!insertmacro: end of MUI_DESCRIPTION_TEXT
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_END
+!insertmacro: end of MUI_DESCRIPTION_END
+FunctionEnd
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_END
+Section: "Uninstall"
+ExecWait: ""$INSTDIR\SCAConf.exe" /S /Method Disable" (->)
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceUninstall_U, nonequal=
+ExecWait: ""$INSTDIR\SCASet.exe" /U" (->)
+Goto: EndServiceUninstall_U
+DeleteRegValue: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx
+Delete: "$WINDIR\Tasks\Syslist Companion Agent Inventory.job"
+File: "KillProcDLL.dll"->"$PLUGINSDIR\KillProcDLL.dll" [compress] 13821/32768 bytes
+Plugin Command: KillProc SCATimEx.exe
+Delete: "$INSTDIR\modern.exe"
+Delete: "$INSTDIR\Uninstall.exe"
+Delete: "$INSTDIR\SCAInv.exe"
+Delete: "$INSTDIR\SCAConf.exe"
+Delete: "$INSTDIR\SCASet.exe"
+Delete: "$INSTDIR\SCATimEx.exe"
+Delete: "$INSTDIR\libeay32.dll"
+Delete: "$INSTDIR\ssleay32.dll"
+RMDir: /r "$INSTDIR\LangDLL"
+DeleteRegKey: HKLM\Software\Syslist Companion Agent
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent
+DeleteRegKey: HKLM\Software\Syslist Companion Agent\Config
+!insertmacro: MUI_UNFINISHHEADER
+!insertmacro: end of MUI_UNFINISHHEADER
+SectionEnd
+Function: ".onInit"
+Call "IsSilent"
+Pop: $0
+StrCmp "$0" "1" equal=NoLangDisplay, nonequal=
+!define: "MUI_LANGDLL_ALWAYSSHOW"=""
+!insertmacro: MUI_LANGDLL_DISPLAY
+!insertmacro: end of MUI_LANGDLL_DISPLAY
+FunctionEnd
+Function: ".onInstSuccess"
+StrCmp "$0" "1" equal=NoExitConfig, nonequal=
+IfFileExists: "$EXEDIR\config" ? FinalConfigInstall : 
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install $CMDLINE" (->)
+Return
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install /Config "$EXEDIR\config"  $CMDLINE" (->)
+Return
+FunctionEnd
+Function: ".onInstFailed"
+StrCmp "$0" "1" equal=NoErrMB, nonequal=
+MessageBox: 0: "Installation of Syslist Companion Agent Demo Failed."
+FunctionEnd
+Function: "un.onInit"
+setting uninstall mode to true
+FunctionEnd
+Function: "IsSilent"
+Push: $0
+Push: $CMDLINE
+Push: /S
+Call "StrStr"
+Pop: $0
+StrCpy $0 "$0" (3) ()
+StrCmp "$0" "/S" equal=silent, nonequal=
+StrCmp "$0" "/S " equal=silent, nonequal=
+StrCpy $0 "0" () ()
+Goto: notsilent
+StrCpy $0 "1" () ()
+Exch($0,0)
+FunctionEnd
+Function: "StrStr"
+Exch($R1,0)
+Exch(st(1),0)
+Exch($R2,0)
+Push: $R3
+Push: $R4
+Push: $R5
+StrLen $R3 "$R1"
+StrCpy $R4 "0" () ()
+StrCpy $R5 "$R2" ($R3) ($R4)
+StrCmp "$R5" "$R1" equal=done, nonequal=
+StrCmp "$R5" "" equal=done, nonequal=
+IntOp: $R4=$R4+1
+Goto: loop
+StrCpy $R1 "$R2" () ($R4)
+Pop: $R5
+Pop: $R4
+Pop: $R3
+Pop: $R2
+Exch($R1,0)
+FunctionEnd
+!include: closed: "TestInstall.nsi"
+
+Processed 1 file, writing output:
+Adding plug-ins initializing function... setting uninstall mode to true
+Done!
+warning: label "WinNTServiceUninstall_U" not used
+warning: label "WinNTServiceUninstall" not used
+warning: label "WinNTServiceSetup" not used
+Processing pages... Done!
+Removing unused resources... Done!
+Generating language tables... Done!
+Finding icons offsets for uninstaller... Done!
+
+Output: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER\SCA_Demo.exe"
+Install: 2 sections (1 required).
+Install: 317 instructions (8876 bytes), 313 strings (14032 bytes), 3 language tables (882 bytes), 5 pages (140 bytes).
+Uninstall: 84 instructions (2352 bytes), 168 strings (4517 bytes), 3 language tables (594 bytes), 3 pages (84 bytes).
+Datablock optimizer saved 6600 bytes (~0.7%).
+
+Using zlib compression.
+
+EXE header size:               47616 / 34816 bytes
+Install code:                   7777 / 24158 bytes
+Install data:                 820075 / 1910494 bytes
+Uninstall code+data:           30459 / 34524 bytes
+CRC (0x9BFC0C1B):                  4 / 4 bytes
+
+Total size:                   905931 / 2003996 bytes (45.2%)
+
+3 warnings:
+  label "WinNTServiceUninstall_U" not used
+  label "WinNTServiceUninstall" not used
+  label "WinNTServiceSetup" not used
+MakeNSIS v2.0b3 - Copyright 1999-2003 Nullsoft, Inc.
+
+Portions Copyright (C) 1995-1998 Jean-loup Gailly and Mark Adler (zlib).
+Includes portions derived from bzip2 (see documentation for details).
+Contributors: nnop@newmail.ru, Ryan Geiss, Andras Varga, Drew Davidson, Peter Windridge, Dave Laundon, Robert Rainwater, Yaroslav Faybishenko, Jeff Doozan, Amir Szekely, Ximon Eighteen, et al.
+
+
+
+Processing config: 
+Changing directory to: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER"
+
+Processing plugin dlls: "C:\Program Files\NSIS\plugins\*.dll"
+ - advsplash::show
+ - Banner::destroy
+ - Banner::show
+ - BgImage::Destroy
+ - BgImage::Init
+ - BgImage::SetImage
+ - BgImage::Sound
+ - Dialer::AttemptConnect
+ - Dialer::AutodialHangup
+ - Dialer::AutodialOnline
+ - Dialer::AutodialUnattended
+ - Dialer::GetConnectedState
+ - InstallOptions::dialog
+ - InstallOptions::initDialog
+ - InstallOptions::show
+ - KillProcDLL::KillProc
+ - LangDLL::LangDialog
+ - nsExec::Exec
+ - nsExec::ExecToLog
+ - nsExec::ExecToStack
+ - nsisdl::download
+ - nsisdl::download_quiet
+ - splash::show
+ - StartMenu::Select
+ - System::Alloc
+ - System::Call
+ - System::Copy
+ - System::Free
+ - System::Get
+ - System::Int64Op
+ - System::Store
+ - UserInfo::GetAccountType
+ - UserInfo::GetName
+
+
+Processing script file: "ASPDemoInstall.nsi"
+!define: "SYSL_OUTPUT_FILE"="SCA_ASP_Demo.exe"
+!define: "MUI_PRODUCT"="Syslist Companion Agent ASP Demo"
+!define: "SYSL_DEMO_INSTALL"=""
+!define: "SYSL_ASP_DEMO_INSTALL"=""
+!include: "TestInstall.nsi"
+!include: "InstallVersion.nsi"
+!define: "MUI_VERSION"="1.4.0"
+!include: closed: "InstallVersion.nsi"
+!define: "SYSL_BASE_NAME"="Syslist Companion Agent"
+!define: "SYSL_REGPATH"="Software\Syslist Companion Agent"
+!define: "SYSL_REGPATH_CONFIG"="Software\Syslist Companion Agent\Config"
+!define: "SYSL_UNINST_ID"="Syslist Companion Agent ASP Demo v1.4.0"
+!define: "SYSL_WIN_UNINST"="Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent"
+!define: "SYSL_WIN98_SERVICE_VALUE"="SCATimeEx"
+!define: "SYSL_SERVICE_EXEC"="SCATimEx.exe"
+!define: "WIN_SERVICE_KEY"="SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices"
+BGGradient: FFFFFF->BBBBBB (text=12582912)
+!include: "MUI.nsh"
+!include: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+NSIS Modern User Interface version 1.63 - © 2002-2003 Joost Verburg (C:\Program Files\NSIS\Contrib\Modern UI\System.nsh:9)
+!include: closed: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+!include: closed: "C:\Program Files\NSIS\Include\MUI.nsh"
+OutFile: "SCA_ASP_Demo.exe"
+InstallDir: "$PROGRAMFILES\Syslist Companion Agent"
+InstallRegKey: "HKLM\SYSL_REGPATH\"
+!define: "MUI_LANGDLL_REGISTRY_ROOT"="HKLM"
+!define: "MUI_LANGDLL_REGISTRY_KEY"="Software\Syslist Companion Agent\Config"
+!define: "MUI_LANGDLL_REGISTRY_VALUENAME"="Language"
+!define: "MUI_TEXT_LANGDLL_WINDOWTITLE"="Syslist Companion Agent ASP Demo v1.4.0 Installer Language"
+!define: "MUI_TEXT_LANGDLL_INFO"="Please select the language for Syslist Companion Agent ASP Demo v1.4.0."
+!define: "MUI_WELCOMPAGE"=""
+!define: "MUI_LICENSEPAGE"=""
+!define: "MUI_DIRECTORYPAGE"=""
+!define: "MUI_ABORTWARNING"=""
+!define: "MUI_FINISHPAGE"=""
+!define: "MUI_UNINSTALLER"=""
+!define: "MUI_UNCONFIRMPAGE"=""
+!define: "MUI_HEADERBITMAP"="..\Images\syslist-logo-inst.bmp"
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(NLD)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(DE)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+LangString: "DESC_SecCopyUI" 1033 "Install the Syslist Companion Agent in the Installation Folder"
+LangString: "DESC_SecCopyUI" 1043 "Installeer de Syslist Companion Agent in de Installatiefolder"
+LangString: "DESC_SecCopyUI" 1031 "{German} Install the Syslist Companion Agent in the Installation Folder"
+LangString: "ERR_ACCT_SETUP_FAIL" 1033 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LangString: "ERR_ACCT_SETUP_FAIL" 1043 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LangString: "ERR_ACCT_SETUP_FAIL" 1031 "The installer was unable to set up accounts and services. Please check account permissions and try again"
+LicenseData: "SyslistAgentLicense.txt"
+LicenseData: "SyslistAgentLicense_Dutch.txt"
+LicenseData: "SyslistAgentLicense_German.txt"
+Section: "Syslist Main Install" ->(SecCopyUI)
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceUninstall, nonequal=
+ExecWait: ""$INSTDIR\SCASet.exe" /U" (->)
+Goto: EndServiceUninstall
+DeleteRegValue: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx
+Delete: "$WINDIR\Tasks\Syslist Companion Agent Inventory.job"
+File: "KillProcDLL.dll"->"$PLUGINSDIR\KillProcDLL.dll" [compress] 13821/32768 bytes
+Plugin Command: KillProc SCATimEx.exe
+SetOutPath: "$INSTDIR"
+File: "SCAInv.exe" [compress] 133183/299008 bytes
+File: "SCAConf.exe" [compress] 103011/237568 bytes
+File: "SCASet.exe" [compress] 24885/65536 bytes
+File: "SCATimEx.exe" [compress] 25314/57344 bytes
+File: "libeay32.dll" [compress] 382980/839680 bytes
+File: "ssleay32.dll" [compress] 73729/159744 bytes
+SetOutPath: "$INSTDIR\LangDLL"
+File: "SyslistLang_DEU.dll" [compress] 16624/53248 bytes
+File: "SyslistLang_FRA.dll" [compress] 14576/45056 bytes
+File: "SyslistLang_NLD.dll" [compress] 16710/53248 bytes
+WriteRegStr: HKLM\Software\Syslist Companion Agent\=$INSTDIR
+WriteRegSTR: HKLM\Software\Syslist Companion Agent\Config\Method=Startup
+WriteRegDWORD: HKLM\Software\Syslist Companion Agent\Config\Frequency=0
+WriteRegDWORD: HKLM\Software\Syslist Companion Agent\Config\Last=0
+ReadRegStr $R2 HKLM\Software\Syslist Companion Agent\Config\Server
+StrCmp "$R2" "" equal=WriteServer, nonequal=NoWriteServer
+WriteRegStr: HKLM\Software\Syslist Companion Agent\Config\Server=https://www.SysList.com
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\DisplayName=Syslist Companion Agent ASP Demo v1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\DisplayVersion=1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\Publisher=Literal Technology
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\UninstallString=$INSTDIR\Uninstall.exe
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\URLInfoAbout=www.Syslist.com
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent\URLUpdateInfo=www.Syslist.com
+WriteUninstaller: "$INSTDIR\Uninstall.exe"
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceSetup, nonequal=
+RMDir: "\r"
+ClearErrors
+CreateDirectory: "$INSTDIR\TEMP"
+IfErrors ?AcctConfigFailed:
+ClearErrors
+ExecWait: ""$INSTDIR\SCASet.exe" /I" (->)
+IfErrors ?AcctConfigFailed:
+Goto: EndServiceSetup
+WriteRegStr: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx="$INSTDIR\SCATimEx.exe"
+ClearErrors
+Exec: ""$INSTDIR\SCATimEx.exe" /I" (->)
+IfErrors ?AcctConfigFailed:
+StrCmp "$0" "0" equal=NoSilentConfig, nonequal=
+IfFileExists: "$EXEDIR\config" ? ConfigInstall : 
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install $CMDLINE" (->)
+IfErrors ?ConfigFailed:
+Return
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install /Config "$EXEDIR\config $CMDLINE"" (->)
+IfErrors ?ConfigFailed:
+Return
+StrCmp "$0" "1" equal=ConfigFailed, nonequal=
+MessageBox: 0: "$(ERR_ACCT_SETUP_FAIL)"
+Quit
+SectionEnd
+!insertmacro: MUI_SECTIONS_FINISHHEADER
+!insertmacro: end of MUI_SECTIONS_FINISHHEADER
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: MUI_DESCRIPTION_TEXT
+!insertmacro: end of MUI_DESCRIPTION_TEXT
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_END
+!insertmacro: end of MUI_DESCRIPTION_END
+FunctionEnd
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_END
+Section: "Uninstall"
+ExecWait: ""$INSTDIR\SCAConf.exe" /S /Method Disable" (->)
+ReadRegStr $R0 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentVersion
+StrCmp "$R0" "" equal=Win98ServiceUninstall_U, nonequal=
+ExecWait: ""$INSTDIR\SCASet.exe" /U" (->)
+Goto: EndServiceUninstall_U
+DeleteRegValue: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\SCATimeEx
+Delete: "$WINDIR\Tasks\Syslist Companion Agent Inventory.job"
+File: "KillProcDLL.dll"->"$PLUGINSDIR\KillProcDLL.dll" [compress] 13821/32768 bytes
+Plugin Command: KillProc SCATimEx.exe
+Delete: "$INSTDIR\modern.exe"
+Delete: "$INSTDIR\Uninstall.exe"
+Delete: "$INSTDIR\SCAInv.exe"
+Delete: "$INSTDIR\SCAConf.exe"
+Delete: "$INSTDIR\SCASet.exe"
+Delete: "$INSTDIR\SCATimEx.exe"
+Delete: "$INSTDIR\libeay32.dll"
+Delete: "$INSTDIR\ssleay32.dll"
+RMDir: /r "$INSTDIR\LangDLL"
+DeleteRegKey: HKLM\Software\Syslist Companion Agent
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent
+DeleteRegKey: HKLM\Software\Syslist Companion Agent\Config
+!insertmacro: MUI_UNFINISHHEADER
+!insertmacro: end of MUI_UNFINISHHEADER
+SectionEnd
+Function: ".onInit"
+Call "IsSilent"
+Pop: $0
+StrCmp "$0" "1" equal=NoLangDisplay, nonequal=
+!define: "MUI_LANGDLL_ALWAYSSHOW"=""
+!insertmacro: MUI_LANGDLL_DISPLAY
+!insertmacro: end of MUI_LANGDLL_DISPLAY
+FunctionEnd
+Function: ".onInstSuccess"
+StrCmp "$0" "1" equal=NoExitConfig, nonequal=
+IfFileExists: "$EXEDIR\config" ? FinalConfigInstall : 
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install $CMDLINE" (->)
+Return
+ClearErrors
+ExecWait: ""$INSTDIR\SCAConf.exe" /install /Config "$EXEDIR\config"  $CMDLINE" (->)
+Return
+FunctionEnd
+Function: ".onInstFailed"
+StrCmp "$0" "1" equal=NoErrMB, nonequal=
+MessageBox: 0: "Installation of Syslist Companion Agent ASP Demo Failed."
+FunctionEnd
+Function: "un.onInit"
+setting uninstall mode to true
+FunctionEnd
+Function: "IsSilent"
+Push: $0
+Push: $CMDLINE
+Push: /S
+Call "StrStr"
+Pop: $0
+StrCpy $0 "$0" (3) ()
+StrCmp "$0" "/S" equal=silent, nonequal=
+StrCmp "$0" "/S " equal=silent, nonequal=
+StrCpy $0 "0" () ()
+Goto: notsilent
+StrCpy $0 "1" () ()
+Exch($0,0)
+FunctionEnd
+Function: "StrStr"
+Exch($R1,0)
+Exch(st(1),0)
+Exch($R2,0)
+Push: $R3
+Push: $R4
+Push: $R5
+StrLen $R3 "$R1"
+StrCpy $R4 "0" () ()
+StrCpy $R5 "$R2" ($R3) ($R4)
+StrCmp "$R5" "$R1" equal=done, nonequal=
+StrCmp "$R5" "" equal=done, nonequal=
+IntOp: $R4=$R4+1
+Goto: loop
+StrCpy $R1 "$R2" () ($R4)
+Pop: $R5
+Pop: $R4
+Pop: $R3
+Pop: $R2
+Exch($R1,0)
+FunctionEnd
+!include: closed: "TestInstall.nsi"
+
+Processed 1 file, writing output:
+Adding plug-ins initializing function... setting uninstall mode to true
+Done!
+warning: label "WinNTServiceUninstall_U" not used
+warning: label "WinNTServiceUninstall" not used
+warning: label "WinNTServiceSetup" not used
+Processing pages... Done!
+Removing unused resources... Done!
+Generating language tables... Done!
+Finding icons offsets for uninstaller... Done!
+
+Output: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER\SCA_ASP_Demo.exe"
+Install: 2 sections (1 required).
+Install: 317 instructions (8876 bytes), 313 strings (14192 bytes), 3 language tables (882 bytes), 5 pages (140 bytes).
+Uninstall: 84 instructions (2352 bytes), 168 strings (4589 bytes), 3 language tables (594 bytes), 3 pages (84 bytes).
+Datablock optimizer saved 6600 bytes (~0.7%).
+
+Using zlib compression.
+
+EXE header size:               47616 / 34816 bytes
+Install code:                   7779 / 24318 bytes
+Install data:                 819906 / 1910494 bytes
+Uninstall code+data:           30460 / 34525 bytes
+CRC (0xB01A1408):                  4 / 4 bytes
+
+Total size:                   905765 / 2004157 bytes (45.2%)
+
+3 warnings:
+  label "WinNTServiceUninstall_U" not used
+  label "WinNTServiceUninstall" not used
+  label "WinNTServiceSetup" not used
+MakeNSIS v2.0b3 - Copyright 1999-2003 Nullsoft, Inc.
+
+Portions Copyright (C) 1995-1998 Jean-loup Gailly and Mark Adler (zlib).
+Includes portions derived from bzip2 (see documentation for details).
+Contributors: nnop@newmail.ru, Ryan Geiss, Andras Varga, Drew Davidson, Peter Windridge, Dave Laundon, Robert Rainwater, Yaroslav Faybishenko, Jeff Doozan, Amir Szekely, Ximon Eighteen, et al.
+
+
+
+Processing config: 
+Changing directory to: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER"
+
+Processing plugin dlls: "C:\Program Files\NSIS\plugins\*.dll"
+ - advsplash::show
+ - Banner::destroy
+ - Banner::show
+ - BgImage::Destroy
+ - BgImage::Init
+ - BgImage::SetImage
+ - BgImage::Sound
+ - Dialer::AttemptConnect
+ - Dialer::AutodialHangup
+ - Dialer::AutodialOnline
+ - Dialer::AutodialUnattended
+ - Dialer::GetConnectedState
+ - InstallOptions::dialog
+ - InstallOptions::initDialog
+ - InstallOptions::show
+ - KillProcDLL::KillProc
+ - LangDLL::LangDialog
+ - nsExec::Exec
+ - nsExec::ExecToLog
+ - nsExec::ExecToStack
+ - nsisdl::download
+ - nsisdl::download_quiet
+ - splash::show
+ - StartMenu::Select
+ - System::Alloc
+ - System::Call
+ - System::Copy
+ - System::Free
+ - System::Get
+ - System::Int64Op
+ - System::Store
+ - UserInfo::GetAccountType
+ - UserInfo::GetName
+
+
+Processing script file: "SCADistInstaller.nsi"
+!include: "InstallVersion.nsi"
+!define: "MUI_VERSION"="1.4.0"
+!include: closed: "InstallVersion.nsi"
+!define: "SYSL_OUTPUT_FILE"="SCA_Remote.exe"
+!define: "MUI_PRODUCT"="Syslist Companion Agent Net Install"
+!define: "SYSL_BASE_NAME"="Syslist Companion Agent Network Installer"
+!define: "SYSL_REGPATH"="Software\Syslist Companion Agent Network Installer"
+!define: "SYSL_REGPATH_CONFIG"="Software\Syslist Companion Agent Network Installer\Config"
+!define: "SYSL_UNINST_ID"="Syslist Companion Agent Net Install v1.4.0"
+!define: "SYSL_WIN_UNINST"="Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer"
+BGGradient: FFFFFF->BBBBBB (text=12582912)
+!include: "MUI.nsh"
+!include: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+NSIS Modern User Interface version 1.63 - © 2002-2003 Joost Verburg (C:\Program Files\NSIS\Contrib\Modern UI\System.nsh:9)
+!include: closed: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+!include: closed: "C:\Program Files\NSIS\Include\MUI.nsh"
+OutFile: "SCA_Remote.exe"
+InstallDir: "$PROGRAMFILES\Syslist Companion Agent Network Installer"
+InstallRegKey: "HKLM\SYSL_REGPATH\"
+!define: "MUI_LANGDLL_REGISTRY_ROOT"="HKLM"
+!define: "MUI_LANGDLL_REGISTRY_KEY"="Software\Syslist Companion Agent Network Installer\Config"
+!define: "MUI_LANGDLL_REGISTRY_VALUENAME"="Language"
+!define: "MUI_TEXT_LANGDLL_WINDOWTITLE"="Syslist Companion Agent Net Install v1.4.0 Installer Language"
+!define: "MUI_TEXT_LANGDLL_INFO"="Please select the language for Syslist Companion Agent Net Install v1.4.0."
+!define: "MUI_WELCOMPAGE"=""
+!define: "MUI_LICENSEPAGE"=""
+!define: "MUI_DIRECTORYPAGE"=""
+!define: "MUI_ABORTWARNING"=""
+!define: "MUI_FINISHPAGE"=""
+!define: "MUI_FINISHPAGE_RUN"="$INSTDIR\SCANet.exe"
+!define: "MUI_UNINSTALLER"=""
+!define: "MUI_UNCONFIRMPAGE"=""
+!define: "MUI_HEADERBITMAP"="..\Images\syslist-logo-inst.bmp"
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Companion Agent"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Companion Agent(NLD)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(DE)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+LangString: "DESC_SecCopyUI" 1033 "Install the Syslist Agent Network Installer in the Installation Folder"
+LangString: "DESC_SecCopyUI" 1043 "Installeer de Syslist Agent Network Installer in de Installatiefolder"
+LangString: "DESC_SecCopyUI" 1031 "Install the Syslist Agent Network Installer in the Installation Folder"
+LicenseData: "SyslistAgentLicense.txt"
+LicenseData: "SyslistAgentLicense_Dutch.txt"
+LicenseData: "SyslistAgentLicense_German.txt"
+Section: "NetInstaller" ->(SecCopyUI)
+SetOutPath: "$INSTDIR"
+File: "SCANet.exe" [compress] 55896/135168 bytes
+File: "SCA_Install.exe" [compress] 886819/905667 bytes
+File: "SCARISvc.exe" [compress] 18046/49152 bytes
+File: "SCAUn.exe" [compress] 17195/45056 bytes
+SetOutPath: "$INSTDIR\LangDLL"
+File: "NetLang_DEU.dll" [compress] 17212/49152 bytes
+File: "NetLang_NLD.dll" [compress] 16593/49152 bytes
+WriteRegStr: HKLM\Software\Syslist Companion Agent Network Installer\=$INSTDIR
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\DisplayName=Syslist Companion Agent Net Install v1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\DisplayVersion=1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\Publisher=Literal Technology
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\UninstallString=$INSTDIR\Uninstall.exe
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\URLInfoAbout=www.Syslist.com
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\URLUpdateInfo=www.Syslist.com
+WriteUninstaller: "$INSTDIR\Uninstall.exe"
+SectionEnd
+!insertmacro: MUI_SECTIONS_FINISHHEADER
+!insertmacro: end of MUI_SECTIONS_FINISHHEADER
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: MUI_DESCRIPTION_TEXT
+!insertmacro: end of MUI_DESCRIPTION_TEXT
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_END
+!insertmacro: end of MUI_DESCRIPTION_END
+FunctionEnd
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_END
+Section: "Uninstall"
+Delete: "$INSTDIR\modern.exe"
+Delete: "$INSTDIR\Uninstall.exe"
+RMDir: /r "$INSTDIR"
+DeleteRegKey: HKLM\Software\Syslist Companion Agent Network Installer
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer
+DeleteRegKey: HKLM\Software\Syslist Companion Agent Network Installer\Config
+!insertmacro: MUI_UNFINISHHEADER
+!insertmacro: end of MUI_UNFINISHHEADER
+SectionEnd
+Function: ".onInit"
+Call "IsSilent"
+Pop: $0
+StrCmp "$0" "1" equal=NoLangDisplay, nonequal=
+!define: "MUI_LANGDLL_ALWAYSSHOW"=""
+!insertmacro: MUI_LANGDLL_DISPLAY
+!insertmacro: end of MUI_LANGDLL_DISPLAY
+FunctionEnd
+Function: ".onInstFailed"
+StrCmp "$0" "1" equal=NoFailDisplay, nonequal=
+MessageBox: 0: "The Syslist Companion Agent Net Install has failed to install correctly. Please contact support and try again"
+FunctionEnd
+Function: "un.onInit"
+setting uninstall mode to true
+IfFileExists: "$INSTDIR\SCANet.exe" ? found : 
+MessageBox: 0: "Uninstall path for the Syslist Companion Agent Net Install is incorrect. The product cannot be uninstalled"
+Abort: ""
+FunctionEnd
+Function: "IsSilent"
+Push: $0
+Push: $CMDLINE
+Push: /S
+Call "StrStr"
+Pop: $0
+StrCpy $0 "$0" (3) ()
+StrCmp "$0" "/S" equal=silent, nonequal=
+StrCmp "$0" "/S " equal=silent, nonequal=
+StrCpy $0 "0" () ()
+Goto: notsilent
+StrCpy $0 "1" () ()
+Exch($0,0)
+FunctionEnd
+Function: "StrStr"
+Exch($R1,0)
+Exch(st(1),0)
+Exch($R2,0)
+Push: $R3
+Push: $R4
+Push: $R5
+StrLen $R3 "$R1"
+StrCpy $R4 "0" () ()
+StrCpy $R5 "$R2" ($R3) ($R4)
+StrCmp "$R5" "$R1" equal=done, nonequal=
+StrCmp "$R5" "" equal=done, nonequal=
+IntOp: $R4=$R4+1
+Goto: loop
+StrCpy $R1 "$R2" () ($R4)
+Pop: $R5
+Pop: $R4
+Pop: $R3
+Pop: $R2
+Exch($R1,0)
+FunctionEnd
+
+Processed 1 file, writing output:
+Adding plug-ins initializing function... setting uninstall mode to true
+Done!
+warning: label "NoPathMB" not used
+Processing pages... Done!
+Removing unused resources... Done!
+Generating language tables... Done!
+Finding icons offsets for uninstaller... Done!
+
+Output: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER\SCA_Remote.exe"
+Install: 2 sections (1 required).
+Install: 275 instructions (7700 bytes), 290 strings (13809 bytes), 3 language tables (870 bytes), 5 pages (140 bytes).
+Uninstall: 69 instructions (1932 bytes), 155 strings (4496 bytes), 3 language tables (594 bytes), 3 pages (84 bytes).
+Datablock optimizer saved 6600 bytes (~0.6%).
+
+Using zlib compression.
+
+EXE header size:               47616 / 34816 bytes
+Install code:                   7340 / 22747 bytes
+Install data:                1026818 / 1300625 bytes
+Uninstall code+data:           16463 / 20528 bytes
+CRC (0xECB1058B):                  4 / 4 bytes
+
+Total size:                  1098241 / 1378720 bytes (79.7%)
+
+1 warning:
+  label "NoPathMB" not used
+MakeNSIS v2.0b3 - Copyright 1999-2003 Nullsoft, Inc.
+
+Portions Copyright (C) 1995-1998 Jean-loup Gailly and Mark Adler (zlib).
+Includes portions derived from bzip2 (see documentation for details).
+Contributors: nnop@newmail.ru, Ryan Geiss, Andras Varga, Drew Davidson, Peter Windridge, Dave Laundon, Robert Rainwater, Yaroslav Faybishenko, Jeff Doozan, Amir Szekely, Ximon Eighteen, et al.
+
+
+
+Processing config: 
+Changing directory to: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER"
+
+Processing plugin dlls: "C:\Program Files\NSIS\plugins\*.dll"
+ - advsplash::show
+ - Banner::destroy
+ - Banner::show
+ - BgImage::Destroy
+ - BgImage::Init
+ - BgImage::SetImage
+ - BgImage::Sound
+ - Dialer::AttemptConnect
+ - Dialer::AutodialHangup
+ - Dialer::AutodialOnline
+ - Dialer::AutodialUnattended
+ - Dialer::GetConnectedState
+ - InstallOptions::dialog
+ - InstallOptions::initDialog
+ - InstallOptions::show
+ - KillProcDLL::KillProc
+ - LangDLL::LangDialog
+ - nsExec::Exec
+ - nsExec::ExecToLog
+ - nsExec::ExecToStack
+ - nsisdl::download
+ - nsisdl::download_quiet
+ - splash::show
+ - StartMenu::Select
+ - System::Alloc
+ - System::Call
+ - System::Copy
+ - System::Free
+ - System::Get
+ - System::Int64Op
+ - System::Store
+ - UserInfo::GetAccountType
+ - UserInfo::GetName
+
+
+Processing script file: "SCADistDemoInstaller.nsi"
+!define: "SYSL_OUTPUT_FILE"="SCA_Remote_Demo.exe"
+!define: "MUI_PRODUCT"="Syslist Companion Agent Net Install Demo"
+!define: "SYSL_DEMO_INSTALL"=""
+!include: "SCADistInstaller.nsi"
+!include: "InstallVersion.nsi"
+!define: "MUI_VERSION"="1.4.0"
+!include: closed: "InstallVersion.nsi"
+!define: "SYSL_BASE_NAME"="Syslist Companion Agent Network Installer"
+!define: "SYSL_REGPATH"="Software\Syslist Companion Agent Network Installer"
+!define: "SYSL_REGPATH_CONFIG"="Software\Syslist Companion Agent Network Installer\Config"
+!define: "SYSL_UNINST_ID"="Syslist Companion Agent Net Install Demo v1.4.0"
+!define: "SYSL_WIN_UNINST"="Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer"
+BGGradient: FFFFFF->BBBBBB (text=12582912)
+!include: "MUI.nsh"
+!include: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+NSIS Modern User Interface version 1.63 - © 2002-2003 Joost Verburg (C:\Program Files\NSIS\Contrib\Modern UI\System.nsh:9)
+!include: closed: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+!include: closed: "C:\Program Files\NSIS\Include\MUI.nsh"
+OutFile: "SCA_Remote_Demo.exe"
+InstallDir: "$PROGRAMFILES\Syslist Companion Agent Network Installer"
+InstallRegKey: "HKLM\SYSL_REGPATH\"
+!define: "MUI_LANGDLL_REGISTRY_ROOT"="HKLM"
+!define: "MUI_LANGDLL_REGISTRY_KEY"="Software\Syslist Companion Agent Network Installer\Config"
+!define: "MUI_LANGDLL_REGISTRY_VALUENAME"="Language"
+!define: "MUI_TEXT_LANGDLL_WINDOWTITLE"="Syslist Companion Agent Net Install Demo v1.4.0 Installer Language"
+!define: "MUI_TEXT_LANGDLL_INFO"="Please select the language for Syslist Companion Agent Net Install Demo v1.4.0."
+!define: "MUI_WELCOMPAGE"=""
+!define: "MUI_LICENSEPAGE"=""
+!define: "MUI_DIRECTORYPAGE"=""
+!define: "MUI_ABORTWARNING"=""
+!define: "MUI_FINISHPAGE"=""
+!define: "MUI_FINISHPAGE_RUN"="$INSTDIR\SCANet.exe"
+!define: "MUI_UNINSTALLER"=""
+!define: "MUI_UNCONFIRMPAGE"=""
+!define: "MUI_HEADERBITMAP"="..\Images\syslist-logo-inst.bmp"
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Companion Agent"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Companion Agent(NLD)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(DE)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+LangString: "DESC_SecCopyUI" 1033 "Install the Syslist Agent Network Installer in the Installation Folder"
+LangString: "DESC_SecCopyUI" 1043 "Installeer de Syslist Agent Network Installer in de Installatiefolder"
+LangString: "DESC_SecCopyUI" 1031 "Install the Syslist Agent Network Installer in the Installation Folder"
+LicenseData: "SyslistAgentLicense.txt"
+LicenseData: "SyslistAgentLicense_Dutch.txt"
+LicenseData: "SyslistAgentLicense_German.txt"
+Section: "NetInstaller" ->(SecCopyUI)
+SetOutPath: "$INSTDIR"
+File: "SCANet.exe" [compress] 55992/135168 bytes
+File: "SCA_Demo.exe" [compress] 887109/905931 bytes
+File: "SCARISvc.exe" [compress] 18046/49152 bytes
+File: "SCAUn.exe" [compress] 17195/45056 bytes
+SetOutPath: "$INSTDIR\LangDLL"
+File: "NetLang_DEU.dll" [compress] 17212/49152 bytes
+File: "NetLang_NLD.dll" [compress] 16593/49152 bytes
+WriteRegStr: HKLM\Software\Syslist Companion Agent Network Installer\=$INSTDIR
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\DisplayName=Syslist Companion Agent Net Install Demo v1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\DisplayVersion=1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\Publisher=Literal Technology
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\UninstallString=$INSTDIR\Uninstall.exe
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\URLInfoAbout=www.Syslist.com
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\URLUpdateInfo=www.Syslist.com
+WriteUninstaller: "$INSTDIR\Uninstall.exe"
+SectionEnd
+!insertmacro: MUI_SECTIONS_FINISHHEADER
+!insertmacro: end of MUI_SECTIONS_FINISHHEADER
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: MUI_DESCRIPTION_TEXT
+!insertmacro: end of MUI_DESCRIPTION_TEXT
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_END
+!insertmacro: end of MUI_DESCRIPTION_END
+FunctionEnd
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_END
+Section: "Uninstall"
+Delete: "$INSTDIR\modern.exe"
+Delete: "$INSTDIR\Uninstall.exe"
+RMDir: /r "$INSTDIR"
+DeleteRegKey: HKLM\Software\Syslist Companion Agent Network Installer
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer
+DeleteRegKey: HKLM\Software\Syslist Companion Agent Network Installer\Config
+!insertmacro: MUI_UNFINISHHEADER
+!insertmacro: end of MUI_UNFINISHHEADER
+SectionEnd
+Function: ".onInit"
+Call "IsSilent"
+Pop: $0
+StrCmp "$0" "1" equal=NoLangDisplay, nonequal=
+!define: "MUI_LANGDLL_ALWAYSSHOW"=""
+!insertmacro: MUI_LANGDLL_DISPLAY
+!insertmacro: end of MUI_LANGDLL_DISPLAY
+FunctionEnd
+Function: ".onInstFailed"
+StrCmp "$0" "1" equal=NoFailDisplay, nonequal=
+MessageBox: 0: "The Syslist Companion Agent Net Install Demo has failed to install correctly. Please contact support and try again"
+FunctionEnd
+Function: "un.onInit"
+setting uninstall mode to true
+IfFileExists: "$INSTDIR\SCANet.exe" ? found : 
+MessageBox: 0: "Uninstall path for the Syslist Companion Agent Net Install Demo is incorrect. The product cannot be uninstalled"
+Abort: ""
+FunctionEnd
+Function: "IsSilent"
+Push: $0
+Push: $CMDLINE
+Push: /S
+Call "StrStr"
+Pop: $0
+StrCpy $0 "$0" (3) ()
+StrCmp "$0" "/S" equal=silent, nonequal=
+StrCmp "$0" "/S " equal=silent, nonequal=
+StrCpy $0 "0" () ()
+Goto: notsilent
+StrCpy $0 "1" () ()
+Exch($0,0)
+FunctionEnd
+Function: "StrStr"
+Exch($R1,0)
+Exch(st(1),0)
+Exch($R2,0)
+Push: $R3
+Push: $R4
+Push: $R5
+StrLen $R3 "$R1"
+StrCpy $R4 "0" () ()
+StrCpy $R5 "$R2" ($R3) ($R4)
+StrCmp "$R5" "$R1" equal=done, nonequal=
+StrCmp "$R5" "" equal=done, nonequal=
+IntOp: $R4=$R4+1
+Goto: loop
+StrCpy $R1 "$R2" () ($R4)
+Pop: $R5
+Pop: $R4
+Pop: $R3
+Pop: $R2
+Exch($R1,0)
+FunctionEnd
+!include: closed: "SCADistInstaller.nsi"
+
+Processed 1 file, writing output:
+Adding plug-ins initializing function... setting uninstall mode to true
+Done!
+warning: label "NoPathMB" not used
+Processing pages... Done!
+Removing unused resources... Done!
+Generating language tables... Done!
+Finding icons offsets for uninstaller... Done!
+
+Output: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER\SCA_Remote_Demo.exe"
+Install: 2 sections (1 required).
+Install: 275 instructions (7700 bytes), 290 strings (14006 bytes), 3 language tables (870 bytes), 5 pages (140 bytes).
+Uninstall: 69 instructions (1932 bytes), 155 strings (4591 bytes), 3 language tables (594 bytes), 3 pages (84 bytes).
+Datablock optimizer saved 6600 bytes (~0.6%).
+
+Using zlib compression.
+
+EXE header size:               47616 / 34816 bytes
+Install code:                   7355 / 22944 bytes
+Install data:                1027204 / 1300889 bytes
+Uninstall code+data:           16466 / 20531 bytes
+CRC (0xF1429AA8):                  4 / 4 bytes
+
+Total size:                  1098645 / 1379184 bytes (79.7%)
+
+1 warning:
+  label "NoPathMB" not used
+MakeNSIS v2.0b3 - Copyright 1999-2003 Nullsoft, Inc.
+
+Portions Copyright (C) 1995-1998 Jean-loup Gailly and Mark Adler (zlib).
+Includes portions derived from bzip2 (see documentation for details).
+Contributors: nnop@newmail.ru, Ryan Geiss, Andras Varga, Drew Davidson, Peter Windridge, Dave Laundon, Robert Rainwater, Yaroslav Faybishenko, Jeff Doozan, Amir Szekely, Ximon Eighteen, et al.
+
+
+
+Processing config: 
+Changing directory to: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER"
+
+Processing plugin dlls: "C:\Program Files\NSIS\plugins\*.dll"
+ - advsplash::show
+ - Banner::destroy
+ - Banner::show
+ - BgImage::Destroy
+ - BgImage::Init
+ - BgImage::SetImage
+ - BgImage::Sound
+ - Dialer::AttemptConnect
+ - Dialer::AutodialHangup
+ - Dialer::AutodialOnline
+ - Dialer::AutodialUnattended
+ - Dialer::GetConnectedState
+ - InstallOptions::dialog
+ - InstallOptions::initDialog
+ - InstallOptions::show
+ - KillProcDLL::KillProc
+ - LangDLL::LangDialog
+ - nsExec::Exec
+ - nsExec::ExecToLog
+ - nsExec::ExecToStack
+ - nsisdl::download
+ - nsisdl::download_quiet
+ - splash::show
+ - StartMenu::Select
+ - System::Alloc
+ - System::Call
+ - System::Copy
+ - System::Free
+ - System::Get
+ - System::Int64Op
+ - System::Store
+ - UserInfo::GetAccountType
+ - UserInfo::GetName
+
+
+Processing script file: "SCADistASPDemoInstaller.nsi"
+!define: "SYSL_OUTPUT_FILE"="SCA_Remote_ASP_Demo.exe"
+!define: "MUI_PRODUCT"="Syslist Companion Agent Net Install ASP Demo"
+!define: "SYSL_DEMO_INSTALL"=""
+!define: "SYSL_ASP_DEMO_INSTALL"=""
+!include: "SCADistInstaller.nsi"
+!include: "InstallVersion.nsi"
+!define: "MUI_VERSION"="1.4.0"
+!include: closed: "InstallVersion.nsi"
+!define: "SYSL_BASE_NAME"="Syslist Companion Agent Network Installer"
+!define: "SYSL_REGPATH"="Software\Syslist Companion Agent Network Installer"
+!define: "SYSL_REGPATH_CONFIG"="Software\Syslist Companion Agent Network Installer\Config"
+!define: "SYSL_UNINST_ID"="Syslist Companion Agent Net Install ASP Demo v1.4.0"
+!define: "SYSL_WIN_UNINST"="Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer"
+BGGradient: FFFFFF->BBBBBB (text=12582912)
+!include: "MUI.nsh"
+!include: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+NSIS Modern User Interface version 1.63 - © 2002-2003 Joost Verburg (C:\Program Files\NSIS\Contrib\Modern UI\System.nsh:9)
+!include: closed: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+!include: closed: "C:\Program Files\NSIS\Include\MUI.nsh"
+OutFile: "SCA_Remote_ASP_Demo.exe"
+InstallDir: "$PROGRAMFILES\Syslist Companion Agent Network Installer"
+InstallRegKey: "HKLM\SYSL_REGPATH\"
+!define: "MUI_LANGDLL_REGISTRY_ROOT"="HKLM"
+!define: "MUI_LANGDLL_REGISTRY_KEY"="Software\Syslist Companion Agent Network Installer\Config"
+!define: "MUI_LANGDLL_REGISTRY_VALUENAME"="Language"
+!define: "MUI_TEXT_LANGDLL_WINDOWTITLE"="Syslist Companion Agent Net Install ASP Demo v1.4.0 Installer Language"
+!define: "MUI_TEXT_LANGDLL_INFO"="Please select the language for Syslist Companion Agent Net Install ASP Demo v1.4.0."
+!define: "MUI_WELCOMPAGE"=""
+!define: "MUI_LICENSEPAGE"=""
+!define: "MUI_DIRECTORYPAGE"=""
+!define: "MUI_ABORTWARNING"=""
+!define: "MUI_FINISHPAGE"=""
+!define: "MUI_FINISHPAGE_RUN"="$INSTDIR\SCANet.exe"
+!define: "MUI_UNINSTALLER"=""
+!define: "MUI_UNCONFIRMPAGE"=""
+!define: "MUI_HEADERBITMAP"="..\Images\syslist-logo-inst.bmp"
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Companion Agent"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Companion Agent(NLD)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(DE)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+LangString: "DESC_SecCopyUI" 1033 "Install the Syslist Agent Network Installer in the Installation Folder"
+LangString: "DESC_SecCopyUI" 1043 "Installeer de Syslist Agent Network Installer in de Installatiefolder"
+LangString: "DESC_SecCopyUI" 1031 "Install the Syslist Agent Network Installer in the Installation Folder"
+LicenseData: "SyslistAgentLicense.txt"
+LicenseData: "SyslistAgentLicense_Dutch.txt"
+LicenseData: "SyslistAgentLicense_German.txt"
+Section: "NetInstaller" ->(SecCopyUI)
+SetOutPath: "$INSTDIR"
+File: "SCANet.exe" [compress] 56029/135168 bytes
+File: "SCA_ASP_Demo.exe" [compress] 886911/905765 bytes
+File: "SCARISvc.exe" [compress] 18046/49152 bytes
+File: "SCAUn.exe" [compress] 17195/45056 bytes
+SetOutPath: "$INSTDIR\LangDLL"
+File: "NetLang_DEU.dll" [compress] 17212/49152 bytes
+File: "NetLang_NLD.dll" [compress] 16593/49152 bytes
+WriteRegStr: HKLM\Software\Syslist Companion Agent Network Installer\=$INSTDIR
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\DisplayName=Syslist Companion Agent Net Install ASP Demo v1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\DisplayVersion=1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\Publisher=Literal Technology
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\UninstallString=$INSTDIR\Uninstall.exe
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\URLInfoAbout=www.Syslist.com
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\URLUpdateInfo=www.Syslist.com
+WriteUninstaller: "$INSTDIR\Uninstall.exe"
+SectionEnd
+!insertmacro: MUI_SECTIONS_FINISHHEADER
+!insertmacro: end of MUI_SECTIONS_FINISHHEADER
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: MUI_DESCRIPTION_TEXT
+!insertmacro: end of MUI_DESCRIPTION_TEXT
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_END
+!insertmacro: end of MUI_DESCRIPTION_END
+FunctionEnd
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_END
+Section: "Uninstall"
+Delete: "$INSTDIR\modern.exe"
+Delete: "$INSTDIR\Uninstall.exe"
+RMDir: /r "$INSTDIR"
+DeleteRegKey: HKLM\Software\Syslist Companion Agent Network Installer
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer
+DeleteRegKey: HKLM\Software\Syslist Companion Agent Network Installer\Config
+!insertmacro: MUI_UNFINISHHEADER
+!insertmacro: end of MUI_UNFINISHHEADER
+SectionEnd
+Function: ".onInit"
+Call "IsSilent"
+Pop: $0
+StrCmp "$0" "1" equal=NoLangDisplay, nonequal=
+!define: "MUI_LANGDLL_ALWAYSSHOW"=""
+!insertmacro: MUI_LANGDLL_DISPLAY
+!insertmacro: end of MUI_LANGDLL_DISPLAY
+FunctionEnd
+Function: ".onInstFailed"
+StrCmp "$0" "1" equal=NoFailDisplay, nonequal=
+MessageBox: 0: "The Syslist Companion Agent Net Install ASP Demo has failed to install correctly. Please contact support and try again"
+FunctionEnd
+Function: "un.onInit"
+setting uninstall mode to true
+IfFileExists: "$INSTDIR\SCANet.exe" ? found : 
+MessageBox: 0: "Uninstall path for the Syslist Companion Agent Net Install ASP Demo is incorrect. The product cannot be uninstalled"
+Abort: ""
+FunctionEnd
+Function: "IsSilent"
+Push: $0
+Push: $CMDLINE
+Push: /S
+Call "StrStr"
+Pop: $0
+StrCpy $0 "$0" (3) ()
+StrCmp "$0" "/S" equal=silent, nonequal=
+StrCmp "$0" "/S " equal=silent, nonequal=
+StrCpy $0 "0" () ()
+Goto: notsilent
+StrCpy $0 "1" () ()
+Exch($0,0)
+FunctionEnd
+Function: "StrStr"
+Exch($R1,0)
+Exch(st(1),0)
+Exch($R2,0)
+Push: $R3
+Push: $R4
+Push: $R5
+StrLen $R3 "$R1"
+StrCpy $R4 "0" () ()
+StrCpy $R5 "$R2" ($R3) ($R4)
+StrCmp "$R5" "$R1" equal=done, nonequal=
+StrCmp "$R5" "" equal=done, nonequal=
+IntOp: $R4=$R4+1
+Goto: loop
+StrCpy $R1 "$R2" () ($R4)
+Pop: $R5
+Pop: $R4
+Pop: $R3
+Pop: $R2
+Exch($R1,0)
+FunctionEnd
+!include: closed: "SCADistInstaller.nsi"
+
+Processed 1 file, writing output:
+Adding plug-ins initializing function... setting uninstall mode to true
+Done!
+warning: label "NoPathMB" not used
+Processing pages... Done!
+Removing unused resources... Done!
+Generating language tables... Done!
+Finding icons offsets for uninstaller... Done!
+
+Output: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER\SCA_Remote_ASP_Demo.exe"
+Install: 2 sections (1 required).
+Install: 275 instructions (7700 bytes), 290 strings (14170 bytes), 3 language tables (870 bytes), 5 pages (140 bytes).
+Uninstall: 69 instructions (1932 bytes), 155 strings (4667 bytes), 3 language tables (594 bytes), 3 pages (84 bytes).
+Datablock optimizer saved 6600 bytes (~0.6%).
+
+Using zlib compression.
+
+EXE header size:               47616 / 34816 bytes
+Install code:                   7362 / 23108 bytes
+Install data:                1027043 / 1300723 bytes
+Uninstall code+data:           16473 / 20538 bytes
+CRC (0x16CA4C7B):                  4 / 4 bytes
+
+Total size:                  1098498 / 1379189 bytes (79.6%)
+
+1 warning:
+  label "NoPathMB" not used
+MakeNSIS v2.0b3 - Copyright 1999-2003 Nullsoft, Inc.
+
+Portions Copyright (C) 1995-1998 Jean-loup Gailly and Mark Adler (zlib).
+Includes portions derived from bzip2 (see documentation for details).
+Contributors: nnop@newmail.ru, Ryan Geiss, Andras Varga, Drew Davidson, Peter Windridge, Dave Laundon, Robert Rainwater, Yaroslav Faybishenko, Jeff Doozan, Amir Szekely, Ximon Eighteen, et al.
+
+
+
+Processing config: 
+Changing directory to: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER"
+
+Processing plugin dlls: "C:\Program Files\NSIS\plugins\*.dll"
+ - advsplash::show
+ - Banner::destroy
+ - Banner::show
+ - BgImage::Destroy
+ - BgImage::Init
+ - BgImage::SetImage
+ - BgImage::Sound
+ - Dialer::AttemptConnect
+ - Dialer::AutodialHangup
+ - Dialer::AutodialOnline
+ - Dialer::AutodialUnattended
+ - Dialer::GetConnectedState
+ - InstallOptions::dialog
+ - InstallOptions::initDialog
+ - InstallOptions::show
+ - KillProcDLL::KillProc
+ - LangDLL::LangDialog
+ - nsExec::Exec
+ - nsExec::ExecToLog
+ - nsExec::ExecToStack
+ - nsisdl::download
+ - nsisdl::download_quiet
+ - splash::show
+ - StartMenu::Select
+ - System::Alloc
+ - System::Call
+ - System::Copy
+ - System::Free
+ - System::Get
+ - System::Int64Op
+ - System::Store
+ - UserInfo::GetAccountType
+ - UserInfo::GetName
+
+
+Processing script file: "SCADistACC.nsi"
+!define: "SYSL_OUTPUT_FILE"="SCA_Remote_ASP.exe"
+!define: "MUI_PRODUCT"="Syslist Companion Agent Net Install ASP"
+!define: "SYSL_ACC"=""
+!include: "SCADistInstaller.nsi"
+!include: "InstallVersion.nsi"
+!define: "MUI_VERSION"="1.4.0"
+!include: closed: "InstallVersion.nsi"
+!define: "SYSL_BASE_NAME"="Syslist Companion Agent Network Installer"
+!define: "SYSL_REGPATH"="Software\Syslist Companion Agent Network Installer"
+!define: "SYSL_REGPATH_CONFIG"="Software\Syslist Companion Agent Network Installer\Config"
+!define: "SYSL_UNINST_ID"="Syslist Companion Agent Net Install ASP v1.4.0"
+!define: "SYSL_WIN_UNINST"="Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer"
+BGGradient: FFFFFF->BBBBBB (text=12582912)
+!include: "MUI.nsh"
+!include: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+NSIS Modern User Interface version 1.63 - © 2002-2003 Joost Verburg (C:\Program Files\NSIS\Contrib\Modern UI\System.nsh:9)
+!include: closed: "C:\Program Files\NSIS\Contrib\Modern UI\System.nsh"
+!include: closed: "C:\Program Files\NSIS\Include\MUI.nsh"
+OutFile: "SCA_Remote_ASP.exe"
+InstallDir: "$PROGRAMFILES\Syslist Companion Agent Network Installer"
+InstallRegKey: "HKLM\SYSL_REGPATH\"
+!define: "MUI_LANGDLL_REGISTRY_ROOT"="HKLM"
+!define: "MUI_LANGDLL_REGISTRY_KEY"="Software\Syslist Companion Agent Network Installer\Config"
+!define: "MUI_LANGDLL_REGISTRY_VALUENAME"="Language"
+!define: "MUI_TEXT_LANGDLL_WINDOWTITLE"="Syslist Companion Agent Net Install ASP v1.4.0 Installer Language"
+!define: "MUI_TEXT_LANGDLL_INFO"="Please select the language for Syslist Companion Agent Net Install ASP v1.4.0."
+!define: "MUI_WELCOMPAGE"=""
+!define: "MUI_LICENSEPAGE"=""
+!define: "MUI_DIRECTORYPAGE"=""
+!define: "MUI_ABORTWARNING"=""
+!define: "MUI_FINISHPAGE"=""
+!define: "MUI_FINISHPAGE_RUN"="$INSTDIR\SCANet.exe"
+!define: "MUI_UNINSTALLER"=""
+!define: "MUI_UNCONFIRMPAGE"=""
+!define: "MUI_HEADERBITMAP"="..\Images\syslist-logo-inst.bmp"
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Companion Agent"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Companion Agent(NLD)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+!define: "MUI_BRANDINGTEXT"="Literal Technology - Syslist Agent(DE)"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+LangString: "DESC_SecCopyUI" 1033 "Install the Syslist Agent Network Installer in the Installation Folder"
+LangString: "DESC_SecCopyUI" 1043 "Installeer de Syslist Agent Network Installer in de Installatiefolder"
+LangString: "DESC_SecCopyUI" 1031 "Install the Syslist Agent Network Installer in the Installation Folder"
+LicenseData: "SyslistAgentLicense.txt"
+LicenseData: "SyslistAgentLicense_Dutch.txt"
+LicenseData: "SyslistAgentLicense_German.txt"
+Section: "NetInstaller" ->(SecCopyUI)
+SetOutPath: "$INSTDIR"
+File: "SCANet.exe" [compress] 55919/135168 bytes
+File: "SCA_ASP.exe" [compress] 886910/905752 bytes
+File: "SCARISvc.exe" [compress] 18046/49152 bytes
+File: "SCAUn.exe" [compress] 17195/45056 bytes
+SetOutPath: "$INSTDIR\LangDLL"
+File: "NetLang_DEU.dll" [compress] 17212/49152 bytes
+File: "NetLang_NLD.dll" [compress] 16593/49152 bytes
+WriteRegStr: HKLM\Software\Syslist Companion Agent Network Installer\=$INSTDIR
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\DisplayName=Syslist Companion Agent Net Install ASP v1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\DisplayVersion=1.4.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\Publisher=Literal Technology
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\UninstallString=$INSTDIR\Uninstall.exe
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\URLInfoAbout=www.Syslist.com
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer\URLUpdateInfo=www.Syslist.com
+WriteUninstaller: "$INSTDIR\Uninstall.exe"
+SectionEnd
+!insertmacro: MUI_SECTIONS_FINISHHEADER
+!insertmacro: end of MUI_SECTIONS_FINISHHEADER
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_BEGIN
+!insertmacro: MUI_DESCRIPTION_TEXT
+!insertmacro: end of MUI_DESCRIPTION_TEXT
+!insertmacro: MUI_FUNCTIONS_DESCRIPTION_END
+!insertmacro: end of MUI_DESCRIPTION_END
+FunctionEnd
+!insertmacro: end of MUI_FUNCTIONS_DESCRIPTION_END
+Section: "Uninstall"
+Delete: "$INSTDIR\modern.exe"
+Delete: "$INSTDIR\Uninstall.exe"
+RMDir: /r "$INSTDIR"
+DeleteRegKey: HKLM\Software\Syslist Companion Agent Network Installer
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\Syslist Companion Agent Network Installer
+DeleteRegKey: HKLM\Software\Syslist Companion Agent Network Installer\Config
+!insertmacro: MUI_UNFINISHHEADER
+!insertmacro: end of MUI_UNFINISHHEADER
+SectionEnd
+Function: ".onInit"
+Call "IsSilent"
+Pop: $0
+StrCmp "$0" "1" equal=NoLangDisplay, nonequal=
+!define: "MUI_LANGDLL_ALWAYSSHOW"=""
+!insertmacro: MUI_LANGDLL_DISPLAY
+!insertmacro: end of MUI_LANGDLL_DISPLAY
+FunctionEnd
+Function: ".onInstFailed"
+StrCmp "$0" "1" equal=NoFailDisplay, nonequal=
+MessageBox: 0: "The Syslist Companion Agent Net Install ASP has failed to install correctly. Please contact support and try again"
+FunctionEnd
+Function: "un.onInit"
+setting uninstall mode to true
+IfFileExists: "$INSTDIR\SCANet.exe" ? found : 
+MessageBox: 0: "Uninstall path for the Syslist Companion Agent Net Install ASP is incorrect. The product cannot be uninstalled"
+Abort: ""
+FunctionEnd
+Function: "IsSilent"
+Push: $0
+Push: $CMDLINE
+Push: /S
+Call "StrStr"
+Pop: $0
+StrCpy $0 "$0" (3) ()
+StrCmp "$0" "/S" equal=silent, nonequal=
+StrCmp "$0" "/S " equal=silent, nonequal=
+StrCpy $0 "0" () ()
+Goto: notsilent
+StrCpy $0 "1" () ()
+Exch($0,0)
+FunctionEnd
+Function: "StrStr"
+Exch($R1,0)
+Exch(st(1),0)
+Exch($R2,0)
+Push: $R3
+Push: $R4
+Push: $R5
+StrLen $R3 "$R1"
+StrCpy $R4 "0" () ()
+StrCpy $R5 "$R2" ($R3) ($R4)
+StrCmp "$R5" "$R1" equal=done, nonequal=
+StrCmp "$R5" "" equal=done, nonequal=
+IntOp: $R4=$R4+1
+Goto: loop
+StrCpy $R1 "$R2" () ($R4)
+Pop: $R5
+Pop: $R4
+Pop: $R3
+Pop: $R2
+Exch($R1,0)
+FunctionEnd
+!include: closed: "SCADistInstaller.nsi"
+
+Processed 1 file, writing output:
+Adding plug-ins initializing function... setting uninstall mode to true
+Done!
+warning: label "NoPathMB" not used
+Processing pages... Done!
+Removing unused resources... Done!
+Generating language tables... Done!
+Finding icons offsets for uninstaller... Done!
+
+Output: "C:\Documents and Settings\Karl\My Documents\SyslistDevel\TESTINSTALLER\SCA_Remote_ASP.exe"
+Install: 2 sections (1 required).
+Install: 275 instructions (7700 bytes), 290 strings (13965 bytes), 3 language tables (870 bytes), 5 pages (140 bytes).
+Uninstall: 69 instructions (1932 bytes), 155 strings (4572 bytes), 3 language tables (594 bytes), 3 pages (84 bytes).
+Datablock optimizer saved 6600 bytes (~0.6%).
+
+Using zlib compression.
+
+EXE header size:               47616 / 34816 bytes
+Install code:                   7348 / 22903 bytes
+Install data:                1026932 / 1300710 bytes
+Uninstall code+data:           16467 / 20532 bytes
+CRC (0x3FC96C2B):                  4 / 4 bytes
+
+Total size:                  1098367 / 1378965 bytes (79.7%)
+
+1 warning:
+  label "NoPathMB" not used
+Done with Packaging
+
+
+
+<h3>Results</h3>
+SCA_Install.exe - 0 error(s), 20 warning(s)
+</pre>
+</body>
+</html>

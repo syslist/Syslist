@@ -1,0 +1,438 @@
+;Syslist Agent Install  Installer
+;Based on ModernUI NullSoft Example
+
+;#######################################
+;# 
+;# NOTE 
+;#
+;# REQUIRES MODIFED MODERN UI V1.63 Contrib
+;# FOR PROPER OPERATION
+;# THIS FILE IS ARCHIVED WITH THE REST OF THE
+;# SOURCE
+;#
+;#########################################
+
+!include "InstallVersion.nsi"
+
+!ifndef SYSL_OUTPUT_FILE
+    !define SYSL_OUTPUT_FILE "SCA_Install.exe"
+!endif
+
+!ifndef MUI_PRODUCT
+    !define MUI_PRODUCT "Syslist Companion Agent" ;Define your own software name here
+!endif
+
+!define SYSL_BASE_NAME "Syslist Companion Agent"
+;#!define MUI_VERSION "1.1.3" ;software version here
+!define SYSL_REGPATH "Software\${SYSL_BASE_NAME}"
+!define SYSL_REGPATH_CONFIG "${SYSL_REGPATH}\Config"
+!define SYSL_UNINST_ID "${MUI_PRODUCT} v${MUI_VERSION}"
+!define SYSL_WIN_UNINST "Software\Microsoft\Windows\CurrentVersion\Uninstall\${SYSL_BASE_NAME}"
+!define SYSL_WIN98_SERVICE_VALUE "SCATimeEx"
+!define SYSL_SERVICE_EXEC "SCATimEx.exe"
+!define WIN_SERVICE_KEY "SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices"
+
+
+;Controls the background gradien (DUH!)
+;Goes from Pure white (FFFFFF) to Light Grey (BBBBBB)
+;Red Text (C00000)
+BGGradient FFFFFF BBBBBB C00000
+
+!include "MUI.nsh"
+
+;--------------------------------
+;Configuration
+
+  ;General
+  OutFile "${SYSL_OUTPUT_FILE}"
+ 
+  ;Folder selection page
+  InstallDir "$PROGRAMFILES\${SYSL_BASE_NAME}"
+  
+  ;Remember install folder
+  InstallDirRegKey HKLM SYSL_REGPATH ""
+  
+;----------------------------------------
+; Language Config for MUI
+; Separated 'cause it's sooo Big.
+
+  ;Remember the installer language
+  !define MUI_LANGDLL_REGISTRY_ROOT "HKLM" 
+  !define MUI_LANGDLL_REGISTRY_KEY "${SYSL_REGPATH_CONFIG}" 
+  !define MUI_LANGDLL_REGISTRY_VALUENAME "Language"
+  
+  ;But Always show it!
+  ;!define MUI_LANGDLL_ALWAYSSHOW
+  
+  ;The window title of the language selection dialog.
+  !define MUI_TEXT_LANGDLL_WINDOWTITLE "${SYSL_UNINST_ID} Installer Language"
+
+  ;The text to display on the language selection dialog.
+  !define MUI_TEXT_LANGDLL_INFO "Please select the language for ${SYSL_UNINST_ID}." 
+
+
+;--------------------------------
+;Modern UI Configuration
+
+  !define MUI_WELCOMPAGE
+  !define MUI_LICENSEPAGE
+;  !define MUI_COMPONENTSPAGE
+  !define MUI_DIRECTORYPAGE
+  
+  !define MUI_ABORTWARNING
+  !define MUI_FINISHPAGE
+;  !define MUI_FINISHPAGE_RUN "$INSTDIR\TestData.exe"
+  !define MUI_UNINSTALLER
+  !define MUI_UNCONFIRMPAGE
+ 
+  !define MUI_HEADERBITMAP "..\Images\syslist-logo-inst.bmp"
+  
+;--------------------------------
+;Languages and Branding text
+ 
+  !define MUI_BRANDINGTEXT "Literal Technology - Syslist Agent"
+  !insertmacro MUI_LANGUAGE "English"
+  
+  ;!define MUI_BRANDINGTEXT "Literal Technology - Syslist Agent(ESP)"
+  ;!insertmacro MUI_LANGUAGE "Spanish"
+  
+  !define MUI_BRANDINGTEXT "Literal Technology - Syslist Agent(NLD)"
+  !insertmacro MUI_LANGUAGE "Dutch"
+  
+  ;!define MUI_BRANDINGTEXT "Literal Technology - Syslist Agent(FRA)"
+  ;!insertmacro MUI_LANGUAGE "French"
+  
+  !define MUI_BRANDINGTEXT "Literal Technology - Syslist Agent(DE)"
+  !insertmacro MUI_LANGUAGE "German"
+  
+;--------------------------------
+;Language Strings
+
+  ;Description
+  LangString DESC_SecCopyUI ${LANG_ENGLISH} "Install the Syslist Companion Agent in the Installation Folder"
+  ;LangString DESC_SecCopyUI ${LANG_SPANISH} "{SPANISH} Install the Syslist Companion Agent in the Installation Folder"
+  LangString DESC_SecCopyUI ${LANG_DUTCH} "Installeer de Syslist Companion Agent in de Installatiefolder"
+  ;LangString DESC_SecCopyUI ${LANG_FRENCH} "{FRENCH} Install the Syslist Companion Agent in the Installation Folder"
+  LangString DESC_SecCopyUI ${LANG_GERMAN} "{German} Install the Syslist Companion Agent in the Installation Folder"
+
+  LangString ERR_ACCT_SETUP_FAIL ${LANG_ENGLISH} "The installer was unable to set up accounts and services. Please check account permissions and try again"
+  LangString ERR_ACCT_SETUP_FAIL ${LANG_DUTCH} "The installer was unable to set up accounts and services. Please check account permissions and try again"
+  LangString ERR_ACCT_SETUP_FAIL ${LANG_GERMAN} "The installer was unable to set up accounts and services. Please check account permissions and try again"
+
+;--------------------------------
+;Data
+  
+  LicenseData /LANG=${LANG_ENGLISH} "SyslistAgentLicense.txt"
+  ;LicenseData /LANG=${LANG_SPANISH} "SyslistAgentLicense_Spanish.txt"
+  LicenseData /LANG=${LANG_DUTCH} "SyslistAgentLicense_Dutch.txt"
+ ; LicenseData /LANG=${LANG_FRENCH} "SyslistAgentLicense_French.txt"
+  LicenseData /LANG=${LANG_GERMAN} "SyslistAgentLicense_German.txt"
+  
+
+;--------------------------------
+;Installer Sections
+
+Section "Syslist Main Install" SecCopyUI
+
+ ;Check for NT
+  ReadRegStr $R0 HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion" CurrentVersion
+  StrCmp $R0 "" Win98ServiceUninstall
+
+WinNTServiceUninstall:  
+  ; Remove the Watchdog Service and account before copying
+  ExecWait '"$INSTDIR\SCASet.exe" /U'
+  Goto EndServiceUninstall
+  
+Win98ServiceUninstall:
+  DeleteRegValue HKLM  ${WIN_SERVICE_KEY} ${SYSL_WIN98_SERVICE_VALUE}
+  Delete "$WINDIR\Tasks\Syslist Companion Agent Inventory.job"
+  KillProcDLL::KillProc "${SYSL_SERVICE_EXEC}"
+  
+EndServiceUninstall:
+  SetOutPath "$INSTDIR"
+  
+ !ifdef SYSL_DEMO_INSTALL
+ 
+     !ifdef SYSL_ASP_DEMO_INSTALL
+        File "..\TestCollect\ReleaseASPDemo\SCAInv.exe"
+        File "..\TestInstConfig\ReleaseASPDemo\SCAConf.exe"
+     !else
+        File "..\TestCollect\ReleaseDemo\SCAInv.exe"
+        File "..\TestInstConfig\ReleaseDemo\SCAConf.exe"
+     !endif
+ 
+ !else
+ 
+    !ifdef SYSL_ACC
+        File "..\TestCollect\ReleaseACC\SCAInv.exe"
+        File "..\TestInstConfig\ReleaseACC\SCAConf.exe"
+   !else
+        File "..\TestCollect\Release\SCAInv.exe"
+        File "..\TestInstConfig\Release\SCAConf.exe"
+   !endif
+        
+ !endif
+ 
+;  Push "$INSTDIR\SCAInv.exe"
+;  Call SetAdminOnly
+
+; Push "$INSTDIR\SCAConf.exe"
+; Call SetAdminOnly
+  
+  File "..\SCASetup\Release\SCASet.exe"
+  File "..\SCATimEx\Release\SCATimEx.exe"
+  
+  File "..\SSLRedist\libeay32.dll"
+  File "..\SSLRedist\ssleay32.dll"
+
+  SetOutPath "$INSTDIR\LangDLL"
+  File /nonfatal "..\TestInstConfig\LangDLL\SyslistLang_*.dll"
+   
+  ;Store install folder
+  WriteRegStr HKLM "${SYSL_REGPATH}" "" $INSTDIR
+  WriteRegSTR HKLM "${SYSL_REGPATH_CONFIG}" "Method" "Startup"
+  WriteRegDWORD HKLM "${SYSL_REGPATH_CONFIG}" "Frequency" "0"
+  WriteRegDWORD HKLM "${SYSL_REGPATH_CONFIG}" "Last" "0"
+  
+  ReadRegStr $R2 HKLM "${SYSL_REGPATH_CONFIG}" "Server" 
+  StrCmp $R2 "" WriteServer NoWriteServer
+WriteServer:
+  WriteRegStr HKLM "${SYSL_REGPATH_CONFIG}" "Server" "https://www.SysList.com"
+NoWriteServer:
+
+  ;Windows Uninstall information  
+  DeleteRegKey  HKLM "${SYSL_WIN_UNINST}"
+  WriteRegStr HKLM "${SYSL_WIN_UNINST}" "DisplayName" "${SYSL_UNINST_ID}"
+  WriteRegStr HKLM "${SYSL_WIN_UNINST}" "DisplayVersion" "${MUI_VERSION}"
+  WriteRegStr HKLM "${SYSL_WIN_UNINST}" "Publisher" "Literal Technology"
+  WriteRegStr HKLM "${SYSL_WIN_UNINST}" "UninstallString" "$INSTDIR\Uninstall.exe"
+  WriteRegStr HKLM "${SYSL_WIN_UNINST}" "URLInfoAbout" "www.Syslist.com"
+  WriteRegStr HKLM "${SYSL_WIN_UNINST}" "URLUpdateInfo" "www.Syslist.com"
+  
+  ;Create uninstaller
+  WriteUninstaller "$INSTDIR\Uninstall.exe"
+  ReadRegStr $R0 HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion" CurrentVersion
+  StrCmp $R0 "" Win98ServiceSetup
+
+WinNTServiceSetup: 
+  ;Create the Temp Dir for the new account
+  RmDir \r "$INSTDIR\TEMP"
+  
+  ClearErrors
+  CreateDirectory "$INSTDIR\TEMP"
+   ifErrors AcctConfigFailed
+
+  ;Set up account and permissions
+  ClearErrors
+  ExecWait '"$INSTDIR\SCASet.exe" /I'
+   ifErrors AcctConfigFailed
+
+  Goto EndServiceSetup
+  
+Win98ServiceSetup:
+  WriteRegStr HKLM  ${WIN_SERVICE_KEY} ${SYSL_WIN98_SERVICE_VALUE} '"$INSTDIR\${SYSL_SERVICE_EXEC}"'
+  ClearErrors
+  Exec '"$INSTDIR\${SYSL_SERVICE_EXEC}" /I'
+  ifErrors AcctConfigFailed
+  
+EndServiceSetup:
+
+  StrCmp $0 0 NoSilentConfig
+
+  ifFileExist "$EXECDIR\config" ConfigInstall
+
+  ClearErrors
+  ExecWait '"$INSTDIR\SCAConf.exe" /install $CMDLINE'
+  ifErrors ConfigFailed
+  Return
+
+ConfigInstall:
+  ClearErrors
+  ExecWait '"$INSTDIR\SCAConf.exe" /install /Config $EXECDIR\config $CMDLINE'
+  ifErrors ConfigFailed
+  Return
+  
+AcctConfigFailed:
+  StrCmp $0 1 ConfigFailed
+  MessageBox MB_OK $(ERR_ACCT_SETUP_FAIL)
+  
+ConfigFailed:
+  Quit
+  
+NoSilentConfig:
+SectionEnd
+
+;Display the Finish header
+;Insert this macro after the sections if you are not using a finish page
+!insertmacro MUI_SECTIONS_FINISHHEADER
+
+;--------------------------------
+;Descriptions
+
+!insertmacro MUI_FUNCTIONS_DESCRIPTION_BEGIN
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecCopyUI} $(DESC_SecCopyUI)
+!insertmacro MUI_FUNCTIONS_DESCRIPTION_END
+ 
+;--------------------------------
+;Uninstaller Section
+
+Section "Uninstall"
+
+  ;ADD YOUR OWN STUFF HERE!
+
+  ;; turn off task scheduler...
+  ExecWait '"$INSTDIR\SCAConf.exe" /S /Method Disable'
+  
+  ;Check for NT
+  ReadRegStr $R0 HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion" CurrentVersion
+  StrCmp $R0 "" Win98ServiceUninstall_U
+  
+WinNTServiceUninstall_U:
+  ExecWait '"$INSTDIR\SCASet.exe" /U'
+  Goto EndServiceUninstall_U
+  
+Win98ServiceUninstall_U:
+  DeleteRegValue HKLM  ${WIN_SERVICE_KEY} ${SYSL_WIN98_SERVICE_VALUE}
+  Delete "$WINDIR\Tasks\Syslist Companion Agent Inventory.job"  
+  KillProcDLL::KillProc "${SYSL_SERVICE_EXEC}"
+ 
+EndServiceUninstall_U:
+  Delete "$INSTDIR\modern.exe"
+  Delete "$INSTDIR\Uninstall.exe"
+
+  Delete "$INSTDIR\SCAInv.exe"
+  Delete "$INSTDIR\SCAConf.exe"
+  Delete "$INSTDIR\SCASet.exe"
+  Delete "$INSTDIR\SCATimEx.exe"
+  
+  Delete "$INSTDIR\libeay32.dll"
+  Delete "$INSTDIR\ssleay32.dll"
+  
+  RmDir /r "$INSTDIR\LangDLL"
+
+  !ifndef SYSLIST_DEMO_INSTALL
+    DeleteRegKey  HKLM "${SYSL_REGPATH}"
+  !endif
+  DeleteRegKey  HKLM "${SYSL_WIN_UNINST}"
+  DeleteRegKey  "${MUI_LANGDLL_REGISTRY_ROOT}" "${MUI_LANGDLL_REGISTRY_KEY}"
+  
+  ;Display the Finish header
+  !insertmacro MUI_UNFINISHHEADER
+
+SectionEnd
+
+;----------------------------------
+; CallBacks
+Function .onInit
+  Call IsSilent
+  Pop $0
+  StrCmp $0 1 NoLangDisplay
+  !ifndef MUI_LANG_DLL_ALWAYSSHOW
+  	!define MUI_LANGDLL_ALWAYSSHOW
+  !endif
+  !insertmacro MUI_LANGDLL_DISPLAY
+NoLangDisplay:
+;ClearErrors
+;UserInfo::GetName
+;IfErrors Win9x
+;Pop $0
+;UserInfo::GetAccountType
+;Pop $1
+;StrCmp $1 "Admin" 0 +3
+;	MessageBox MB_OK 'User "$0" is in the Administrators group'
+;	Goto done
+FunctionEnd
+
+;; Run Syslist Configurator Executable
+Function .onInstSuccess
+  strcmp $0 1 NoExitConfig
+  ifFileExist "$EXECDIR\config" ConfigInstall
+  
+  ClearErrors
+  ExecWait '"$INSTDIR\SCAConf.exe" /install $CMDLINE'
+  Return
+  
+  ClearErrors
+  ExecWait '"$INSTDIR\SCAConf.exe" /install /Config $EXECDIR\config $CMDLINE'
+  ifErrors ConfigFailed
+  Return
+  
+NoExitConfig:
+FunctionEnd
+
+Function .onInstFailed
+    strcmp $0 1 NoErrMB
+    MessageBox MB_OK "Installation of ${MUI_PRODUCT} Failed."
+NoErrMB:
+FunctionEnd
+
+Function un.onInit
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; ned to figure out how to do this with silent uninstall!
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;  IfFileExists $INSTDIR\SCAConf.exe found
+;    Messagebox MB_OK "Uninstall path incorrect. The product cannot be uninstalled"
+;QuitUniinstNoMB:
+;  Abort
+;found:
+FunctionEnd
+
+;----------------------------------
+; Homebrew functions for file protection
+;Function SetAdminOnly
+;    
+;    Pop $R0  ; File Name 
+;    
+;    AccessControl::SetOnFile $R0 "Builtin\Administrators" "FullAccess"
+;    AccessControl::SetFileGroup $R0 "Builtin\Administrators"
+;    AccessControl::GrantOnfile $R0 "System" "FullAccess"
+;    AccessControl::DenyOnFile $R0 "Builtin\Users" "FullAccess"
+;    AccessControl::DenyOnFile $R0 "Builtin\Power Users" "FullAccess"
+;    
+;FunctionEnd
+
+;----------------------------------
+; Useful Stuff
+Function IsSilent
+  Push $0
+  Push $CMDLINE
+  Push "/S"
+  Call StrStr
+  Pop $0
+  StrCpy $0 $0 3
+  StrCmp $0 "/S" silent
+  StrCmp $0 "/S " silent
+    StrCpy $0 0
+    Goto notsilent
+  silent: StrCpy $0 1
+  notsilent: Exch $0
+FunctionEnd
+
+Function StrStr
+  Exch $R1 ; st=haystack,old$R1, $R1=needle
+  Exch    ; st=old$R1,haystack
+  Exch $R2 ; st=old$R1,old$R2, $R2=haystack
+  Push $R3
+  Push $R4
+  Push $R5
+  StrLen $R3 $R1
+  StrCpy $R4 0
+  ; $R1=needle
+  ; $R2=haystack
+  ; $R3=len(needle)
+  ; $R4=cnt
+  ; $R5=tmp
+  loop:
+    StrCpy $R5 $R2 $R3 $R4
+    StrCmp $R5 $R1 done
+    StrCmp $R5 "" done
+    IntOp $R4 $R4 + 1
+    Goto loop
+  done:
+  StrCpy $R1 $R2 "" $R4
+  Pop $R5
+  Pop $R4
+  Pop $R3
+  Pop $R2
+  Exch $R1
+FunctionEnd

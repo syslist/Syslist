@@ -1,0 +1,94 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "DummyResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\resource.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "DummyResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\resource.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OK                  "OUI!"
+    IDS_CANCEL              "La Cancelle"
+    IDS_CB_DISABLED         "La Disabled"
+    IDS_CB_DAILY            "La Once a Day"
+    IDS_CB_STARTUP          "La On Startup"
+    IDS_CB_WEEKLY           "La Once A Week"
+    IDS_CB_MONTHLY          "La Once a Month"
+    IDS_SERVER_STATIC       "La Syslist Server:"
+    IDS_FREQ_STATIC         "La La Frequency:"
+    IDS_CFG_CANCELLED_STR   "OUI OUI! LA Configuration was cancelled. No changes to your Syslist reporting will be made. \n\nIf reporting was disabled then this machine will not report to the Syslist server"
+    IDS_CFG_CANCELLED_CAPTION "la Configuration Cancelled"
+    IDS_CFG_SLANG           "FRA"
+    IDS_CFG_LLANG           "French (France)"
+    IDS_LANG_STATIC         "La Language:"
+    IDS_ID_STATIC           "La ID, OUI OUI"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UNKNOWN_ID          "C'est?"
+    IDS_CFG_ILANG           "1036"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

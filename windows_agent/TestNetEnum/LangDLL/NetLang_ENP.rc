@@ -1,0 +1,137 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\resource.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\resource.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RAW_TEXT
+//
+
+IDR_RAW_TEXT_LIC        RAW_TEXT DISCARDABLE    "SyslistAgentLicense.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LIC_TEXT            "(c) 2003 Literal Technology\n    \nThis software program is the copyrighted work of\nLiteral Technology. It is solely for use by end users\naccording to the terms of the License Agreement\n(""license.txt"") included with the Syslist Server\nprogram files. Any use, reproduction or redistribution\nof the Program not in accordance with the terms of the\nLicense Agreement is expressly prohibited.\n    \nBy clicking 'I Agree', you acknowledge that you have\nread and agree with all the terms in the\naforementioned License Agreement, and that you will\nabide by those terms. If you have not read the License\nAgreement, you must click 'Cancel'. If you do not\nunderstand ANY PART of the License Agreement, click\n'Cancel' and contact support@syslist.com for\nassistance.""    \n    \nLiteral Technology expressly disclaims any warranty\nfor the Syslist Companion Agent. It is provided ""as\nis,"" without warranty of any kind, either express or\nimplied, including, without limitation, the implied\nwarranties of merchantabili"
+    IDS_CANCEL              "Cancel IT"
+    IDS_CB_DISABLED         "Disabled"
+    IDS_CB_DAILY            "Once a Day"
+    IDS_CB_STARTUP          "On Startup"
+    IDS_CB_WEEKLY           "Once A Week"
+    IDS_CB_MONTHLY          "Once a Month"
+    IDS_SERVER_STATIC       "Syslist Server:"
+    IDS_FREQ_STATIC         "Frequency By Karl:"
+    IDS_OK                  "OK"
+    IDS_CFG_SLANG           "ENP"
+    IDS_CFG_LLANG           "English (Karls)"
+    IDS_LANG_STATIC         "Phase:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CFG_ILANG           "0001"
+    IDS_USER_STATIC         "Syslist Account Name:"
+    IDS_PWD_STATIC          "Syslist Account Password:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MACHUSER_STATIC     "hmmm. Admin "
+    IDS_MACHPWD_STATIC      "Machine Administrator Password:"
+    IDS_MACH_PROCESSING     "Processing node:"
+    IDS_MACH_PASSED         "Passed"
+    IDS_MACH_FAILED         "FAILED"
+    IDS_ERR_NO_SOURCE_SHARE "Could not share the installation source. Installation Terminated"
+    IDS_ERR_START_TASK_MGR  "Could not start the remote task manager for installation."
+    IDS_ERR_NO_INSTALLER    "Could not locate the local installation executable SCAInst.exe"
+    IDS_ERR_NO_INSTALL_TASK "Could not successfully execute the remote install on the remote machine. Please check user permissions."
+    IDS_INST_COMPLETE       "Remote Installation Processing Complete!"
+    IDS_INST_TOTAL_ATTEMPT  "Total number of ATTEMPTED installs:"
+    IDS_INST_TOTAL_PASS     "Total number of SUCCESSFUL installs:"
+    IDS_INST_TOTAL_FAIL     "Total number of FAILED installs:"
+    IDS_NET_ID_LOCAL        "Local Network"
+    IDS_NET_ID_NETWORK      "NETWORK"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NET_ID_DOMAIN       "DOMAIN"
+    IDS_INSTALL             "Install IT"
+    IDS_LOCAL_SCAN          "Local Scan Only"
+    IDS_SCAN                "Scan Network"
+    IDS_NET_SCAN_START      "Starting Network Scan"
+    IDS_NET_SCAN_DONE       "Network Scan Complete!"
+    IDS_NET_SCAN_CANCEL     "Network Scan Cancelled."
+    IDS_INST_CANCEL         "Remote Installation Processing Cancelled."
+    IDS_CLOSE               "Close"
+    IDS_LIC_ACCEPT          "I Agree"
+    IDS_LIC_DLG_CAPTION     "Syslist Companion Agent Licensing"
+    IDS_INST_DLG_CAPTION    "Syslist Companion Agent Remote Installer"
+    IDS_INST_START          "Starting Installation."
+    IDS_INTRO_SCAN_INVITE   "Press ""Scan Network"" to detect computers on your network"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
