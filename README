@@ -1,0 +1,8 @@
+Syslist is a web-based Mac and PC computer inventory and helpdesk solution that tracks your computers, network hardware, and sofware. Audit your IT assets quickly with Syslist!
+
+Syslist operated as a for-profit company from 2002 until 2012.  As part of shutting the business down, we decided to open source all Syslist code.  This includes:
+/web/ a PHP + MySQL website for displaying system information
+/windows_agent/ a Windows background process that collects system information and reports it to the server
+/mac_agent/ a Mac OSX background process that collects system information and reports it to the server
+
+This code is being provided with NO SUPPORT WHATSOEVER.  Do whatever you like with it -- subject the MIT license found in license.txt -- but don't expect help or support.
