@@ -1,0 +1,524 @@
+<html>
+<head>
+<style>
+/*
+-----------------------------------------------
+Reset Stylesheet
+Author:   Eric Meyer
+
+Taken from:
+http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+----------------------------------------------- */
+
+@import 'codehighlight.css';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+	font-family:"HelveticaNeue",Helvetica,Verdana,sans-serif;
+  font-size: 100%;
+	padding: 0 20px;
+	background: #D5DDE6;
+	line-height: 1.5;
+}
+
+#wrapper {
+	width: 910px;
+	margin: 0 auto;
+}
+
+#skiplinks {
+	display: none;
+}
+
+a {
+	color: #06C;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*************************************
+Container
+*************************************/
+
+#container {
+  width: 100%;
+  margin: 25px auto 0 auto;
+  background-color: white;
+  color: #000;
+  }
+
+/*************************************
+Content
+*************************************/
+#content {
+  padding: 0px 20px 0px 32px;
+  }
+
+#searchform {
+  background: #f9fafb;
+  margin-bottom: 20px;
+  padding: 10px 10px 0 10px;
+  color: #000;
+  border: 2px solid #646c8c;
+  text-align: left;
+}
+
+.article {
+  margin: 10px 20px 20px 0;
+  padding-bottom: 5px;
+  text-align: left;
+  color: #444;
+  }
+
+.article h1 {
+  margin: 15px 0px 15px 0;
+  padding: 15px 0 0 0;
+  color: rgb(17, 17, 17);
+  font-size: 210%;
+  }
+
+.article h1 a:link, .article h1 a:visited {
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+  }
+
+.article h2 {
+  margin: 10px 10px 20px 15px;
+  font-size: 1.3em;
+  color: rgb(17, 17, 17);
+  }
+
+.article h3 {
+  color: rgb(128, 196, 28);
+  font-size: 165%;
+  margin: 0px 0px 15px;
+  padding: 0px;
+  }
+
+.article h4 {
+  color: rgb(128, 196, 28);
+  font-size: 125%;
+  margin: 0px 0px 15px;
+  padding: 0px;
+  }
+
+.article p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  }
+
+.article p a:link, .article p a:visited {
+  color: rgb(0,102,208);
+  text-decoration: none;
+  font-weight: bold;
+  }
+
+.article p a:hover {
+  text-decoration: underline;
+  }
+
+.article img {
+  margin: 15px auto;
+  padding: 4px;
+  border: 2px solid #646c8c;
+  }
+
+.article img:hover {
+  border: 2px solid #0f2b8d;
+  }
+
+.article .image a:link, .article .image a:visited {
+  text-decoration: none;
+  border-bottom: 0;
+  }
+
+.article table {
+  table-layout: fixed;
+  width: 100%;
+  empty-cells: hide;
+  text-align: center;
+  }
+
+.article table thead th {
+  background: #fffff0;
+  border: 1px solid #646c8c;
+ }
+
+.article table tbody th {
+  background: #fffff0;
+  border: 1px solid #646c8c;
+  }
+
+.article table tbody tr.alt td {
+  background: #edf3fe;
+  }
+
+ /*************************************
+Base for code highlighting
+*************************************/
+pre {
+  background: #232323;
+  color: #fff;
+  margin: 10px 0;
+  padding: 1em 10px;
+  margin-bottom: 1.5em;
+  border-top: solid 3px #000;
+  border-left: solid 3px #000;
+  border-right: solid 3px #ccc;
+  border-bottom: solid 3px #ccc;
+  overflow: auto;
+}
+
+code {
+  font: 100% monospace;
+}
+
+ /*************************************
+RUBY Highlighting
+*************************************/
+#content code.ruby span.comment {
+  color: #C2C2D0;
+}
+
+#content code.ruby span.string {
+  color: #A5C261;
+}
+
+#content code.ruby span.brackets {
+  color: #E3C2F8;
+}
+
+#content code.ruby span.symbol {
+  color: #6D9CBE;
+}
+
+#content code.ruby span.keywords {
+  color: #BF7833;
+}
+
+ /*************************************
+JAVASCRIPT Highlighting
+*************************************/
+#content code.javascript span.comment {
+  color: #C2C2D0;
+}
+
+#content code.javascript span.string {
+  color: #A5C261;
+}
+
+#content code.javascript span.brackets {
+  color: #E3C2F8;
+}
+
+#content code.javascript span.symbol {
+  color: #6D9CBE;
+}
+
+#content code.javascript span.keywords {
+  color: #BF7833;
+}
+
+ /*************************************
+HTML Highlighting
+*************************************/
+#content code.html span.comment {
+  color: #C2C2D0;
+}
+
+#content code.html span.string {
+  color: #A5C261;
+}
+
+#content code.html span.tag {
+  color: #6D9CBE
+}
+
+#content code.html span.attribute {
+  color: #BF7833;
+}
+
+#content code.html span.doctype {
+  color: #E3C2F8;
+}
+
+ /*************************************
+CSS Highlighting
+*************************************/
+#content code.css span.comment {
+  color: #C2C2D0;
+}
+
+#content code.css span.keywords {
+  color: #BF7833;
+}
+
+#content code.css span.selectors {
+  color: #BF7833;
+}
+
+#content code.css span.properties {
+  color: #6D9CBE;
+}
+
+#content code.css span.units {
+  color: #A5C261;
+}
+</style>
+</head>
+<title>Syslist Self-Hosted Walkthrough</title>
+<body>
+<div id="wrapper">
+<div id="container">
+<div id="content">
+<div class="article">
+<h1>Setting Up Self-Hosted Syslist</h1>
+<p>This document will walk through installing Syslist on a new machine.  It specifically covers installing
+Syslist from scratch on a 64bit machine running Ubuntu Hardy, but you can run Syslist on whatever server type you want,
+as long as it supports MySQL and PHP 4.2.1.</p>
+
+<p>Other servers will have different steps for installing Apache,
+PHP, MySQL, etc.  However, the Syslist steps towards the end of the walkthrough should all be the same.</p>
+
+<h3>Initial login & user creation</h3>
+
+<p>For this walkthrough, we start from scratch with a 64bit Ubuntu Hardy machine with an IP Address of 204.232.210.183, and
+we will create a user named 'bob'. Throughout this document, you should use the IP Address of your own server
+when you see 204.232.210.183, and you should use the name of your own user when you see 'bob'.</p>
+
+<p>Log in to server:</p>
+<pre><code>ssh root@204.232.210.183</pre></code>
+
+<p>Change the root password:</p>
+<pre><code>passwd</pre></code>
+
+<p>Add a non-root user:</p>
+<pre><code>adduser bob</pre></code>
+
+<p>Give bob sudo priviledges: </p>
+<pre><code>visudo</pre></code>
+
+<p>Add this line to the end of the file using the crazy vi syntax (i => edit, esc => stop editing, :wq to save and quit):</p>
+<pre><code>bob ALL=(ALL) ALL</pre></code>
+
+<p>Log out of root:</p>
+<pre><code>exit</pre></code>
+
+<p>Log in to server as user:</p>
+<pre><code>ssh bob@204.232.210.183</pre></code>
+
+<h3>Basic server stuff</h3>
+
+<p>(We're going to skip some initial server setup stuff like configuring a firewall or generating ssh keys...)</p>
+
+<p>Update Ubuntu sources:</p>
+<pre><code>sudo aptitude update</pre></code>
+
+<p>Set locale:</p>
+<pre><code>sudo locale-gen en_US.UTF-8
+...
+sudo /usr/sbin/update-locale LANG=en_US.UTF-8</pre></code>
+
+<p>Upgrade Ubuntu:</p>
+<pre><code>sudo aptitude safe-upgrade</pre></code>
+
+<p>Followed by:</p>
+<pre><code>sudo aptitude full-upgrade</pre></code>
+
+<p>Install build essentials, too:</p>
+<pre><code>sudo aptitude install build-essential</pre></code>
+
+<h3> Apache </h3>
+
+<p>Install Apache:</p>
+<pre><code>sudo aptitude install apache2 apache2.2-common apache2-mpm-prefork apache2-utils libexpat1 ssl-cert</pre></code>
+<!--
+<p>Towards the end of the install you will see this warning:</p>
+<pre><code>apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName</pre></code>
+
+<p>Fix the warning by:</p>
+<pre><code>sudo nano /etc/apache2/apache2.conf</pre></code>
+
+<p>Add to the bottom of the file:</p>
+<pre><code>ServerName akratic-test</pre></code>
+
+<p>Save apache2.conf and gracefully restart Apache:</p>
+<pre><code>sudo apache2ctl graceful</pre></code>
+-->
+
+<p>Test that it works by navigating to:</p>
+<pre><code>http://204.232.210.183/</pre></code>
+
+<h3>PHP </h3>
+
+<p>Install PHP5:</p>
+<pre><code>sudo aptitude install libapache2-mod-php5 php5 php5-common php5-curl php5-dev php5-gd
+php5-imagick php5-mcrypt php5-memcache php5-mhash php5-mysql php5-pspell php5-snmp
+php5-sqlite php5-xmlrpc php5-xsl</pre></code>
+
+<p>Reload Apache:</p>
+<pre><code>sudo /etc/init.d/apache2 reload</pre></code>
+
+<h3>Syslist, Apache & PHP </h3>
+
+<p>Create a home for syslist:</p>
+<pre><code>cd ~
+mkdir syslist
+mkdir -p syslist/{public,private,log,cgi-bin,backup}</pre></code>
+
+<p>Create a test file:</p>
+<pre><code>nano syslist/public/phpinfo.php</pre></code>
+
+<p>Containing:</p>
+<pre><code>&lt;?php echo phpinfo(); ?&gt;</pre></code>
+
+<p>Configure apache to point to the right place:</p>
+<pre><code>sudo nano /etc/apache2/sites-available/default</pre></code>
+
+<p>In that file, change /var/www/ to /home/bob/syslist/public/</p>
+
+<p>Reload Apache:</p>
+<pre><code>sudo /etc/init.d/apache2 reload</pre></code>
+
+<p>Verify that everything works:</p>
+<pre><code>http://204.232.210.183/phpinfo.php</pre></code>
+
+<p>Copy syslist410.zip onto the server and put it in ~/syslist/public.
+
+<p>Unzip syslist410.zip:</p>
+<pre><code>cd ~/syslist/public/
+sudo aptitude install unzip
+unzip syslist410.zip</pre></code>
+
+<p>Syslist will unzip itself into a folder named syslist410, clean that up:</p>
+<pre><code>mv syslist410/* .
+rm -r syslist410</pre></code>
+
+<p>Try it out:</p>
+<pre><code>http://204.232.210.183/</pre></code>
+
+<h3>Ioncube</h3>
+
+<p>I got an error related to ioncube.  If you got this error and are running a 64bit machine, follow these steps, otherwise skip ahead to the MySQL section.</p>
+<pre><code>Site error: the file /home/bob/syslist/public/index.php requires the ionCube PHP Loader ioncube_loader_lin_5.2.so to be installed by the site administrator.
+</pre></code>
+<p>The problem is that 32bit ioncube is included with Syslist, but I need 64bit for my 64bit machine.</p>
+
+<p>Clean out the ioncube installation that came in syslist410.zip</p>
+<pre><code>cd ~/syslist/public
+rm -rf ioncube</pre></code>
+
+<p>Go <a href="http://www.ioncube.com/loaders.php">here</a> and find the 
+URL 
+of the loaders for your operating system.  
+Mine (64bit linux) is http://downloads2.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.zip:</p>
+
+<p>Download and install the ioncube loaders:</p>
+<pre><code>sudo aptitude install wget
+wget http://downloads2.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.zip
+unzip ioncube_loaders_lin_x86-64.zip
+</pre></code>
+
+<p>Explicitly configure PHP to use these loaders:</p>
+
+<pre><code>sudo nano /etc/php5/apache2/php.ini
+zend_extension = /home/bob/syslist/public/ioncube/ioncube_loader_lin_5.2.so
+sudo /etc/init.d/apache2 restart
+</pre></code>
+
+<h3>MySQL</h3>
+
+At this point when you access http://204.232.210.183/ you should see the following MySQL error:
+
+<pre><code>MySQL Error:
+
+Warning: mysql_connect() [function.mysql-connect]: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /home/bob/syslist/public/Includes/db.inc.php on line 24
+
+Warning: mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/bob/syslist/public/Includes/db.inc.php on line 25
+Error: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+SQL: SET NAMES 'utf8'
+</pre></code>
+
+<p>This is because MySQL isn't installed yet.  Let's fix that:</p>
+
+<pre><code>sudo aptitude install mysql-server mysql-client libmysqlclient15-dev</pre></code>
+
+<p>You will be prompted for a password, choose one.</p>
+
+<p>Log in to mysql:</p>
+
+<pre><code>mysql -u root -p</pre></code>
+
+<p>Create a database for syslist:</p>
+<pre><code>CREATE DATABASE syslist;</pre></code>
+
+<p>Create a new user with priviledges to this database (in my case the user is bob and the pasword is password):</p>
+<pre><code>GRANT ALL ON syslist.* to 'bob'@'localhost' IDENTIFIED BY 'password';</pre></code>
+
+<p>Exit mysql:</p>
+<pre><code>exit</pre></code>
+
+<p>Initialize the Syslist database with the dump file:</p>
+<pre><code>mysql -u bob -p syslist < ~/syslist/public/dump.sql</pre></code>
+
+<p>Edit the Syslist database configuration to reflect these changes:</p>
+<pre><code>nano ~/syslist/public/Includes/db.inc.php</pre></code>
+
+<p>And then change these two lines:</p>
+<p>From:</p>
+<pre><code>$db = mysql_connect('localhost','username','password');
+$dbOK = mysql_select_db('database_name',$db);</pre></code>
+<p>To:</p>
+<pre><code>$db = mysql_connect('localhost','bob','password');
+$dbOK = mysql_select_db('syslist',$db);</pre></code>
+
+<h3> License Key </h3>
+
+<p>Before Syslist was open sourced, license keys were used.  Now, you can use this free license key:</p>
+
+<pre><code>4yCDsLVxw2S9OfXKyBmJ0UFTroBPnO6tMHWAe1xNG5GeVA==</pre></code>
+
+<p>Edit global.inc.php to specify the Syslist license key, admin email, and other global settings:</p>
+
+<pre><code>nano ~/syslist/public/Includes/global.inc.php</pre></code>
+
+<p>Verify that everything worked:</p>
+
+<pre><code>http://204.232.210.183/</pre></code>
+
+<p>Login, the username is 'admin' and the password is 'password'.  Once logged in, you should enter a valid email address and password for yourself.  Do not skip this step, otherwise important system emails may be lost in the future.</p>
+
+<p>At this point, your installation is complete and ready to use.  Congratulations!</p>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
