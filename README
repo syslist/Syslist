@@ -4,5 +4,8 @@ Syslist operated as a for-profit company from 2002 until 2012.  As part of shutt
 /web/ a PHP + MySQL website for displaying system information
 /windows_agent/ a Windows background process that collects system information and reports it to the server
 /mac_agent/ a Mac OSX background process that collects system information and reports it to the server
+/binaries/ containing:
+- agents.zip executables for the Windows and Mac agents
+- syslist410.zip the encoded, sale version of /web/
 
 This code is being provided with NO SUPPORT WHATSOEVER.  Do whatever you like with it -- subject the MIT license found in license.txt -- but don't expect help or support.
