@@ -1,9 +1,3 @@
---- License Information ---
-
-Please read 'license.txt', which contains the terms and conditions that you must abide by as a purchaser of Syslist.
-
-Your license key will permit you to inventory a certain number of systems. Once you exceed this number, you will no longer be able to manually add systems to the database, and the Syslist Companion Agent (which automatically inventories Windows PCs) will fail to create new systems in the database. To remedy this, you can purchase an additional license, or manually delete systems from Syslist to bring yourself back below the allowed limit. If you choose to purchase an additional license, please contact sales@syslist.com.
-
 
 --- Installation ---
 
